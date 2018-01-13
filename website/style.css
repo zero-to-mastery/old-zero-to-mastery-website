@@ -12,12 +12,9 @@ header {
     padding: 2vw;
     color:#24292e;
 }
-
-#brand-name {
-    font-size: 1.3vw;
-    font-weight: 900;
-    padding: 2vw;
-    color:#24292e;
+.discount{
+	color:rgb(8, 141, 183);
+	font-weight: 900;
 }
 
 #main-container {
