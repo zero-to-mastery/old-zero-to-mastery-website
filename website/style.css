@@ -10,12 +10,14 @@ body {
 header {
     margin: auto;
     padding: 2vw;
+    color:#24292e;
 }
 
 #brand-name {
     font-size: 1.3vw;
     font-weight: 900;
     padding: 2vw;
+    color:#24292e;
 }
 
 #main-container {
@@ -25,6 +27,7 @@ header {
 
 #main-container h1 {
     text-align: center;
+    color:#24292e;
     font-size: 4vw;
     letter-spacing: 1vw;
     font-family: 'Patua One', cursive;
@@ -49,10 +52,11 @@ header {
 #introduction-content {
     width: 50%;
     font-family: 'Titillium Web', sans-serif;
+    color:#24292e;
 }
 
 .cta {
-    background: rgb(255, 0, 47);
+    background: rgb(8, 141, 183);
     width: 40%;
     letter-spacing: 1vw;
     text-align: center;
@@ -75,7 +79,7 @@ header {
 #testimonial-wrapper {
     display: flex;
     justify-content: space-around;
-    border-top: 1px dashed rgb(72, 255, 0);
+    border-top: 1px dashed rgb(8, 141, 183);
     margin-top: 2vw;
     padding: 2vw 0 2vw 0;
     overflow-x: scroll;
@@ -86,8 +90,8 @@ header {
     padding: 2vw;
     width: 25%;
     min-width: 220px;
-    background: rgb(233, 78, 78);
-    color: white;
+    background: rgb(8, 141, 183);
+    color: whitesmoke;
     transition: .5s all linear;
     font-family: 'Titillium Web', sans-serif;
 }
@@ -109,15 +113,16 @@ header {
 
 .testimonial:hover {
     background: rgb(240, 234, 234);
-    color: black;
-    box-shadow: 0 0 40px 0 red;
+    color: #24292e;
+    box-shadow: 0 0 40px 0 rgb(8, 141, 183);
 }
 
 footer {
     margin-top: 2vw;
     padding-top: 2vw;
-    border-top: 1px dashed rgb(72, 255, 0);
+    border-top: 1px dashed rgb(8, 141, 183);
     text-align: center;
+    color:#24292e;
 }
 
 
@@ -172,5 +177,5 @@ footer {
 /* styling scrollbars  */
 
  ::-webkit-scrollbar {
-    color: red;
+    color: rgba(8, 141, 183, 1);
 }
