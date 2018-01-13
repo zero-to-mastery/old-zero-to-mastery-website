@@ -12,8 +12,13 @@ header {
     padding: 2vw;
     color:#24292e;
 }
+.dark{
+    color:#24292e;
+}
+.blue{
+    color:rgb(8, 141, 183);
+}
 .discount{
-	color:rgb(8, 141, 183);
 	font-weight: 900;
 }
 
@@ -24,7 +29,6 @@ header {
 
 #main-container h1 {
     text-align: center;
-    color:#24292e;
     font-size: 4vw;
     letter-spacing: 1vw;
     font-family: 'Patua One', cursive;
@@ -49,7 +53,6 @@ header {
 #introduction-content {
     width: 50%;
     font-family: 'Titillium Web', sans-serif;
-    color:#24292e;
 }
 
 .cta {
@@ -119,7 +122,6 @@ footer {
     padding-top: 2vw;
     border-top: 1px dashed rgb(8, 141, 183);
     text-align: center;
-    color:#24292e;
 }
 
 
@@ -130,14 +132,8 @@ footer {
         font-size: 5vw;
         margin: auto;
     }
-    #brand-name {
-        font-size: 5vw;
-        font-weight: 900;
-	color: #24292e;
-    }
     #main-container h1 {
         font-size: 8vw;
-	color: #24292e;
     }
     #introduction {
         flex-direction: column;
@@ -147,7 +143,6 @@ footer {
     }
     #introduction-content {
         width: 100%;
-	color: #24292e;
     }
     .cta {
         width: 60%;
