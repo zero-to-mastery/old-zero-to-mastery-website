@@ -93,7 +93,7 @@ header {
 }
 
 .testimonial:not(:first-child) {
-    margin-left: 10px;
+	margin-left: 10px;
 }
 
 .testimonial img {
@@ -131,9 +131,11 @@ footer {
     #brand-name {
         font-size: 5vw;
         font-weight: 900;
+	color: #24292e;
     }
     #main-container h1 {
         font-size: 8vw;
+	color: #24292e;
     }
     #introduction {
         flex-direction: column;
@@ -143,6 +145,7 @@ footer {
     }
     #introduction-content {
         width: 100%;
+	color: #24292e;
     }
     .cta {
         width: 60%;
