@@ -12,6 +12,11 @@ header {
     padding: 2vw;
     color:#24292e;
 }
+.cta a:link, .cta a:visited, .cta a:hover, .cta a:active{
+	text-align: center; 
+    text-decoration: none;
+    color: #ffffff	
+}
 .dark{
     color:#24292e;
 }
