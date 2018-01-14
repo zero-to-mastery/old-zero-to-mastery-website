@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <title>Document</title>
 </head>
 
@@ -19,7 +20,9 @@ top introduction with a video. Change it to a appropiate one
         <h1>ZERO TO MASTERY</h1>
         <div id="introduction">
             <div id="introduction-media">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/sCX_YMPuJGA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+             <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sCX_YMPuJGA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="introvid" class="embed-responsive-item"></iframe>
+             </div>
             </div>
             <div id="introduction-content" class="dark">
                 <h3>The best and most complete UDEMY course to date, made by Andrei Neagoie</h3>
@@ -45,29 +48,34 @@ top introduction with a video. Change it to a appropiate one
 
         <!-- Testimonial section. Improve when necessary  -->
 
+      
 
-        <div id="testimonial-wrapper">
+           <div id="testimonial-wrapper">
+                  <div class="testimonial">
+                    <img class="testimonial-image" src="./assets/img/profilephoto.jpg">
+                    <br><br>
+                    <span class="header">James Bishop
+                    </span>
+                    <br><br> This is the course I've been looking for. I have bought several other courses on Udemy. This one is by far the best because it focuses on preparing you to work in the industry.
+                  </div>   
+            
+       
             <div class="testimonial">
-                <img class="testimonial-image" src="./img/profilephoto.jpg">
-                <br><br>
-                <span class="header">James Bishop
-                </span>
-                <br><br> This is the course I've been looking for. I have bought several other courses on Udemy. This one is by far the best because it focuses on preparing you to work in the industry.
-            </div>
-            <div class="testimonial">
-                <img class="testimonial-image" src="./img/profilephoto.jpg">
+                <img class="testimonial-image" src="./assets/img/profilephoto.jpg">
                 <br><br>
                 <span class="header">Rohail Agneshius</span>
                 <br><br>I have taken so many web dev courses, but honestly, this one is unique because instructor helps you establish great understanding and think outside your comfort zone Plus finding a solution to the problems.All the material is well
                 structured and new such as react and a node with machine learning.
             </div>
+            
             <div class="testimonial">
-                <img class="testimonial-image" src="./img/profilephoto.jpg">
-                <br><br>
+                <img class="testimonial-image" src="./assets/img/profilephoto.jpg">
+                <br><br>                
                 <span class="header">NAME HERE</span>
                 <br><br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis veritatis dolorum iure voluptate saepe similique
             </div>
         </div>
+      
 
 
 
