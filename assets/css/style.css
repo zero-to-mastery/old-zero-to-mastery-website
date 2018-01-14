@@ -89,16 +89,21 @@ header {
 .testimonial_3 {
     text-align: center;
     padding: 1vw;
-    width: 30%;
-    min-width: 220px;
     background: rgb(8, 141, 183);
     color: whitesmoke;
     transition: .5s all linear;
     font-family: 'Titillium Web', sans-serif;
     justify-content: space-between;
+    margin:0 auto;
 
 }
-
+.testimonial_1:hover,
+.testimonial_2:hover,
+.testimonial_3:hover{
+    color: #24292e;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 0px rgb(8, 141, 183);
+}
 /*.testimonial_2 {
     margin-left: 2vw;
     margin-right: 2vw;
@@ -127,7 +132,7 @@ header {
     box-shadow: 0 0 40px 0 rgb(8, 141, 183);
 }
 
-footer {
+footer{
     margin-top: 2vw;
     padding-top: 2vw;
     border-top: 1px dashed rgb(8, 141, 183);
@@ -159,7 +164,8 @@ footer {
     }
     #testimonial-wrapper {
         justify-content: flex-start;
-        overflow-x: auto;
+        overflow-x:
+    min-width: 220px; auto;
         margin-top: 5vw;
         padding: 5vw 0 5vw 2vw;
     }
@@ -180,4 +186,10 @@ footer {
 
  ::-webkit-scrollbar {
     color: rgba(8, 141, 183, 1);
+}
+
+
+#container {
+    margin-top: 20px;
+    padding: 2vw;
 }
