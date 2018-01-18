@@ -21,6 +21,10 @@
             text-decoration: none;
             color: #ffffff
         }
+
+        .navbar {
+            font-family: 'Titillium Web', sans-serif;
+        }
         
         .dark {
             color: #24292e;
