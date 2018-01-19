@@ -312,7 +312,8 @@
         }
         #enroll-button {
             color: #ffffff;
-            border-color: #ec5237;
+            border: 1px solid transparent;
+            padding: .375rem 6em;
             background-color: #ec5237;
         }
 
