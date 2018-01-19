@@ -94,7 +94,6 @@
         }
         
         .container {
-            border-top: 1px dashed rgb(8, 141, 183);
             margin-top: 2vw;
             padding: 2vw 0 2vw 0;
             overflow-x: scroll;
