@@ -3,14 +3,27 @@
         @import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
         body {
             margin: 0px;
-            font-family: ubuntu;
+            font-family: 'Titillium Web', sans-serif;
             overflow-x: hidden;
         }
         
         header {
+            font-family: 'Titillium Web', sans-serif;
             margin: auto;
             padding: 2vw;
             color: #24292e;
+        }
+
+        header.masthead {
+            padding-top: 10rem;
+            padding-bottom: calc(10rem - 56px);
+            background-image: url("../../Mockups/cover.jpg ");
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .cover-title{
+            font-size: 8em;
         }
         
         .cta a:link,
@@ -93,7 +106,6 @@
         }
         
         .container {
-            border-top: 1px dashed rgb(8, 141, 183);
             margin-top: 2vw;
             padding: 2vw 0 2vw 0;
             overflow-x: scroll;
@@ -269,6 +281,7 @@
             padding: 2vw;
         }
 
+
         #signup-button {
             color: #ffffff;
             border-color: #ffffff;
@@ -296,4 +309,31 @@
 
         .btn-outline-success.focus, .btn-outline-success:focus {
             box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+        }
+        #enroll-button {
+            color: #ffffff;
+            border: 1px solid transparent;
+            padding: .375rem 6em;
+            background-color: #ec5237;
+        }
+
+        #enroll-button:hover {
+            color: #ec5237;
+            background-color: #ffffff;
+            border-color: #ffffff;
+        }
+
+        #enroll-button:not([disabled]):not(.disabled).active, .#enroll-button:not([disabled]):not(.disabled):active, .show>#enroll-button.dropdown-toggle {
+            color: #ec5237;
+            background-color: #ffffff;
+            border-color: #ffffff;
+            box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+        }
+
+        #enroll-button.focus, #enroll-button:focus {
+            box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+        }
+
+        .red-text{
+            color:#ec5237;
         }
