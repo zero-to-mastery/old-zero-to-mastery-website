@@ -21,6 +21,10 @@
             background-position: center center;
             background-size: cover;
         }
+
+        .cover-title{
+            font-size: 8em;
+        }
         
         .cta a:link,
         .cta a:visited,
@@ -277,6 +281,7 @@
             padding: 2vw;
         }
 
+
         #signup-button {
             color: #ffffff;
             border-color: #ffffff;
@@ -305,7 +310,25 @@
         .btn-outline-success.focus, .btn-outline-success:focus {
             box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
         }
+        #enroll-button {
+            color: #ffffff;
+            border-color: #ec5237;
+            background-color: #ec5237;
+        }
 
-        .cover-title{
-            font-size: 8em;
+        #enroll-button:hover {
+            color: #ec5237;
+            background-color: #ffffff;
+            border-color: #ffffff;
+        }
+
+        #enroll-button:not([disabled]):not(.disabled).active, .#enroll-button:not([disabled]):not(.disabled):active, .show>#enroll-button.dropdown-toggle {
+            color: #ec5237;
+            background-color: #ffffff;
+            border-color: #ffffff;
+            box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+        }
+
+        #enroll-button.focus, #enroll-button:focus {
+            box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
         }
