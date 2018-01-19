@@ -8,11 +8,19 @@
         }
         
         header {
+            font-family: 'Titillium Web', sans-serif;
             margin: auto;
             padding: 2vw;
             color: #24292e;
         }
-
+       
+        header.masthead {
+            padding-top: 10rem;
+            padding-bottom: calc(10rem - 56px);
+            background-image: url("../../Mockups/cover.jpg ");
+            background-position: center center;
+            background-size: cover;
+        }
         
         .cta a:link,
         .cta a:visited,
@@ -298,8 +306,6 @@
             box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
         }
 
-        header.masthead {
-            background-image: url("../../Mockups/cover.jpg ");
-            background-position: center center;
-            background-size: cover;
+        .cover-title{
+            font-size: 8em;
         }
