@@ -5,7 +5,6 @@
             margin: 0px;
             font-family: ubuntu;
             overflow-x: hidden;
-            padding-top: 70px;
         }
         
         header {
@@ -13,6 +12,7 @@
             padding: 2vw;
             color: #24292e;
         }
+
         
         .cta a:link,
         .cta a:visited,
@@ -296,4 +296,10 @@
 
         .btn-outline-success.focus, .btn-outline-success:focus {
             box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+        }
+
+        header.masthead {
+            background-image: url("../../Mockups/cover.jpg ");
+            background-position: center center;
+            background-size: cover;
         }
