@@ -206,7 +206,7 @@
           border-radius: 5px;
       }
       
-      .group-project a:hover {
+      .group-project:hover a {
           text-decoration: none;
           color: inherit;
           border: 1px solid #1f6694;
