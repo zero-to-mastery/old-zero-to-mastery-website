@@ -200,13 +200,14 @@
             margin: auto;
             text-align: center;
             font-weight: bold;
-            border: 1px solid rgb(8, 141, 183);
+            border: 1px solid rgb(250, 250, 250);
             border-radius: 5px;
         }
         
         .group-project a:hover {
             text-decoration: none;
             color: inherit;
+            border: 1px solid rgb(8, 141, 183);
         }
         
         footer {
