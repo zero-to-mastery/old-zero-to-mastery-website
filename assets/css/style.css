@@ -1,3 +1,5 @@
+      /*colors red - #ec5237 blue - #0781fe dark blue - #1f6694*/
+
         @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
         @import url('https://fonts.googleapis.com/css?family=Patua+One');
         @import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
@@ -116,7 +118,7 @@
         .testimonial_3 {
             text-align: center;
             padding: 1vw;
-            background: rgb(8, 141, 183);
+            background: #1f6694;
             color: whitesmoke;
             transition: .5s all linear;
             font-family: 'Titillium Web', sans-serif;
@@ -129,7 +131,7 @@
         .testimonial_3:hover {
             color: #24292e;
             background: rgb(255, 255, 255);
-            box-shadow: 0px 0px 20px 0px rgb(8, 141, 183);
+            box-shadow: 0px 0px 20px 0px #1f6694;
         }
         
         .row img {
@@ -152,7 +154,7 @@
         .group-project-wrapper {
             width: 1005;
             margin-top: 30px;
-            border-top: 1px solid rgb(8, 141, 183);
+            border-top: 1px solid #1f6694;
             padding: 2vw;
             justify-content: space-around;
             align-items: center;
@@ -170,7 +172,7 @@
             margin: 7px;
             padding: 2vw;
             color: white;
-            background: rgb(8, 141, 183);
+            background-color: #1f6694;
             border-radius: 5px;
             font-family: 'Titillium Web', sans-serif;
             transition: 1s all ease;
@@ -179,7 +181,7 @@
         .project:hover {
             color: black;
             background: white;
-            box-shadow: 0px 0px 20px 0px rgb(8, 141, 183);
+            box-shadow: 0px 0px 20px 0px #1f6694;
         }
         
         .project-header {
@@ -207,7 +209,7 @@
         .group-project a:hover {
             text-decoration: none;
             color: inherit;
-            border: 1px solid rgb(8, 141, 183);
+            border: 1px solid #1f6694);
         }
         
         footer {
