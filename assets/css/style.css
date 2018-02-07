@@ -152,7 +152,7 @@
       }
       
       .group-project-wrapper {
-          width: 1005;
+          width: 100%; //1005
           margin-top: 30px;
           border-top: 1px solid #1f6694;
           padding: 2vw;
@@ -165,10 +165,12 @@
           display: flex;
           flex-wrap: wrap;
           text-align: center;
+          justify-content: center;
+          align-items: center;
       }
       
       .project {
-          width: 32%;
+          width: 30%;
           margin: 7px;
           padding: 2vw;
           color: white;
@@ -327,7 +329,7 @@
       }
       
       #enroll-button:not([disabled]):not(.disabled).active,
-      .#enroll-button:not([disabled]):not(.disabled):active,
+      #enroll-button:not([disabled]):not(.disabled):active,
       .show>#enroll-button.dropdown-toggle {
           color: #ec5237;
           background-color: #ffffff;
