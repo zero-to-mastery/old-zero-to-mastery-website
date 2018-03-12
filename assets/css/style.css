@@ -361,6 +361,7 @@
           box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
       }
 
+/*
       #enroll-button {
           color: #ffffff;
           border: 1px solid transparent;
@@ -387,6 +388,36 @@
       #enroll-button:focus {
           box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
       }
+*/
+
+      .enroll-button {
+          color: #ffffff;
+          border: 1px solid transparent;
+          padding: .375rem 6em;
+          background-color: #ec5237;
+      }
+
+      .enroll-button:hover {
+          color: #ec5237;
+          background-color: #ffffff;
+          border-color: #ffffff;
+      }
+
+      .enroll-button:not([disabled]):not(.disabled).active,
+      .#enroll-button:not([disabled]):not(.disabled):active,
+      .show>#enroll-button.dropdown-toggle {
+          color: #ec5237;
+          background-color: #ffffff;
+          border-color: #ffffff;
+          box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+      }
+
+      .enroll-button.focus,
+      .enroll-button:focus {
+          box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+      }
+
+
 
       .red-text {
           color: #ec5237;
