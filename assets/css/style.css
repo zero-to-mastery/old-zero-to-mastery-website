@@ -236,6 +236,40 @@
           border-top: 1px dashed rgb(8, 141, 183);
           text-align: center;
       }
+
+/*Opens Source*/
+#open-source {
+    background-color: #0781FE;
+    color: white;
+/*    display: block;*/
+    font-size: 2rem;
+    
+}
+
+#open-source  div img{
+  
+    border-radius: 0;
+    text-align: center;
+    display: block;    
+}
+#open-source > div p {
+    font-size: 2rem;
+    
+   
+}
+#open-source > div p span{
+    font-size: 4rem;
+   
+}
+#btn-opens{
+    margin: auto 0;
+    background-color: #EC5238;
+    border: 0;
+    color: white;
+}
+
+
+
       /* for mobile screen   */
 
       @media screen and (max-width: 500px) {
