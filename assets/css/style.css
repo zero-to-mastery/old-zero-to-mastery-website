@@ -59,7 +59,7 @@
         background: url('../img/playicon-s.png') , url('../../Mockups/1430746_2f43_2.jpg');
         background-repeat: no-repeat;
         background-position: center;
-        margin: 0 auto;
+        margin: 0 auto;        
         overflow:hidden;
         cursor:pointer;
         transition: all .5s;
@@ -67,6 +67,9 @@
       }
       .playicon:hover{
         transform: scale(1.02);
+      }
+      #vidwrap {
+          text-align: center;
       }
       #main-container {
           width: 90%;
