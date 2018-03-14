@@ -213,6 +213,7 @@
       .group-project img {
           border-radius: 5px;
           padding: 2vw;
+          width: 75%;
       }
 
       .group-project a {
