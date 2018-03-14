@@ -194,6 +194,7 @@
           border-radius: 5px;
           font-family: 'Titillium Web', sans-serif;
           transition: 1s all ease;
+          position: relative;
       }
 
       .project:hover {
@@ -236,6 +237,23 @@
           border-top: 1px dashed rgb(8, 141, 183);
           text-align: center;
       }
+.project > p {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 87%;
+}
+
+.btncontr{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 87%;
+}
+
+.absolute{
+    position: absolute;
+}
 
 /*Opens Source*/
 #open-source {
