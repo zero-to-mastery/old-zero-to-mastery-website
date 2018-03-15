@@ -28,7 +28,7 @@
           font-size: 8em;
       }
       .DescriptionBG{
-        background-color: #0781FE;
+        background-color: #0781FE !important;
       }
       .cta a:link,
       .cta a:visited,
