@@ -27,7 +27,9 @@
       .cover-title {
           font-size: 8em;
       }
-
+      .DescriptionBG{
+        background-color: #0781FE;
+      }
       .cta a:link,
       .cta a:visited,
       .cta a:hover,
@@ -419,7 +421,7 @@
 /*Status page*/
 
 #statush h1, h5 {
-    
+
     font-weight: bolder;
    text-shadow: -2px 2px 6px #908b8b;
 }
