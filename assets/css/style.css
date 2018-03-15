@@ -383,34 +383,6 @@
           box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
       }
 
-/*
-      #enroll-button {
-          color: #ffffff;
-          border: 1px solid transparent;
-          padding: .375rem 6em;
-          background-color: #ec5237;
-      }
-
-      #enroll-button:hover {
-          color: #ec5237;
-          background-color: #ffffff;
-          border-color: #ffffff;
-      }
-
-      #enroll-button:not([disabled]):not(.disabled):active,
-      .show>#enroll-button.dropdown-toggle {
-          color: #ec5237;
-          background-color: #ffffff;
-          border-color: #ffffff;
-          box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-      }
-
-      #enroll-button.focus,
-      #enroll-button:focus {
-          box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-      }
-*/
-
       .enroll-button {
           color: #ffffff;
           border: 1px solid transparent;
@@ -443,3 +415,74 @@
       .red-text {
           color: #ec5237;
       }
+
+/*Status page*/
+
+#statush h1, h5 {
+    
+    font-weight: bolder;
+   text-shadow: -2px 2px 6px #908b8b;
+}
+
+#statush h1 > a {
+    border: 2px solid red;
+}
+
+#statush h3 {
+    font-weight: bolder;
+    text-shadow: -2px 2px 6px #908b8b;
+}
+
+#statush hr {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 5px auto;
+    height: 5px;
+    width: 35%;
+    /* max-height: 48px; */
+    font-size: 22px;
+    /* line-height: 5px; */
+    /* clear: both; */
+    text-shadow: -1px 2px 6px #240101;
+    /* color: #0781fe; */
+    background-color: #098cb7;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -2px 2px 6px 0px #908b8b;
+}
+
+.contributors{
+       margin: 10px;
+    margin-left: 20px;
+}
+
+.contributors img {
+    max-height: 40px;
+    max-width: 40px;
+    margin-bottom: 5px;
+}
+
+.contributors img:hover {
+    border: 2px solid #0781fe;
+}
+
+.container p {
+    margin: auto 15%;
+    margin-bottom: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+/*
+h5.text-center.blue:hover {
+    text-decoration: none;
+}
+*/
+
+h5 a.blue:hover {
+    text-decoration: none;
+    color: inherit;
+    text-shadow: -1px 1px 3px #908b8b;
+}
