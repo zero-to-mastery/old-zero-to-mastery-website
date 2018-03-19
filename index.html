@@ -46,23 +46,23 @@
               	        <strong>Mastery</strong>
                     </h1>
                     <p>The best and most complete course in UDEMY to become a web developer today!</p>
-                    <a id="enroll-button" class="btn btn-primary btn-xl js-scroll-trigger" href="https://www.udemy.com/the-complete-web-developer-in-2018/?couponCode=SSACDWA"><strong>ENROLL NOW!</strong></a>
+                    <a id="enroll-button" class="btn btn-primary btn-xl js-scroll-trigger enroll-button" href="https://www.udemy.com/the-complete-web-developer-in-2018/?couponCode=SSACDWA"><strong>ENROLL NOW!</strong></a>
                 </div>
             </div>
     </div>
 </header>
 
-    <!-- Intro Section with a video-->
+    <!-- Intro Section with a video -->
 	<section id="about">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6">
+          <div class="col-xl-6">
             <div class="p-5">
               <div onclick="play();" class="playicon" id="vidwrap"></div>
               <script src="assets/js/script.js"></script>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-xl-6">
             <div class="p-5">
             	<div class="red-text">
               <h3>Become a Web Developer</h3>
@@ -77,6 +77,27 @@
 		    </div>
       </div>
     </section>
+
+<!--    Opens source project-->
+    <section>
+    <div id="container">
+
+         <div id= "open-source" class="row blue">
+             <div class="pl-4 pt-3">
+                <p class="m-0">Become part of our</p>
+                <p><span> Open source Projects!</span></p>
+             </div>
+             <div class="col-md-12 ">
+                 <img class="img-fluid mx-auto"  src="./assets/img/contribute-open-source-community.png" alt="contribute-open-source-community">
+             </div>
+             <div class="col-sm-12 text-center mb-4">
+    	    <a id="enroll-button" class="btn btn-primary btn-xl js-scroll-trigger enroll-button" href="#"><strong>More Projects</strong></a>
+            </div>
+        </div>
+
+    </div>
+    </section>
+<!--    END Open Source project-->
         <!-- Testimonial section. Improve when necessary  -->
 
         <div id="container">
@@ -88,7 +109,6 @@
                     </span>
                     <br><br> This is the course I've been looking for. I have bought several other courses on Udemy. This one is by far the best because it focuses on preparing you to work in the industry.
                 </div>
-
                 <div class="col-sm-3 testimonial_2">
                     <img class="testimonial-image" src="./assets/img/profilephoto.jpg">
                     <br><br>
@@ -96,17 +116,15 @@
                     <br><br>I have taken so many web dev courses, but honestly, this one is unique because instructor helps you establish great understanding and think outside your comfort zone Plus finding a solution to the problems.All the material
                     is well structured and new such as react and a node with machine learning.
                 </div>
-
-
-
                 <div class="col-sm-3 testimonial_3">
                     <img class="testimonial-image" src="./assets/img/profilephoto.jpg">
                     <br><br>
-                    <span class="header">NAME HERE</span>
-                    <br><br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis veritatis dolorum iure voluptate saepe similique
+                    <span class="header">Lauren R </span>
+                    <br><br>I came across udemy to learn new things then I found out this course. I never thought that this course will make me go deeper in this kind of industry with the help of the course community and the instructor.
                 </div>
 
-
+</div>
+    </div>
                 <!-- group projects showcase  -->
 
 
@@ -114,50 +132,111 @@
                     <h1>Our Open Source Projects </h1>
                     <div class="group-project">
                         <div class="project">
-                            <span class="project-header">Project Name </span>
+                            <span class="project-header">Travel Guide</span>
                             <br>
-                            <img src="./assets/img/projectplaceholder.png" alt="">
-                            <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur suscipit neque dolore ea voluptatum eaque animi, vitae ratione aliquam odit est facere nam recusandae in eligendi, quam molestias iste nemo.
-                            <br><br><a href="#">CONTRIBUTE</a>
+                            <img class="img-fluid mx-auto" src="./assets/img/travelguide.png" alt="">
+                            <br> A travel guide to suggest activities you can do once you arrive to a certain destination. Or you can just browse destinations and check out the different available activities.
+                            <br><br>
+                            <p class="btncontr">
+                            <a class="btn btn-primary btn-xl enroll-button" href="https://github.com/zero-to-mastery/travel-guide">CONTRIBUTE NOW</a></p>
                         </div>
                         <div class="project">
 
-                            <span class="project-header">Project Name </span>
+                            <span class="project-header">Ztm Job Board</span>
                             <br>
-                            <img src="./assets/img/projectplaceholder.png" alt="">
-                            <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur suscipit neque dolore ea voluptatum eaque animi, vitae ratione aliquam odit est facere nam recusandae in eligendi, quam molestias iste nemo.
-                            <br><br><a href="#">CONTRIBUTE</a>
+                            <img class="img-fluid mx-auto" src="./assets/img/jobboard.png" alt="">
+                            <br> A place for developers to show recruiters they are available for hire
+                            <br><br>
+                            <p class="btncontr"><a class="btn btn-primary btn-xl enroll-button" href="https://github.com/zero-to-mastery/ZtM-Job-Board">CONTRIBUTE NOW</a></p>
                         </div>
                         <div class="project">
-                            <span class="project-header">Project Name </span>
+                            <span class="project-header">Litter Finder</span>
                             <br>
-                            <img src="./assets/img/projectplaceholder.png" alt="">
-                            <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur suscipit neque dolore ea voluptatum eaque animi, vitae ratione aliquam odit est facere nam recusandae in eligendi, quam molestias iste nemo.
-                            <br><br><a href="#">CONTRIBUTE</a>
+                            <img class="img-fluid mx-auto" src="./assets/img/litter.png" alt="">
+                            <br>An app to find litter using community submitted geotagged images. The submitted areas are then tracked as to whether they have been cleaned up or not. There should be a leaderboard of submissions and the overall number of submitted images displayed.
+                            <br><br>
+                             <p class="btncontr"><a class="btn btn-primary btn-xl enroll-button" href="https://github.com/zero-to-mastery/litter-finder">CONTRIBUTE NOW</a></p>
                         </div>
                         <div class="project">
-                            <span class="project-header">Project Name </span>
+                            <span class="project-header">House Organiser</span>
                             <br>
-                            <img src="./assets/img/projectplaceholder.png" alt="">
-                            <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur suscipit neque dolore ea voluptatum eaque animi, vitae ratione aliquam odit est facere nam recusandae in eligendi, quam molestias iste nemo.
-                            <br><br><a href="#">CONTRIBUTE</a>
+                            <img class="img-fluid mx-auto" src="./assets/img/houseorg.png" alt="">
+                            <br>Registers the amount and type of items that you have and helps you reach your goal of reaching a certain number of items of your choice.
+                            <br><br>
+                             <p class="btncontr"><a class="btn btn-primary btn-xl enroll-button" href="https://github.com/zero-to-mastery/house-organiser">CONTRIBUTE NOW</a></p>
                         </div>
                         <div class="project">
-                            <span class="project-header">Project Name </span>
+                            <span class="project-header">StarWars Spaceships</span>
                             <br>
-                            <img src="./assets/img/projectplaceholder.png" alt="">
-                            <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur suscipit neque dolore ea voluptatum eaque animi, vitae ratione aliquam odit est facere nam recusandae in eligendi, quam molestias iste nemo.
-                            <br><br><a href="#">CONTRIBUTE</a>
+                            <img class="img-fluid mx-auto" src="./assets/img/starwars.png" alt="">
+                            <br>No description.
+                            <br><br>
+                             <p class="btncontr"><a class="btn btn-primary btn-xl enroll-button" href="https://github.com/zero-to-mastery/starwars-spaceships">CONTRIBUTE NOW</a></p>
                         </div>
                         <div class="project">
-                            <span class="project-header">Project Name </span>
+                            <span class="project-header">Recycling Tracker</span>
                             <br>
-                            <img src="./assets/img/projectplaceholder.png" alt="">
-                            <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur suscipit neque dolore ea voluptatum eaque animi, vitae ratione aliquam odit est facere nam recusandae in eligendi, quam molestias iste nemo.
-                            <br><br><a href="#">CONTRIBUTE</a>
+                            <img class="img-fluid mx-auto" src="./assets/img/recyclingtracker.png" alt="">
+                            <br>A game style app that tracks the amount of waste that you have recycled and where, then calculates the amount of landfill that you prevented overall. Giving you bragging rights on your favorite social media platform.
+                            <br><br>
+                            <p class="btncontr"><a class="btn btn-primary btn-xl enroll-button" href="https://github.com/zero-to-mastery/recycling-tracker">CONTRIBUTE NOW</a></p>
+                        </div>
+                        <div class="project">
+                            <span class="project-header">Resources</span>
+                            <br>
+                            <img class="img-fluid mx-auto" src="./assets/img/resources.png" alt="">
+                            <br>Here is a list of best resources for the developers (mostly web). Feel free to add your resources as well because sharing is caring
+                            <br><br>
+                            <p class="btncontr"><a class="btn btn-primary btn-xl enroll-button" href="https://github.com/zero-to-mastery/resources">CONTRIBUTE NOW</a></p>
+                        </div>
+                        <div class="project">
+                            <span class="project-header">Book Tracker</span>
+                            <br>
+                            <img class="img-fluid mx-auto" src="./assets/img/booktracker.png" alt="">
+                            <br>Tracks the amount of books that you've read, the ones you want to read and the progress on the ones you're reading.
+                            <br><br>
+                            <p class="btncontr"><a class="btn btn-primary btn-xl enroll-button" href="https://github.com/zero-to-mastery/book-tracker">CONTRIBUTE NOW</a></p>
+                        </div>
+                        <div class="project">
+                            <span class="img-fluid mx-auto" class="project-header">Time Collector</span>
+                            <br>
+                            <img class="img-fluid mx-auto" src="./assets/img/timecollector.png" alt="">
+                            <br>This projects counts the time need on each project we do as freelancers or hobbyists, so we better know in the future how to estimate time for projects.
+                            <br><br>
+                            <p class="btncontr"><a class="btn btn-primary btn-xl enroll-button" href="https://github.com/zero-to-mastery/time-collector">CONTRIBUTE NOW</a></p>
+                        </div>
+                             <div class="project">
+                            <span class="project-header">Trello Clone</span>
+                            <br>
+                            <img class="img-fluid mx-auto" src="./assets/img/trello.png" alt="">
+                            <br>A clone of trello, mimicking its basic functionality.
+                            <br><br>
+                                 <p class="btncontr"><a class="btn btn-primary btn-xl enroll-button" href="https://github.com/zero-to-mastery/Trello-Clone">CONTRIBUTE NOW</a></p>
+                        </div>
+                        <div class="project">
+                            <span class="project-header">CSS Grid LearnGame</span>
+                            <br>
+                            <img class="img-fluid mx-auto" src="./assets/img/cssgame.png" alt="">
+                            <br>This will be a game to learn CSS Grid in a Game Mode Style, to make learning more fun!
+                            <br><br>
+                            <p class="btncontr"><a class="btn btn-primary btn-xl enroll-button" href="https://github.com/zero-to-mastery/CSS_Grid_LearnGame">CONTRIBUTE NOW</a></p>
+                        </div>
+
+                           <div class="project">
+                            <span class="project-header">ZtM Website</span>
+                            <br>
+                            <img class="img-fluid mx-auto" src="./assets/img/website.png" alt="">
+                            <br>
+                            A website to track the status of the OpenSource Projects that our groups will be working on, with links to the github profiles of the contributors
+                            <br><br>-->
+                            <p class="btncontr"><a class="btn btn-primary btn-xl enroll-button" href="https://github.com/zero-to-mastery/time-collector">CONTRIBUTE NOW</a></p>
                         </div>
                     </div>
-                </div>
+                    </div>
+
+
+
+     <!-- END group projects showcase  with bootstrap -->
 
                 <footer class="col-sm-12">
                     &copy 2018 Zero To Mastery Community
@@ -167,7 +246,7 @@
         </div>
 
         <!-- bootstrap java and jquery  -->
-
+        <script type="text/javascript" src="bundle.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
