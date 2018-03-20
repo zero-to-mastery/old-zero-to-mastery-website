@@ -18,5 +18,6 @@
   "homepage": "https://github.com/laurenceRama/zero-to-mastery-website#readme",
   "dependencies": {
     "lodash": "^4.17.5"
-  }
+  },
+  "devDependencies": {}
 }
