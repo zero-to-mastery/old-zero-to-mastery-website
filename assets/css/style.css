@@ -133,9 +133,7 @@
           overflow-x: scroll;
       }
 
-      .testimonial_1,
-      .testimonial_2,
-      .testimonial_3 {
+      .testimonial {
           text-align: center;
           padding: 1vw;
           background: #1f6694;
@@ -146,9 +144,7 @@
           margin: 0 auto;
       }
 
-      .testimonial_1:hover,
-      .testimonial_2:hover,
-      .testimonial_3:hover {
+      .testimonial:hover, {
           color: #24292e;
           background: rgb(255, 255, 255);
           box-shadow: 0px 0px 20px 0px #1f6694;
@@ -159,17 +155,32 @@
           border-radius: 50%;
       }
 
-      .testimonial .header {
+/*
+      .testimonial headertest {
           font-weight: 900;
+          border: 2px solid red;
           font-size: 1.8vw;
           font-family: 'Open Sans', sans-serif;
       }
+*/
+
+span.headertest {
+    font-weight: 900;
+    /* border: 2px solid red; */
+    font-size: 2.2vw;
+    font-family: 'Open Sans', sans-serif;
+}
 
       .testimonial:hover {
           background: rgb(240, 234, 234);
           color: #24292e;
           box-shadow: 0 0 40px 0 rgb(8, 141, 183);
       }
+
+        img.testimonial-image {
+            border: 2px solid #1f6694;
+        }
+
 
       .group-project-wrapper {
           width: 1005;
@@ -188,21 +199,42 @@
       }
 
       .project {
+/*
           width: 32%;
           margin: 7px;
-          padding: 2vw;
+          
           color: white;
           background-color: #1f6694;
           border-radius: 5px;
           font-family: 'Titillium Web', sans-serif;
           transition: 1s all ease;
           position: relative;
+*/
+          
+          width: 32%;
+          margin: 7px;
+          padding: 2vw;
+          text-align: center;
+          padding: 1vw;
+          background: #1f6694;
+          color: whitesmoke;
+          transition: .5s all linear;
+          font-family: 'Titillium Web', sans-serif;
+          justify-content: space-between;
+          margin: 2vh auto;
+          position: relative;
       }
 
       .project:hover {
           color: black;
+/*
           background: white;
           box-shadow: 0px 0px 20px 0px #1f6694;
+*/
+          
+          background: rgb(240, 234, 234);
+          color: #24292e;
+          box-shadow: 0 0 40px 0 rgb(8, 141, 183);
       }
 
       .project-header {
@@ -241,17 +273,18 @@
       }
 .project > p {
     display: block;
-    position: absolute;
-    bottom: 0;
-    width: 87%;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
 }
 
-.btncontr{
-    display: block;
-    position: absolute;
-    bottom: 0;
-    width: 87%;
+.col-sm-3.project {
+    flex: 0 0 33%;
+    max-width: 32%;
 }
+
+
 
 .absolute{
     position: absolute;
@@ -341,6 +374,7 @@
           .project-header {
               font-size: 7vw;
           }
+       
       }
       /* styling scrollbars  */
 
@@ -488,3 +522,45 @@ h5 a.blue:hover {
     color: inherit;
     text-shadow: -1px 1px 3px #908b8b;
 }
+
+
+
+/* Header Parallax Element Style*/ 
+.paral {
+min-height: 300px;
+background-attachment: fixed;
+background-size: cover;
+background-position: 50% 50%;
+}
+ 
+/* Paragrapgh for Parallax Section */ 
+.paral p {
+font-size: 24px;
+color:#f5f5f5;
+text-align: center;
+line-height: 60px;
+}
+ 
+/* Heading for Parallax Section */ 
+.paral h1 {
+color: #ec5237 ;
+font-size: 60px;
+font-weight: 900;
+text-align: center;
+padding-top: 20px;
+line-height: 100px;
+}
+ 
+/* Image for Parallax Section */ 
+.paralsec {
+background-image: url("../img/Constructing.jpg");
+    
+}
+ 
+h1.display {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Remove Bottom Margin from Jumbotron */
+.jumbotron{margin-bottom: 0;}
+ 
