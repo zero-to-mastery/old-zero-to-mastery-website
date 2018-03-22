@@ -422,7 +422,7 @@ span.headertest {
       .enroll-button {
           color: #ffffff;
           border: 1px solid transparent;
-          padding: .375rem 6em;
+          padding: .375rem auto;
           background-color: #ec5237;
       }
 
