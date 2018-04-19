@@ -30,6 +30,7 @@ footer {
     border-top: 1px dashed var(--ztm-blue);
     text-align: center;
     background-color: var(--ztm-blue);
+    color: #fff;
 }
 
 /* === INDEX PAGE === */
@@ -301,3 +302,12 @@ h5 a.blue:hover {
     color: inherit;
     text-shadow: -1px 1px 3px #908b8b;
 }
+
+/* === MOBILE OPTIMISATIONS */
+
+      @media screen and (max-width: 500px) {
+            /* to hide the scroll bars. Doesn't look good in browsers. Style it if you want   for mobile only */
+           ::-webkit-scrollbar {
+              display: none;
+          }
+      }
