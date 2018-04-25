@@ -176,6 +176,7 @@ div.desktop-wrapper iframe {
     justify-content: space-between;
     margin: 0 auto;
     border: 1px solid var(--ztm-darkblue);
+    border-radius: 0.25rem;
 }
 
 .testimonial:hover {
@@ -227,7 +228,8 @@ span.headertest {
     justify-content: space-between;
     margin: 2vh auto;
     position: relative;
-    border: 1px solid var(--ztm-darkblue)
+    border: 1px solid var(--ztm-darkblue);
+    border-radius: 0.25rem;
 }
 
 .project:hover {
