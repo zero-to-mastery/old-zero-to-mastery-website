@@ -425,7 +425,7 @@
       }
 
       .enroll-button:not([disabled]):not(.disabled).active,
-      .#enroll-button:not([disabled]):not(.disabled):active,
+      .enroll-button:not([disabled]):not(.disabled):active,
       .show>#enroll-button.dropdown-toggle {
           color: #ec5237;
           background-color: #ffffff;
