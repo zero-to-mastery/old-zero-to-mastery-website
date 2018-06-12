@@ -217,6 +217,9 @@ span.headertest {
 }
 
 .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 32%;
     margin: 7px;
     padding: 2vw;
@@ -226,7 +229,6 @@ span.headertest {
     color: whitesmoke;
     transition: .5s all linear;
     font-family: 'Titillium Web', sans-serif;
-    justify-content: space-between;
     margin: 2vh auto;
     position: relative;
     border: 1px solid var(--ztm-darkblue);
