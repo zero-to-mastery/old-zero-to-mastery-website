@@ -86,7 +86,6 @@ header.masthead .DescriptionBG {
     background: url(../img/vidscreen.png) center center no-repeat;
     background-size: contain;
     padding: 3.2% 10.8% 18.6%;
-    /* 11.9% 15.5% 14.8% */
     position: absolute;
     top: 0;
     left: 0;
@@ -217,10 +216,9 @@ span.headertest {
 }
 
 .project {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    width: 32%;
+     justify-content: flex-start; */
     margin: 7px;
     padding: 2vw;
     text-align: center;
@@ -230,7 +228,6 @@ span.headertest {
     transition: .5s all linear;
     font-family: 'Titillium Web', sans-serif;
     margin: 2vh auto;
-    position: relative;
     border: 1px solid var(--ztm-darkblue);
     border-radius: 0.25rem;
 }
@@ -377,7 +374,7 @@ h5 {
 .container p {
     margin: auto 15%;
     margin-bottom: 10px;
-    background-color: #e9ecef;
+    /* background-color: #e9ecef; */
     border-radius: 5px;
     padding: 2%;
 }
