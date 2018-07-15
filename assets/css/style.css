@@ -47,7 +47,7 @@ footer {
 header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 56px);
-    background-image: url("../../Mockups/cover.jpg ");
+    background-image: url("../../Mockups/cover-updated.jpg");
     background-position: center center;
     background-size: cover;
 }
@@ -171,7 +171,9 @@ div.desktop-wrapper iframe {
     padding: 1vw;
     background: var(--ztm-darkblue);
     color: whitesmoke;
-    transition: .5s all linear;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
     font-family: 'Titillium Web', sans-serif;
     justify-content: space-between;
     margin: 0 auto;
@@ -180,8 +182,9 @@ div.desktop-wrapper iframe {
 }
 
 .testimonial:hover {
-    color: #24292e;
-    background: rgb(255, 255, 255);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    transform: scale(1.1)
 }
 
 .testimonial-image {
@@ -225,16 +228,19 @@ span.headertest {
     padding: 1vw;
     background: var(--ztm-darkblue);
     color: whitesmoke;
-    transition: .5s all linear;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     font-family: 'Titillium Web', sans-serif;
     margin: 2vh auto;
-    border: 1px solid var(--ztm-darkblue);
+    border-right: 2px solid white;
+    border-left: 2px solid white;
     border-radius: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .project:hover {
-    background: white;
-    color: #24292e;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .project-header {
@@ -499,9 +505,59 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     transform: scale(1.02);
     cursor: pointer
 }
+
+/* Queries */
+
 @media screen and (max-width: 500px) {
     /* to hide the scroll bars. Doesn't look good in browsers. Style it if you want   for mobile only */
     ::-webkit-scrollbar {
         display: none;
     }
+}
+
+/* @cobimr Responsive Update */
+@media screen and (max-width: 980px) {
+    /* Clean Blue Background on Mobile Device */
+    header.masthead {
+        background-position: initial
+    }
+    /* Fixed Responsive Main Banner*/
+    .masthead div.p-5 {
+        padding: 0 !important;
+    }
+    /* Fixed Discord Banner on Mobile Devices */
+    .discordheader {
+        padding-top: 10rem !important;
+    }
+    /* Better looking on About Discord Section by erasing innecesary padding*/
+    #about-discord div.p-5 {
+        padding: 0 !important;
+    }
+    /* Removing Discord Banner Parallax only for Mobile Devices */
+     section.paral{
+             background-attachment: unset;
+             margin: 0px;   
+     }
+
+    /* Better Image on mobile devices */
+    .testimonial-image {
+        width: 50% !important;
+    }
+    /* Desactivate Hover Animation on Mobile */
+    .testimonial {
+        transition: none !important;
+        margin: 1rem auto !important;
+    }
+    .testimonial:hover {
+        box-shadow: none;
+        transform: none
+    }
+    .project {
+         transition: none !important;
+    }
+    .project:hover {
+         box-shadow: none;
+    }
+
+    
 }
