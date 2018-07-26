@@ -126,6 +126,10 @@ div.desktop-wrapper iframe {
     color: var(--ztm-red);
 }
 
+#about {
+    margin-top:  3%;
+}
+
 #about p {
     margin: auto 0%;
     margin-bottom: 10px;
