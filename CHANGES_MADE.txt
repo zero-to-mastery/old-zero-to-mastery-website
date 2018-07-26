@@ -1,4 +1,4 @@
-Moved the navbar to a separeted file, so at any alterations made, only one file is changed, applying to all others.
+Moved the navbar to a separated file, so at any alterations made, only one file is changed, apply to all others.
 
 Drawbacks: The files must be .php and it may make more difficult for SEO searches.
 
