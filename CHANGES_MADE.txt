@@ -1,5 +1,0 @@
-Moved the navbar to a separated file, so at any alterations made, only one file is changed, apply to all others.
-
-Drawbacks: The files must be .php and it may make more difficult for SEO searches.
-
-Changes by: Bruno Finhana
