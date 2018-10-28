@@ -179,6 +179,9 @@ div.desktop-wrapper iframe {
     margin: 0 auto;
     border: 1px solid var(--ztm-darkblue);
     border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .testimonial:hover {
@@ -378,7 +381,7 @@ h5 {
 }
 
 .container p {
-    margin: auto 15%;
+    margin: auto 10%;
     margin-bottom: 10px;
     /* background-color: #e9ecef; */
     border-radius: 5px;
