@@ -16,6 +16,9 @@
 
 /* === GENERAL STYLE === */
 
+html {
+  scroll-behavior: smooth;
+}
 body {
     margin: 0px;
     font-family: 'Titillium Web', sans-serif;
@@ -539,7 +542,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     /* Removing Discord Banner Parallax only for Mobile Devices */
      section.paral{
              background-attachment: unset;
-             margin: 0px;   
+             margin: 0px;
      }
 
     /* Better Image on mobile devices */
@@ -562,5 +565,5 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
          box-shadow: none;
     }
 
-    
+
 }
