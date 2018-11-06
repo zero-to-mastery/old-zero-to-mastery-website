@@ -1,5 +1,4 @@
-# Project of The Month (November 2018) 
-![Level](https://img.shields.io/badge/Novembers%20-%20Project-yellow.svg?longCache=true&style=for-the-badge)
+# Project of The Month ![Level](https://img.shields.io/badge/November%20-%202018-yellow.svg?longCache=true&style=for-the-badge)
 
 
 ## What's this?
@@ -40,6 +39,9 @@ Integrate the Job Board
 #### Resources (https://github.com/zero-to-mastery/resources)  
 -----
 Integrate the Resources Website
+
+* zeroOverflow (https://thecode.zone)
+Information and links to zeroOverflow
 
 #### Discord 
 -----
