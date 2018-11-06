@@ -37,17 +37,10 @@ Integrate the Resources Website
 Information about the Discord Community, along with guides on using Discord.
 
 ## Useful Information
-Repo: https://github.com/zero-to-mastery/zero-to-mastery-website/
-Tech: HTML initially, but up to the community
-Theme: Light and Elegant
+Repo: https://github.com/zero-to-mastery/zero-to-mastery-website/  
+Tech: HTML initially, but up to the community  
+Theme: Light and Elegant  
 
-This will be the official Zero-to-Mastery website.
-
-The website is a project with several projects within.
-These projects are:
-1. Landing Page - a link to the udemy course, summary of the course & video, link to the ongoing projects.
-2. Status Tracker - tracking the progress of opensource projects coming from this course.
-3. Blog - updates about the course and success stories.
 
 ## How to get started?
 - Start making small Pull Requests wherever you think you can help. The Management team will be handling the project and adding the features that you create as they come.  
