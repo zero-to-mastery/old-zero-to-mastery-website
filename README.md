@@ -40,9 +40,9 @@ Integrate the Job Board
 -----
 Integrate the Resources Website
 
-* **zeroOverflow** (https://thecode.zone)
-
-Information and links to zeroOverflow
+#### zeroOverflow (https://thecode.zone)
+-----
+tInformation and links to zeroOverflow
 
 #### Discord 
 -----
