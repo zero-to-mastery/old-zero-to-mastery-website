@@ -1,4 +1,4 @@
-# Project of The Month (November 2018)
+# Project of The Month (November 2018) https://img.shields.io/badge/Novembers%20-%20Project-yellow.svg?longCache=true&style=for-the-badge
 
 ## What's this?
 This website was created by the community of Zero to Mastery and is run by 100% by the community. **Fun fact**: It was initially developed by the 6 moderators that started our community back in the day on Slack (before we moved to Discord). We want to turn this project into a resource for the community and a place to gather all of our open source initiatives (see below).
