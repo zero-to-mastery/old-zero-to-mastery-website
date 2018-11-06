@@ -20,32 +20,42 @@ The aim of this event is to bring together all that ZTM has to offer, into a sin
 ## Features
 
 #### Courses Page 
------
 A page containing details of each course, some reviews and sign up buttons. 
 Udemy's API, might be something we could use in this.
 
-#### Group Projects (https://github.com/zero-to-mastery)  
 -----
+
+#### Group Projects (https://github.com/zero-to-mastery)  
 Listing all the group projects available, what language/tech they use. Also information on getting started and FAQs. Utilise the Github API to fetch data such as contributors and total PRs, maybe.
 
-#### Coding Challenges 
 -----
-List all previous coding challenges & entries, utilising a JSON file structure to allow adding new challenges quickly and easily. Making it easier for new students to go back and try previous challenges. 
+
+#### Coding Challenges 
+
+List all previous coding challenges & entries, utilising a JSON file structure to allow adding new challenges quickly and easily. Making it easier for new students to go back and try previous challenges.
+
+-----
 
 #### Job Board (https://github.com/zero-to-mastery/ZtM-Job-Board)  
------
+
 Integrate the Job Board
 
-#### Resources (https://github.com/zero-to-mastery/resources)  
 -----
+
+#### Resources (https://github.com/zero-to-mastery/resources)  
+
 Integrate the Resources Website
 
-#### zeroOverflow (https://thecode.zone)
 -----
-tInformation and links to zeroOverflow
+
+#### zeroOverflow (https://thecode.zone)
+
+Information and links to zeroOverflow
+
+-----
 
 #### Discord 
------
+
 Information about the Discord Community, along with guides on using Discord.
 
 ## Useful Information
