@@ -1,13 +1,14 @@
 # Project of The Month (November 2018)
 
 ## What's this?
-This website was created by the community of Zero to Mastery and is run by the community. Fun fact: It was initially developed by the 7 moderators that started our community back in the day on Slack (before we moved to Discord). We want to turn this project into a resource for the community and a place to gather all of our open source initiatives (see below).
+This website was created by the community of Zero to Mastery and is run by 100% by the community. **Fun fact**: It was initially developed by the 6 moderators that started our community back in the day on Slack (before we moved to Discord). We want to turn this project into a resource for the community and a place to gather all of our open source initiatives (see below).
 
 ## Who can participate?
 Anybody! Think of this as a playground where no matter what your skill level, you can contribure (see the Git and Github section of the Complete Web Developer in 2018: Zero to Mastery if this is your first time contributing to open source) to this project and nobody is going to yell at you if you make a mistake :)
 
 ## What is the project?
-Re-developing  https://zerotomastery.io/
+Re-developing  https://zerotomastery.io/  
+
 **A Note from Andrei: This is 100% a community run (0 involvement from me) from day 1 and all procceeds from this website go into supporting our open source projects (i.e. hosting, domains).**
 
 ## Intro
@@ -49,7 +50,8 @@ These projects are:
 3. Blog - updates about the course and success stories.
 
 ## How to get started?
-Start making small Pull Requests wherever you think you can help. The Management team will be handling the project and adding the features that you create as they come. You can use the **#group-project** channel on Discord to discuss anything related to this project. 
+- Start making small Pull Requests wherever you think you can help. The Management team will be handling the project and adding the features that you create as they come.  
+- You can use the **#group-project** channel on Discord to discuss anything related to this project.  
 
 Happy coding!
 
