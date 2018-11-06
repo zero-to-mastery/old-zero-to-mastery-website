@@ -12,9 +12,9 @@ Re-developing  https://zerotomastery.io/
 **A Note from Andrei: This is 100% a community run (0 involvement from me) from day 1 and all procceeds from this website go into supporting our open source projects (i.e. hosting, domains).**
 
 ## Intro
-The aim of this month's community challenge is to re-develop the Zero To Mastery Website. Not only to make this a great place for new potential students to find out more, but for potential employers to scout talent and finally for students to find everything the community has to offer.
+Zero-to-Mastery and the community has grown into so much more than than ever could have been imagined when this project was first created. Each month brings many more new students to the community with many new ideas, leaving this website and project, outdated and under utilised. 
 
-In short, the aim is to re-develop the site to encompass all the fragmented sections of ZTM into a single website.
+The aim of this event is to bring together all that ZTM has to offer, into a single weblication. A community portal, where students a like can find reources they may not have known existed before now.
 
 ## Features
 **Courses Page**
