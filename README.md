@@ -1,4 +1,5 @@
-# Project of The Month (November 2018) https://img.shields.io/badge/Novembers%20-%20Project-yellow.svg?longCache=true&style=for-the-badge
+# Project of The Month (November 2018) 
+https://img.shields.io/badge/Novembers%20-%20Project-yellow.svg?longCache=true&style=for-the-badge
 
 ## What's this?
 This website was created by the community of Zero to Mastery and is run by 100% by the community. **Fun fact**: It was initially developed by the 6 moderators that started our community back in the day on Slack (before we moved to Discord). We want to turn this project into a resource for the community and a place to gather all of our open source initiatives (see below).
@@ -17,23 +18,29 @@ Zero-to-Mastery and the community has grown into so much more than than ever cou
 The aim of this event is to bring together all that ZTM has to offer, into a single weblication. A community portal, where students a like can find reources they may not have known existed before now.
 
 ## Features
-**Courses Page**  
+**Courses Page** 
+-----
 A page containing details of each course, some reviews and sign up buttons. 
 Udemy's API, might be something we could use in this.
 
 **Group Projects** (https://github.com/zero-to-mastery)  
+-----
 Listing all the group projects available, what language/tech they use. Also information on getting started and FAQs. Utilise the Github API to fetch data such as contributors and total PRs, maybe.
 
-**Coding Challenges**   
+**Coding Challenges**  
+-----
 List all previous coding challenges & entries, utilising a JSON file structure to allow adding new challenges quickly and easily. Making it easier for new students to go back and try previous challenges. 
 
 **Job Board** (https://github.com/zero-to-mastery/ZtM-Job-Board)  
+-----
 Integrate the Job Board
 
 **Resources** (https://github.com/zero-to-mastery/resources)  
+-----
 Integrate the Resources Website
 
 **Discord**  
+-----
 Information about the Discord Community, along with guides on using Discord.
 
 ## Useful Information
