@@ -18,28 +18,29 @@ Zero-to-Mastery and the community has grown into so much more than than ever cou
 The aim of this event is to bring together all that ZTM has to offer, into a single weblication. A community portal, where students a like can find reources they may not have known existed before now.
 
 ## Features
-**Courses Page** 
+
+#### Courses Page 
 -----
 A page containing details of each course, some reviews and sign up buttons. 
 Udemy's API, might be something we could use in this.
 
-**Group Projects** (https://github.com/zero-to-mastery)  
+#### Group Projects (https://github.com/zero-to-mastery)  
 -----
 Listing all the group projects available, what language/tech they use. Also information on getting started and FAQs. Utilise the Github API to fetch data such as contributors and total PRs, maybe.
 
-**Coding Challenges**  
+#### Coding Challenges 
 -----
 List all previous coding challenges & entries, utilising a JSON file structure to allow adding new challenges quickly and easily. Making it easier for new students to go back and try previous challenges. 
 
-**Job Board** (https://github.com/zero-to-mastery/ZtM-Job-Board)  
+#### Job Board (https://github.com/zero-to-mastery/ZtM-Job-Board)  
 -----
 Integrate the Job Board
 
-**Resources** (https://github.com/zero-to-mastery/resources)  
+#### Resources (https://github.com/zero-to-mastery/resources)  
 -----
 Integrate the Resources Website
 
-**Discord**  
+#### Discord 
 -----
 Information about the Discord Community, along with guides on using Discord.
 
