@@ -15,7 +15,7 @@ Re-developing  https://zerotomastery.io/
 ## Intro
 Zero-to-Mastery and the community has grown into so much more than ever could have been imagined when this project was first created. Each month brings many more new students to the community with many new ideas, leaving this website and project, outdated and under utilised. 
 
-The aim of this event is to bring together all that ZTM has to offer, into a single weblication. A community portal, where students a like can find reources they may not have known existed before now.
+The aim of this event is to bring together all that ZTM has to offer, into a single weblication. A community portal, where students a like can find resources they may not have known existed before now.
 
 ## Features
 
