@@ -57,11 +57,19 @@ header.masthead {
 
 .cover-title {
     font-size: 8em;
+    color: rgba(236, 82, 54);
 }
 
 header.masthead .DescriptionBG {
     background-color: transparent;
+    color: rgba(236, 82, 54);
 }
+
+/* Added h2 for "zero" in title */
+h2 {
+    color: rgba(236, 82, 54);
+}
+
 
 .enroll-button {
     color: #ffffff;
@@ -530,6 +538,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     /* Fixed Responsive Main Banner*/
     .masthead div.p-5 {
         padding: 0 !important;
+        color: rgba(236, 82, 54)
     }
     /* Fixed Discord Banner on Mobile Devices */
     .discordheader {
