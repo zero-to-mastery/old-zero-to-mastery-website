@@ -18,8 +18,6 @@
   }
   
   .carousel-control-prev-icon, .carousel-control-next-icon {
-    background: none;
-    border: 2px solid #fff;
     height: 60px;
     width: 60px;
     line-height: 55px;
@@ -30,7 +28,6 @@
   }
   
   .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
-    background: #fff;
     opacity: 9;
     color: #000;
   }
