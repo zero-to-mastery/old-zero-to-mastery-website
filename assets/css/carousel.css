@@ -1,0 +1,145 @@
+.carousel-fade .carousel-item {
+    height: 100%;
+  }
+  
+  .carousel-fade .carousel-item img {
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    background-size: cover;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: center;
+    color: rgba(0, 0, 0, 0.56);
+    filter: brightness(30%);
+    right: 0;
+    left: 0;
+    resize: both;
+  }
+  
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 60px;
+    width: 60px;
+    line-height: 55px;
+    opacity: 9 !important;
+    filter: brightness(100%) !important;
+    font-size: 40px;
+    border-radius: 100%;
+  }
+  
+  .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+    opacity: 9;
+    color: #000;
+  }
+  
+  .la {
+    opacity: 99;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .carousel-indicators li {
+    background: #000;
+    color: #000;
+    height: 30px;
+    width: 30px;
+    margin: 5px !important;
+    border-radius: 100%;
+  }
+  
+  .carousel-caption {
+    top: 120px;
+  }
+  
+  @media (min-width: 992px) {
+    .carousel-caption {
+      top: 180px !important;
+    }
+  }
+  
+  .carousel-caption h3 {
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+    color: #D4AF37
+  }
+  
+  @media (min-width: 992px) {
+    .carousel-caption h3 {
+      font-size: 70px !important;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+  
+  .carousel-caption p {
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  @media (min-width: 992px) {
+    .carousel-caption p {
+      font-size: 30px !important;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+  
+  .carousel-caption .btn {
+    border: 2px solid #fff;
+    border-radius: 0;
+  }
+  
+  @media (min-width: 300px) {
+    .img-fluid.w-100.d-block {
+      height: auto;
+    }
+  }
+  
+  @media (min-width: 576px) {
+    .img-fluid.w-100.d-block {
+      height: auto;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .img-fluid.w-100.d-block {
+      height: auto;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .img-fluid.w-100.d-block {
+      height: 100vh;
+    }
+  }
+  
+  @media (min-width: 300px) {
+    .carousel-caption {
+      top: 0;
+      font-size: 20px;
+    }
+  }
+  
+  @media (min-width: 300px) {
+    .carousel-caption h3 {
+      font-size: 20px;
+    }
+  }
+  
+  .carousel-caption p {
+    font-size: 15px;
+  }
+  
+  @media (min-width: 768px) {
+    .carousel-caption {
+      top: 100px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .carousel-caption h3 {
+      font-size: 40px;
+    }
+  }

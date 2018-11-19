@@ -2,491 +2,281 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
-        crossorigin="anonymous">
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/favicon.png" >
-    <title>Zero to Mastery</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Zero To Mastery - Become a Web Deb Today</title>
+  <link rel="icon" type="image/png" href="./assets/images/favicon.ico" >
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+  <link href="./assets/css/carousel.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #ec5237;">
-        <a class="navbar-brand" href="#">Zero To Mastery</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#about">About
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#project">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="status.html">Status</a>
-                </li>
-                <!-- <li class="nav-item">
-        <button id="signup-Button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign Up!</button>
-      </li> -->
-            </ul>
-        </div>
-    </nav>
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg">
+    <a class="navbar-brand" href="./">
+      <img src="./assets/images/ztm.png" width="50" height="50" class="d-inline-block align-top" alt="">
+    </a>
 
-    <header class="masthead text-center text-white d-flex">
-        <div class="container my-auto">
-            <div class="row">
-                <hr>
-            </div>
-            <div class="col-lg-6 order-lg-1">
-                <div class="p-5">
-                    <h2>
-                        <strong>Zero to</strong>
-                    </h2>
-                    <h1 class="cover-title" class="text-uppercase">
-                        <strong>Mastery</strong>
-                    </h1> 
-                    <p class="DescriptionBG">The best and most complete course on Udemy to become a Web Developer today!</p>
-                    <a id="enroll-button" class="btn btn-primary btn-xl js-scroll-trigger enroll-button" href="https://www.udemy.com/the-complete-web-developer-in-2018/?couponCode=SSACDWA">
-                        <strong>ENROLL NOW!</strong>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
+    <div class="collapse navbar-collapse justify-content-between" id="navbar">
+      <div class="navbar-nav">
 
-    <!-- Intro Section with a video -->
-    <section id="about">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-7">
-                    <div class="p-5">
-                        <div class="desktop-wrapper">
-                            <div onclick="play();" class="playicon " id="vidwrap"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-5">
-                    <div class="p-5">
-                        <div class="red-text text-center">
-                            <h3>Become a Web Developer</h3>
-                            <h2 class="display-4">Start Today!</h2>
-                        </div>
-                        <p>
-                            <em>"The Complete Web Developer in 2018: Zero to Mastery"</em> is a complete full-stack web development
-                            course, with the latest and most in-demand technologies, for anyone trying to learn web development
-                            in 2018.
-                            <br>
-                            <br> Learn to code with us, join the community and practice the skills you gained from the course,
-                            build up your portfolio by contributing to projects, and become a job ready web developer this
-                            year.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      </div>
+      <div class="navbar-nav">
 
-    <section class="discordheader text-center text-white d-flex paral">
-        <!-- Header Image -->
-    </section>
+        <!-- Course Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Courses
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./courses/zero-to-mastery.html">Zero to Mastery</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./courses/junior-to-senior.html">Junior to Senior</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./courses/master-the-coding-interview.html">Master the Coding Interview</a>
+          </div>
+        </li>
 
-    <!-- Intro Section with a widget -->
-    <section id="about-discord">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4">
-                    <div class="p-4">
-                        <iframe class="embed-responsive-item" src="https://discordapp.com/widget?id=423464391791476747&theme=dark" width="350" height="500"
-                            allowtransparency="true" frameborder="0"></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="p-5">
-                        <div class="red-text text-center">
-                            <h3>Join Our</h3>
-                            <h2 class="display-4">Discord Community!</h2>
-                        </div>
-                        <div class="bg-light p-4 m-3">
-                            We have created a Discord server for all the students of The Complete Web Developer in 2018, where you can:
-                            <ul>
-                                <li>Introduce yourself</li>
-                                <li>Ask the community questions </li>
-                                <li>Get help with exercises </li>
-                                <li>Meet other students around the world </li>
-                                <li>Learn how to answer questions </li>
-                                <li>Learn from each other</li>
-                            </ul>
-                            I am very excited about this but it will only work if everybody helps each other out. I know it isn't for everybody, but
-                            being able to ask questions and help others when they have questions is the best way to learn.
-                            The Q&A section in the course will still be available and I will still answer every question.
-                            However, the Discord server should give you faster replies from the community.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12 text-center">
-            <button type="button" class="btn btn-primary m-4" data-toggle="modal" data-target="#joinDiscord">Join Discord</button>
-            <button type="button" class="btn btn-danger m-4" data-toggle="modal" data-target="#installingDiscord">Installing Discord</button>
-            <button type="button" class="btn btn-primary m-4" data-toggle="modal" data-target="#usingDiscord">Using Discord</button>
-        </div>
-    </section>
+        <!-- Projects -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./projects/collaboration-projects.html">Collaboration Projects</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./projects/coding-challenges.html">Coding Challenges</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./projects/project-of-the-month.html">Project of the Month</a>
+          </div>
+        </li>
 
-    <!-- Modal - Join Discord -->
-    <div class="modal fade" id="joinDiscord" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Join Discord</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="col-sm-12">
-                        To be added
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Events -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Events
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./events/advent-of-code.html">Advent Of Code</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./events/past-events.html">Past Events</a>
+          </div>
+        </li>
+
+        <!-- Community -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Community
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="./community/discord.html">Discord</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./community/resources.html">Handy Resources</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./community/questtion-board.html">Question Board</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./community/job-board.html">Job Board</a>
+          </div>
+        </li>
+
+      </div>
     </div>
 
-    <!-- Modal - Installing Discord -->
-    <div class="modal fade" id="installingDiscord" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Installing Discord</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-xl-7">
-                            <ul class="list-unstyled dislist">
-                                <li>
-                                    <span>Step 1</span> - Head over to
-                                    <strong>discordapp.com</strong> and download the version for your OS.</li>
-                                <li>
-                                    <span class="alt">Step 2</span> - Run the download, either create a new account or login.</li>
-                                <li>
-                                    <span>Step 3</span> - Select 'Join Server' and enter 'https:discord.io/zerotomastery</li>
-                            </ul>
-                        </div>
-                        <div class="col-xl-5">
-                            <img class="img-fluid pull-right" src="./assets/img/discord1.gif" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  </nav>
 
-    <!-- Modal - Installing Discord -->
-    <div class="modal fade" id="usingDiscord" tabindex="-1" role="dialog" aria-labelledby="usingDiscord" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Using Discord</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-xl-7">
-                            <h3>Using Discord</h3>
-                            Click the screen on the right to check out a video details just some of the awesome features Discord has to offer.
-                        </div>
-                        <div class="col-xl-5">
-                            <div class="desktop-wrapper">
-                                <div onclick="playDiscord();" class="discordplayicon " id="vidwrap"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <header>
+    <div class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000" id="carousel-1">
+      <div class="carousel-inner" role="listbox">
 
-            </div>
-        </div>
-    </div>
-
-    <!--    Opens source project-->
-    <section>
-        <div id="container">
-
-            <div id="open-source" class="row blue">
-                <div class="pl-4 pt-3">
-                    <p class="m-0">Become part of our</p>
-                    <p>
-                        <span> Open source Projects!</span>
-                    </p>
-                </div>
-                <div class="col-md-12 ">
-                    <img class="img-fluid mx-auto" src="./assets/img/contribute-open-source-community.png" alt="contribute-open-source-community">
-                </div>
-                <div class="col-sm-12 text-center mb-4">
-                    <a id="enroll-button" class="btn btn-primary btn-xl js-scroll-trigger enroll-button" href="https://github.com/zero-to-mastery" target=_"">
-                        <strong>More Projects</strong>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!--    END Open Source project-->
-
-    <!-- group projects showcase  -->
-<div class="container">
-    <div class="group-project-wrapper" id="project">
-        <h1 class="current-projects"> Current Open Source Projects</h1>
-
-        <div id="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-12 project">
-                    <span class="project-header ">Travel Guide</span>
-                    <img class="img-fluid mx-auto rounded mt-3" src="./assets/img/travelguide.png" alt="">
-                    <p class="text-center">A travel guide to suggest activities you can do once you arrive to a certain destination. Or you can
-                        just browse destinations and check out the different available activities..</p>
-                    <p class="mt-auto">
-                        <a class="btn btn-primary btn-xl js-scroll-trigger enroll-button d-block" href="https://github.com/zero-to-mastery/travel-guide">
-                            <strong>CONTRIBUTE NOW</strong>
-                        </a>
-                    </p>
-                </div>
-
-                <div class="col-md-4 col-sm-12 project">
-                    <span class="project-header">Ztm Job Board</span>
-                    <img class="img-fluid mx-auto rounded mt-3" src="./assets/img/jobboard.png" alt="">
-                    <p class="text-center">A place for developers to show recruiters they are available for hire</p>
-                    <p class="mt-auto">
-                        <a class="btn btn-primary btn-xl js-scroll-trigger enroll-button d-block" href="https://github.com/zero-to-mastery/ZtM-Job-Board">
-                            <strong>CONTRIBUTE NOW</strong>
-                        </a>
-                    </p>
-                </div>
-                <div class="col-md-4 col-sm-12 project">
-                    <span class="project-header">Litter Finder</span>
-                    <img class="img-fluid mx-auto rounded mt-3" src="./assets/img/litter.png" alt="">
-                    <p class="text-center">An app to find litter using community submitted geotagged images. The submitted areas are then tracked
-                        as to whether they have been cleaned up or not. There should be a leaderboard of submissions and
-                        the overall number of submitted images displayed.</p>
-                    <p class="mt-auto">
-                        <a class="btn btn-primary btn-xl js-scroll-trigger enroll-button d-block" href="https://github.com/zero-to-mastery/litter-finder">
-                            <strong>CONTRIBUTE NOW</strong>
-                        </a>
-                    </p>
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-12 project">
-                    <span class="project-header ">House Organiser</span>
-                    <img class="img-fluid mx-auto rounded mt-3" src="./assets/img/houseorg.png" alt="">
-                    <p class="text-center">Registers the amount and type of items that you have and helps you reach your goal of reaching a certain
-                        number of items of your choice.</p>
-                    <p class="mt-auto">
-                        <a class="btn btn-primary btn-xl js-scroll-trigger enroll-button d-block" href="https://github.com/zero-to-mastery/house-organiser">
-                            <strong>CONTRIBUTE NOW</strong>
-                        </a>
-                    </p>
-                </div>
-
-                <div class="col-md-4 col-sm-12 project">
-                    <span class="project-header">StarWars Spaceships</span>
-                    <img class="img-fluid mx-auto rounded mt-3" src="./assets/img/starwars.png" alt="">
-                    <p class="text-center">This is an experimental ReactJS project intiated by all the students from Zero to Mastery Course.</p>
-                    <p class="mt-auto">
-                        <a class="btn btn-primary btn-xl js-scroll-trigger enroll-button d-block" href="https://github.com/zero-to-mastery/starwars-spaceships">
-                            <strong>CONTRIBUTE NOW</strong>
-                        </a>
-                    </p>
-                </div>
-                <div class="col-md-4 col-sm-12 project">
-                    <span class="project-header">Recycling Tracker</span>
-                    <img class="img-fluid mx-auto rounded mt-3" src="./assets/img/recyclingtracker.png" alt="">
-                    <p class="text-center">A game style app that tracks the amount of waste that you have recycled and where, then calculates the
-                        amount of landfill that you prevented overall. Giving you bragging rights on your favorite social
-                        media platform.</p>
-                    <p class="mt-auto">
-                        <a class="btn btn-primary btn-xl js-scroll-trigger enroll-button d-block" href="https://github.com/zero-to-mastery/recycling-tracker">
-                            <strong>CONTRIBUTE NOW</strong>
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-12 project">
-                    <span class="project-header ">Resources</span>
-                    <img class="img-fluid mx-auto rounded mt-3" src="./assets/img/resources.png" alt="">
-                    <p class="text-center">Here is a list of best resources for the developers (mostly web). Feel free to add your resources as
-                        well because sharing is caring</p>
-                    <p class="mt-auto">
-                        <a class="btn btn-primary btn-xl js-scroll-trigger enroll-button d-block" href="https://github.com/zero-to-mastery/resources">
-                            <strong>CONTRIBUTE NOW</strong>
-                        </a>
-                    </p>
-                </div>
-                <div class="col-md-4 col-sm-12 project">
-                    <span class="project-header">Book Tracker</span>
-                    <img class="img-fluid mx-auto rounded mt-3" src="./assets/img/booktracker.png" alt="">
-                    <p class="text-center">Tracks the amount of books that you've read, the ones you want to read and the progress on the ones you're
-                        reading.</p>
-                    <p class="mt-auto">
-                        <a class="btn btn-primary btn-xl js-scroll-trigger enroll-button d-block" href="https://github.com/zero-to-mastery/book-tracker">
-                            <strong>CONTRIBUTE NOW</strong>
-                        </a>
-                    </p>
-                </div>
-                <div class="col-md-4 col-sm-12 project">
-                    <span class="project-header">Time Collector</span>
-                    <img class="img-fluid mx-auto rounded mt-3" src="./assets/img/timecollector.png" alt="">
-                    <p class="text-center">This projects counts the time needed on each project we do as freelancers or hobbyists, so we better know
-                        in the future how to estimate time for projects.</p>
-                    <p class="mt-auto">
-                        <a class="btn btn-primary btn-xl js-scroll-trigger enroll-button d-block" href="https://github.com/zero-to-mastery/time-collector">
-                            <strong>CONTRIBUTE NOW</strong>
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-12 project">
-                    <span class="project-header ">Trello Clone</span>
-                    <img class="img-fluid mx-auto rounded mt-3" src="./assets/img/trello.png" alt="">
-                    <p class="text-center">A clone of trello, mimicking its basic functionality.</p>
-                    <p class="mt-auto">
-                        <a class="btn btn-primary btn-xl js-scroll-trigger enroll-button d-block" href="https://github.com/zero-to-mastery/Trello-Clone">
-                            <strong>CONTRIBUTE NOW</strong>
-                        </a>
-                    </p>
-                </div>
-                <div class="col-md-4 col-sm-12 project">
-                    <span class="project-header">CSS Grid LearnGame</span>
-                    <img class="img-fluid mx-auto rounded mt-3" src="./assets/img/cssgame.png" alt="">
-                    <p class="text-center">A fun game to help you learn CSS Grid!</p>
-                    <p class="mt-auto">
-                        <a class="btn btn-primary btn-xl js-scroll-trigger enroll-button d-block" href="https://github.com/zero-to-mastery/CSS_Grid_LearnGame">
-                            <strong>CONTRIBUTE NOW</strong>
-                        </a>
-                    </p>
-                </div>
-                <div class="col-md-4 col-sm-12 project">
-                    <span class="project-header">ZtM Website</span>
-                    <img class="img-fluid mx-auto rounded mt-3" src="./assets/img/website.png" alt="">
-                    <p class="text-center">The Website you're visiting now! The site is constantly updated and improved by members of the Zero to
-                        Mastery community.</p>
-                    <p class="mt-auto">
-                        <a class="btn btn-primary btn-xl js-scroll-trigger enroll-button d-block" href="https://github.com/zero-to-mastery/zero-to-mastery-website">
-                            <strong>CONTRIBUTE NOW</strong>
-                        </a>
-                    </p>
-                </div>
-            </div>
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img class="img-fluid w-100 d-block" src="./assets/images/slide-images/slide1.jpg" alt="Slide Image">
+          <div class="carousel-caption">
+            <h3 class="animated slideInDown">Coding Challenge</h3>
+            <p class="animated slideInLeft">Monthly challenges, designed to push your skills to the next level!</p>
+            <a href="./projects/coding-challenges.html" class="btn btn-outline-light btn-lg animated slideInUp">Read More</a>
+          </div>
         </div>
 
-    </div>
-</div>
-    <!-- END group projects showcase  with bootstrap -->
-
-
-        <!-- Testimonial section. Improve when necessary  -->
-
-    <div class="container-fluid mt-5 mb-5">
-        <h1 class="testimonial-header"></h1> Student Testimonials</h1>
-        <div class="row">
-            <div class="col-md-3 col-xs-12 testimonial">
-                <img class="testimonial-image" src="./assets/img/martin.png">
-                <br>
-                <br>
-                <span class="headertest">Martin Comito
-                </span>
-                <br>
-                <p class="text-center">The content is great, but the best thing of all is the way Andrei explains it. His explanations are clear,
-                    concise and no longer extensive, preventing it from becoming too long and difficult to assimilate. This
-                    course is different from all the others, I recommend it totally.</p>
-
-                <a id="enroll-button" class="btn btn-primary btn-xl js-scroll-trigger enroll-button " href="https://github.com/martincomito"
-                    target="_blank">
-                    <strong>Martin's Github</strong>
-                </a>
-
-            </div>
-
-            <div class="col-md-3 col-xs-12 testimonial">
-                <img class="testimonial-image" src="./assets/img/andy.png">
-                <br>
-                <br>
-                <span class="headertest">Andy Polcaster</span>
-                <br>
-                <p class="text-center"> Andrei's course has been by far the most consise and helpful Udemy course I've taken thus far. It definitely
-                    jump-started my interest in open-source!</p>
-                <a id="enroll-button" class="btn btn-primary btn-xl js-scroll-trigger enroll-button " href="https://github.com/Polcat000"
-                    target="_blank">
-                    <strong>Andy's Github</strong>
-                </a>
-            </div>
-
-            <div class="col-md-3 col-xs-12  testimonial">
-                <img class="testimonial-image" src="./assets/img/dimitris.jpg">
-                <br>
-                <br>
-                <span class="headertest">Dimitris Tsaknakis</span>
-                <br>
-                <p class="text-center">Andrei has an excellent way of explaining things, and covers the whole spectrum of web developing (from front
-                    end to back end). He's there for any questions that rise, responding to all (and very polite as well),
-                    and so are many of people enrolled in the course. It really makes learning fun, and for quality learning
-                    (like the instructor offers for this course) it makes it even more enjoyable. Definitely a recommended
-                    course to take!</p>
-                <a id="enroll-button" class="btn btn-primary btn-xl js-scroll-trigger enroll-button " href="https://github.com/dimitristsaknakis"
-                    target="_blank">
-                    <strong>Dimitris' Github</strong>
-                </a>
-            </div>
-
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img class="img-fluid w-100 d-block" src="./assets/images/slide-images/slide2.jpg" alt="Slide Image">
+          <div class="carousel-caption">
+            <h3 class="animated fadeInDown">Collaboration Projects</h3>
+            <p class="animated slideInUp">Opensource community projects, work with other to create something awesome</p>
+            <a href="./projects/collaboration-projects.html" class="btn btn-outline-light btn-lg animated slideInUp">Read More</a>
+          </div>
         </div>
-    </div>
 
-
-
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="jumbotron paral paralsec">
-
-                <h1 class="display ">See the progress of our projects</h1>
-                <p class="lead">
-                    <a class="btn btn-info btn-lg btn-md enroll-button" href="https://zero-to-mastery.github.io/zero-to-mastery-website/status.html"
-                        role="button">PROGRESS</a>
-                </p>
-
-            </div>
-
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img class="img-fluid w-100 d-block" src="./assets/images/slide-images/slide3.jpg" alt="Slide Image">
+          <div class="carousel-caption">
+            <h3 class="animated slideInDown">Useful Resources</h3>
+            <p class="animated slideInLeft">Student collated resources and article repository</p>
+            <a href="./community/resources.html" class="btn btn-outline-light btn-lg animated slideInUp">Read More</a>
+          </div>
         </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <img class="img-fluid w-100 d-block" src="./assets/images/slide-images/slide4.jpg" alt="Slide Image">
+          <div class="carousel-caption">
+            <h3 class="animated slideInDown">Questions and Answers</h3>
+            <p class="animated slideInLeft">Ask and answer questions</p>
+            <a href="./community/questtion-board.html" class="btn btn-outline-light btn-lg animated slideInUp">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="carousel-item">
+          <img class="img-fluid w-100 d-block" src="./assets/images/slide-images/slide5.jpg" alt="Slide Image">
+          <div class="carousel-caption">
+            <h3 class="animated slideInDown">Community</h3>
+            <p class="animated slideInLeft">Join nearly 19,000 students and developers in the online community</p>
+            <a href="./community/discord.html" class="btn btn-outline-light btn-lg animated slideInUp">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon">
+            <i class="la la-cutlery"></i>
+          </span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+          <span class="carousel-control-next-icon">
+            <i class="la la-cutlery"></i>
+          </span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-1" data-slide-to="1"></li>
+        <li data-target="#carousel-1" data-slide-to="2"></li>
+        <li data-target="#carousel-1" data-slide-to="3"></li>
+        <li data-target="#carousel-1" data-slide-to="4"></li>
+      </ol>
     </div>
+  </header>
 
 
-    <footer class="col-sm-12">
-        &copy 2018 Zero To Mastery Community
-        <br> Special thanks to Andrei Neagoie and to the loyal members of the community.
-    </footer>
-    </div>
-    </div>
 
-    <!-- bootstrap java and jquery  -->
-    <script src="assets/js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
-        crossorigin="anonymous"></script>
+  <!-- Language Section -->
+  <section class="langs py-5">
+    <div class="container text-center">
+      <img src="./assets/images/htmlcsjs.png" style="width: 50vw">
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section id="about" class="bg-secondary">
+    <div class="container bg-secondary text-center p-5">
+
+      <!-- Title -->
+      <div class="videoTitles text-center">
+        <h3>Become a Web Developer</h3>
+        <h2 class="display-4">Start Today!</h2>
+      </div>
+
+      <!-- Video -->
+      <div class="desktop-wrapper my-5">
+        <div onclick="play();" class="playicon " id="vidwrap"></div>
+      </div>
+
+      <!-- Description -->
+      <p>
+        <em>"The Complete Web Developer in 2018: Zero to Mastery"</em> is a complete full-stack web development course, with
+        the latest and most in-demand technologies, for anyone trying to learn web development in 2018.
+        <br>
+        <br> Learn to code with us, join the community and practice the skills you gained from the course, build up your portfolio
+        by contributing to projects, and become a job ready web developer this year.
+      </p>
+    </div>
+  </section>
+
+  <!-- Course Section -->
+  <section id="course" class="container py-5">
+    <div class="card-deck">
+
+      <!-- ZTM -->
+      <div class="card coursecard">
+        <img class="card-img-top" src="./assets/images/course-images/zerotomastery.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">The Complete Web Developer in 2018: Zero to Mastery</h5>
+          <p class="card-text">Learn to code and become a web developer in 2018 with HTML5, CSS, Javascript, React, Node.js, Machine Learning
+            & more!</p>
+        </div>
+        <div class="card-footer bg-secondary text-center">
+          <a href="./courses/zero-to-mastery.html" class="btn btn-outline-warning">View Course</a>
+        </div>
+      </div>
+
+      <!-- J2S -->
+      <div class="card coursecard">
+        <img class="card-img-top" src="./assets/images/course-images/j2s.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">The Complete Junior to Senior Web Developer Roadmap (2019)</h5>
+          <p class="card-text">This is the tutorial you've been looking for to no longer be a junior developer, level up your skills, and earn
+            a higher salary. This extensive course doesn’t just cover a small portion of the industry.</p>
+        </div>
+        <div class="card-footer bg-secondary text-center">
+          <a href="./courses/junior-to-senior.html" class="btn btn-outline-warning">View Course</a>
+        </div>
+      </div>
+
+      <!-- MCI -->
+      <div class="card coursecard">
+        <img class="card-img-top" src="./assets/images/course-images/mastering-interviews.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Master the Coding Interview: Data Structures + Algorithms</h5>
+          <p class="card-text">Using the strategies, lessons, and exercises in this course, you will learn how to land offers from great tech
+            companies like Google, Microsoft, Facebook, Netflix, Amazon and more!</p>
+        </div>
+        <div class="card-footer bg-secondary text-center">
+          <a href="./courses/master-the-coding-interview.html" class="btn btn-outline-warning">View Course</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="pt-5 pb-3 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Zero To Mastery 2018</p>
+      <p class="pt-2 text-center text-secondary">Built by the students for the students with a special thanks to Andrei Neagoie.</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <script src="./assets/js/scripts.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
