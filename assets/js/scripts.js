@@ -9,17 +9,6 @@ function dateFilter() {
   	fetch('https://cors.io/?http://91.121.210.171:42550/solutions/?day='+day).then(response => {
 	  	return response.json();
 	}).then(data => {
-		cardCreator();
-	  	console.log(data);
-	}).catch(err => {
-	  	throw err;
-	});
-}
-
-const dataFetch = () => {
-	fetch('https://cors.io/?http://91.121.210.171:42550/solutions/all').then(response => {
-	  	return response.json();
-	}).then(data => {
 	  	console.log(data);
 	}).catch(err => {
 	  	throw err;

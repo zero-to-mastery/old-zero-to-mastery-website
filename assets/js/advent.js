@@ -4,11 +4,13 @@ const dataFetch1 = () => {
     }).then(data => {
         data.forEach(sol => {
             console.log(sol)
+            let dayImgUrl = "../assets/images/days/" + sol.dayNumber + ".png";
+            console.log(dayImgUrl)
             document.getElementById('solutions').insertAdjacentHTML('beforeend', 
             `
             <div class="card coursecard">
             <img src="https://cdn2.iconfinder.com/data/icons/nodejs-1/512/nodejs-512.png" class="langIcon">
-            <img src="https://power2save.org/wp-content/uploads/2016/07/icon-day1.png" class="dayIcon">
+            <img src=${dayImgUrl} class="dayIcon">
             <img class="card-img-top" src=${sol.avatarUrl}
                 alt="Card image cap">
             <div class="card-body text-center">
