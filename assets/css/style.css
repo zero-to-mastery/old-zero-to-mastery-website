@@ -17,6 +17,7 @@ When adding styles try to ensure the following:
 /* #  Global Styles  # */
 
 /* ################### */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200');
 
 .navbar {
   border-top: 5px solid #D4AF37;
@@ -171,7 +172,30 @@ div.desktop-wrapper iframe {
 }
 
 #advent {
-  margin-top: 100px
+  margin-top: 80px
+}
+.adventStats i {
+  color: rgba(153, 153, 153, 0.123);
+  font-size: 4em
+}
+.adventStats h2 {
+  color: #D4AF37;
+  font-size: 3em;
+  font-family: 'Titillium Web', sans-serif;
+  margin-bottom: 0px
+}
+.adventStats p {
+  font-size: medium;
+}
+
+.adventCard {
+  border-radius: 10px
+}
+.adventCard h5 {
+  color: rgb(255, 255, 255);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.6em;
+  margin-bottom: 0px;
 }
 
 .button-area {

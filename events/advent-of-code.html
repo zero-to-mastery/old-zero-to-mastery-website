@@ -17,6 +17,8 @@
 
     <!-- Custom styles for this template -->
     <link href="../assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
 
 </head>
 
@@ -94,10 +96,10 @@
                     </div>
                 </li>
 
-                <div class="nav-item">
+                <!-- <div class="nav-item">
                     <input type="date" name="dNumber" id="date-input" min="2018-12-01" max="2018-12-31" required="required">
                     <input type="submit" onclick="dateFilter()" value="Search">
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -105,10 +107,24 @@
     </nav>
 
     <section id="advent">
-        <div class="container">
-            <div class="bg-secondary text-white text-center p-5">
+        <div class="">
+            <div class="bg-dark text-white text-center p-3 d-block">
+
+                <!-- Student Filter -->
+                <div class="dropdown show d-inline mr-4">
+                    <a class="btn btn-light btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Student Filter
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" data-target="#exampleModal">
                     Date Filter
                 </button>
 
@@ -134,12 +150,41 @@
         </div>
     </section>
 
-    <!-- Content -->
-    <section class="bg-light mt-5">
-        <div class="container py-5">
-            <div id="solutions" class="card-deck mt-4">
-
+    <!-- Stats -->
+    <section class="bg-white">
+        <div class="container pt-4 pb-2">
+            <div class="row text-center">
+                <div class="col-md-4 adventStats">
+                    <i class="far fa-file-code"></i>
+                    <h2 id="statsTotals">598</h2>
+                    <p class="text-muted">Total Submissions</p>
+                </div>
+                <div class="col-md-4 adventStats">
+                    <i class="far fa-calendar-alt"></i>
+                    <h2 id="statsToday">30</h2>
+                    <p class="text-muted">Total Today</p>
+                </div>
+                <div class="col-md-4 adventStats">
+                    <i class="fas fa-users"></i>
+                    <h2 id="statsStudents">170</h2>
+                    <p class="text-muted">Total Students</p>
+                </div>
             </div>
+
+
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="bg-light">
+        <div class="container p-1">
+            <div class="rowd">
+                    <div id="solutions" class="row mt-4">
+
+                        </div>
+            </div>
+
+   
         </div>
     </section>
 
@@ -162,7 +207,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="../assets/js/advent.js"></script>
-
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </body>
 
 </html>
