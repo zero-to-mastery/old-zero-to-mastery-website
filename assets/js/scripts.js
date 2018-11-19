@@ -4,9 +4,24 @@ function play(){
   };
 
 function dateFilter() {
-	
-      var date = new Date($('#date-input').val());
-      day = date.getDate();
-      alert('query url will be: https://server_url/?'+day);
-    
+  	var date = new Date($('#date-input').val());
+  	day = date.getDate();
+  	fetch('https://cors.io/?http://91.121.210.171:42550/solutions/?day='+day).then(response => {
+	  	return response.json();
+	}).then(data => {
+		cardCreator();
+	  	console.log(data);
+	}).catch(err => {
+	  	throw err;
+	});
+}
+
+const dataFetch = () => {
+	fetch('https://cors.io/?http://91.121.210.171:42550/solutions/all').then(response => {
+	  	return response.json();
+	}).then(data => {
+	  	console.log(data);
+	}).catch(err => {
+	  	throw err;
+	});
 }
