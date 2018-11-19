@@ -158,9 +158,60 @@ div.desktop-wrapper iframe {
 }
 
 #advent {
-  background: url(../images/advent.jpg);
-  background-size: cover;
-  background-position: center;
+margin-top: 100px
+}
+
+
+h3 {
+  text-align: center;
+  max-width: 320px;
+}
+.button-area {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 80vw;
+
+}
+.button-area a {
+
+    background: #999;
+     padding: 1em 2.4em;
+     font-size: .9em;
+     margin: 1em;
+     color: white;
+     text-decoration: none;
+     flex-grow: 1;
+     text-align: center;
+   
+}
+
+.button-area-line {
+  margin: 10px auto;
+  display: -webkit-box;   
+  display: -moz-box;  
+  display: -ms-flexbox; 
+  display: -webkit-flex; 
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  max-width: 90%;
+
+}
+.button-area-line a {
+  background: #999;
+  padding: 1em;
+  font-size: .9em;
+  margin: .3em;
+  color: white;
+  text-decoration: none;
+  flex-grow: 1;
+  text-align: center;
 }
 
 #pastEvents {

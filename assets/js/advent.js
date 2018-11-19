@@ -25,3 +25,18 @@ const dataFetch1 = () => {
 }
 
 dataFetch1();
+
+let date = new Date();
+let day = date.getDate()
+console.log(day)
+
+while (day > 0) {
+    document.getElementById('calBtn').insertAdjacentHTML('beforeend', 
+    `
+    <a href="#">Day ${day}</a>
+
+    `);
+    day = day - 1
+    console.log(day)
+}
+
