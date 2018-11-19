@@ -1,5 +1,12 @@
+
+let url = window.location.href
+let paramLocation = url.indexOf("1")
+let selection = url.slice(url.indexOf("?"))
+console.log("selection", selection)
+let fetchLink = (selection === "l" ? "https://cors.io/?http://91.121.210.171:42550/solutions/all" : `https://cors.io/?http://91.121.210.171:42550/solutions/${selection}`)
+
 const dataFetch1 = () => {
-    fetch('https://cors.io/?http://91.121.210.171:42550/solutions/all').then(response => {
+    fetch(fetchLink).then(response => {
         return response.json();
     }).then(data => {
         data.forEach(sol => {
@@ -33,12 +40,14 @@ let day = date.getDate()
 console.log(day)
 
 while (day > 0) {
+    let dayBtn = "../assets/images/days/" + day + ".png";
+    let link = `?day=` + day
     document.getElementById('calBtn').insertAdjacentHTML('beforeend', 
     `
-    <a href="#">Day ${day}</a>
+    <a href=${link}><img src=${dayBtn}></a>
+    
 
     `);
-    day = day - 1
-    console.log(day)
+  day --
 }
 

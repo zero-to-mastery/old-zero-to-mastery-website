@@ -12,11 +12,10 @@ When adding styles try to ensure the following:
 2- You add it to the relevant section, so the next person can find it easily
 */
 
-
-
-
 /* ################### */
+
 /* #  Global Styles  # */
+
 /* ################### */
 
 .navbar {
@@ -27,18 +26,21 @@ When adding styles try to ensure the following:
   box-shadow: 0px 5px 24px -3px rgba(0, 0, 0, 0.88);
 }
 
-
 /* ################### */
+
 /* #  Index Page Styles  # */
+
 /* ################### */
 
 /* Language banner on index page */
+
 .langs {
   background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f4f4f4' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* Video section styles*/
+
 .playicon {
   box-sizing: border-box;
   background: url(../images/vidscreen.png) center center no-repeat;
@@ -83,6 +85,7 @@ div.desktop-wrapper iframe {
 .videoTitles h3 {
   color: #000;
 }
+
 .videoTitles h2 {
   color: #D4AF37;
 }
@@ -95,19 +98,22 @@ div.desktop-wrapper iframe {
   padding: 20px;
 }
 
-.coursecard h5{
+.coursecard h5 {
   color: #D4AF37;
   text-align: center
-
 }
+
 .coursecard p {
   color: rgba(100, 100, 100, 0.938);
   text-align: justify
 }
 
 /* ################### */
+
 /* #   Course Pages  # */
+
 /* ################### */
+
 #ztmCourse {
   background: url(../images/course-images/zerotomastery.jpg);
   background-size: cover;
@@ -122,13 +128,17 @@ div.desktop-wrapper iframe {
   background: url(../images/course-images/mastering-interviews.jpg);
   background-size: cover;
 }
+
 .courseHeader {
   height: 100vh;
 }
 
 /* ################### */
+
 /* #  Projects Pages # */
+
 /* ################### */
+
 .projectsHeader {
   height: 70vh;
 }
@@ -151,21 +161,19 @@ div.desktop-wrapper iframe {
 }
 
 /* ################### */
+
 /* #   Events Pages  # */
+
 /* ################### */
+
 .eventsHeader {
   height: 100vh;
 }
 
 #advent {
-margin-top: 100px
+  margin-top: 100px
 }
 
-
-h3 {
-  text-align: center;
-  max-width: 320px;
-}
 .button-area {
   margin: 10px auto;
   display: flex;
@@ -173,45 +181,19 @@ h3 {
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 80vw;
-
 }
+
 .button-area a {
-
-    background: #999;
-     padding: 1em 2.4em;
-     font-size: .9em;
-     margin: 1em;
-     color: white;
-     text-decoration: none;
-     flex-grow: 1;
-     text-align: center;
-   
-}
-
-.button-area-line {
-  margin: 10px auto;
-  display: -webkit-box;   
-  display: -moz-box;  
-  display: -ms-flexbox; 
-  display: -webkit-flex; 
-  display: flex;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  max-width: 90%;
-
-}
-.button-area-line a {
-  background: #999;
-  padding: 1em;
-  font-size: .9em;
-  margin: .3em;
-  color: white;
-  text-decoration: none;
+  background: rgba(241, 240, 240, 0.795);
+  border: 2px #D4AF37 solid;
+  border-radius: 10px;
+  padding: 1em 1.4em;
+  margin: 0.45em;
   flex-grow: 1;
-  text-align: center;
+}
+
+.button-area img {
+  width: 45px
 }
 
 #pastEvents {
@@ -219,6 +201,7 @@ h3 {
   background-size: cover;
   background-position: center;
 }
+
 .langIcon {
   width: 70px;
   height: 70px;
@@ -226,6 +209,7 @@ h3 {
   top: 1px;
   right: 10px
 }
+
 .dayIcon {
   width: 50px;
   height: 50px;
@@ -233,9 +217,13 @@ h3 {
   top: 10px;
   left: 10px
 }
+
 /* ################### */
+
 /* # Community Pages # */
+
 /* ################### */
+
 .communityHeader {
   height: 100vh;
 }
