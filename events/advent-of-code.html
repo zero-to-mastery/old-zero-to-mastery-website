@@ -117,10 +117,8 @@
                         Student Filter
                     </a>
 
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                    <div id="studentFilter" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
                     </div>
                 </div>
                 <!-- Button trigger modal -->
@@ -128,24 +126,6 @@
                     Date Filter
                 </button>
 
-                <!-- Modal -->
-                <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header bg-warning">
-                                <h5 class="modal-title" id="exampleModalLabel">Select Date</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div id="calBtn" class="button-area">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -156,17 +136,24 @@
             <div class="row text-center">
                 <div class="col-md-4 adventStats">
                     <i class="far fa-file-code"></i>
-                    <h2 id="statsTotals">598</h2>
+                    <h2 id="statsTotal">
+                        <i class="fa fa-spinner fa-spin" style="color: #D4AF37; font-size: 0.8em"></i>
+                    </h2>
                     <p class="text-muted">Total Submissions</p>
                 </div>
                 <div class="col-md-4 adventStats">
                     <i class="far fa-calendar-alt"></i>
-                    <h2 id="statsToday">30</h2>
-                    <p class="text-muted">Total Today</p>
+                    <h2 id="statsToday">
+                        <i class="fa fa-spinner fa-spin" style="color: #D4AF37; font-size: 0.8em"></i>
+                        </i>
+                    </h2>
+                    <p class="text-muted">Todays Submissions</p>
                 </div>
                 <div class="col-md-4 adventStats">
                     <i class="fas fa-users"></i>
-                    <h2 id="statsStudents">170</h2>
+                    <h2 id="statsStudents">
+                        <i class="fa fa-spinner fa-spin" style="color: #D4AF37; font-size: 0.8em"></i>
+                    </h2>
                     <p class="text-muted">Total Students</p>
                 </div>
             </div>
@@ -178,13 +165,9 @@
     <!-- Content -->
     <section class="bg-light">
         <div class="container p-1">
-            <div class="rowd">
-                    <div id="solutions" class="row mt-4">
+            <div id="solutions" class="row mt-4">
 
-                        </div>
             </div>
-
-   
         </div>
     </section>
 
@@ -196,6 +179,44 @@
         </div>
         <!-- /.container -->
     </footer>
+
+    <!-- Date Modal -->
+    <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title" id="exampleModalLabel">Select Date</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="calBtn" class="button-area">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Student Modal -->
+    <div class="modal fade " id="student" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <h5 class="modal-title" id="exampleModalLabel">User</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="userContent" class="button-area">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

@@ -188,6 +188,10 @@ div.desktop-wrapper iframe {
   font-size: medium;
 }
 
+#solutions {
+  min-height: 50px
+}
+
 .adventCard {
   border-radius: 10px
 }
