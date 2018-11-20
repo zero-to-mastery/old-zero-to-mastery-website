@@ -125,6 +125,13 @@
                 <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" data-target="#exampleModal">
                     Date Filter
                 </button>
+                <!-- filter reset -->
+                <!-- using anchor so as to clear previous cards -->
+                <a href="./advent-of-code.html">
+                    <button type="button" class="btn btn-outline-warning btn-sm" onclick=>
+                    Clear Filter
+                    </button>
+                </a>
 
             </div>
         </div>
@@ -145,7 +152,6 @@
                     <i class="far fa-calendar-alt"></i>
                     <h2 id="statsToday">
                         <i class="fa fa-spinner fa-spin" style="color: #D4AF37; font-size: 0.8em"></i>
-                        </i>
                     </h2>
                     <p class="text-muted">Todays Submissions</p>
                 </div>
@@ -211,7 +217,9 @@
                 </div>
                 <div class="modal-body">
                     <div id="userContent" class="button-area">
-
+                        <h2 id="userModal-points" class="p-5">
+                            
+                        </h2>
                     </div>
                 </div>
             </div>
