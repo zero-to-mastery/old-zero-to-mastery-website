@@ -91,14 +91,14 @@ const insertCard = (sol) => {
                 <img class="card-img-top img-fluid" src=${sol.avatarUrl} alt=${sol.userName}>
                 <div class="card-body text-center bg-dark">
                     <h5 class="card-title">
-                        <a class="text-white"' href="#" onclick='playerModal()'>${sol.userName}</a>
+                        <a class="text-white" href="#" onclick="playerModal('${sol.userName}')" id="userNameHolder">${sol.userName}</a>
                     </h5>
-                    <a href=${sol.url} class="btn btn-outline-warning btn-sm mt-3 mb-0">View Solution</a>
+                    <a href=${sol.url} target="_blank" class="btn btn-outline-warning btn-sm mt-3 mb-0">View Solution</a>
                 </div>
             </div>
         </div>
     `)
-}  
+}
 
 
 
@@ -121,10 +121,11 @@ while (day > 0) {
 }
 
 playerModal = (u) => {
+    console.log(u)
     fetch("https://cors.io/?http://91.121.210.171:42550/user").then(response => {
         return response.json();
     }).then(data => {
-        let obj = data.find(obj => obj.username === "Mattchow");
+        let obj = data.find(obj => obj.username === u);
         document.getElementById("userContent").innerHTML = `<h5 class="p-5 m-5">Points: ${obj.point}</h5>`;
         console.log("User Obj", obj)
     }).catch(err => {
