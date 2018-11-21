@@ -28,6 +28,10 @@ const users = async () => {
 }
 users()
 
+const onClick = (param) => {
+    console.log("Clicked", param)
+}
+
 // Fetch Solution
 const fetchSolutions = (url) => {
     fetch("https://cors.io/?http://91.121.210.171:42550/" + url).then(response => {

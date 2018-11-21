@@ -96,81 +96,79 @@
                     </div>
                 </li>
 
-                <!-- <div class="nav-item">
-                    <input type="date" name="dNumber" id="date-input" min="2018-12-01" max="2018-12-31" required="required">
-                    <input type="submit" onclick="dateFilter()" value="Search">
-                </div> -->
-
             </div>
         </div>
-
     </nav>
 
-    <section id="advent">
-        <div class="">
-            <div class="bg-dark text-white text-center p-3 d-block">
-
-                <!-- Student Filter -->
-                <div class="dropdown show d-inline mr-4">
-                    <a class="btn btn-light btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        Student Filter
-                    </a>
-
-                    <div id="studentFilter" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-
-                    </div>
-                </div>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" data-target="#exampleModal">
-                    Date Filter
-                </button>
-                <!-- filter reset -->
-                <!-- using anchor so as to clear previous cards -->
-                <a href="./advent-of-code.html">
-                    <button type="button" class="btn btn-outline-warning btn-sm" onclick=>
-                    Clear Filter
-                    </button>
-                </a>
-
-            </div>
+    <section id="adventHeader" class="text-center">
+        <div class="advOverlay">
+            <h1>Advent of Code</h1>
+            <h2 class="year">2018</h2>
+            <a class="btn btn-outline-light" href="#">About AoC</a>
         </div>
     </section>
 
-    <!-- Stats -->
-    <section class="bg-white">
-        <div class="container pt-4 pb-2">
-            <div class="row text-center">
-                <div class="col-md-4 adventStats">
-                    <i class="far fa-file-code"></i>
-                    <h2 id="statsTotal">
-                        <i class="fa fa-spinner fa-spin" style="color: #D4AF37; font-size: 0.8em"></i>
-                    </h2>
-                    <p class="text-muted">Total Submissions</p>
-                </div>
-                <div class="col-md-4 adventStats">
-                    <i class="far fa-calendar-alt"></i>
-                    <h2 id="statsToday">
-                        <i class="fa fa-spinner fa-spin" style="color: #D4AF37; font-size: 0.8em"></i>
-                    </h2>
-                    <p class="text-muted">Todays Submissions</p>
-                </div>
-                <div class="col-md-4 adventStats">
-                    <i class="fas fa-users"></i>
-                    <h2 id="statsStudents">
-                        <i class="fa fa-spinner fa-spin" style="color: #D4AF37; font-size: 0.8em"></i>
-                    </h2>
-                    <p class="text-muted">Total Students</p>
+    <section>
+        <div class="adventStats"><hr class="m-3 text-white">
+            <div class="container text-center">
+                <div class="row">
+                    <!-- Total Submissions -->
+                    <div class="col-md-4 ">
+                        <i class="far fa-file-code"></i>
+                        <h2 id="statsTotal">
+                            <i class="fa fa-spinner fa-spin" style="color: #D4AF37; font-size: 0.8em"></i>
+                        </h2>
+                        <p class="text-muted">Total Submissions</p>
+                    </div>
+                    <!-- Todays Submissions  -->
+                    <div class="col-md-4 ">
+                        <i class="far fa-calendar-alt"></i>
+                        <h2 id="statsToday">
+                            <i class="fa fa-spinner fa-spin" style="color: #D4AF37; font-size: 0.8em"></i>
+                        </h2>
+                        <p class="text-muted">Todays Submissions</p>
+                    </div>
+                    <!-- Total Students  -->
+                    <div class="col-md-4 ">
+                        <i class="fas fa-users"></i>
+                        <h2 id="statsStudents">
+                            <i class="fa fa-spinner fa-spin" style="color: #D4AF37; font-size: 0.8em"></i>
+                        </h2>
+                        <p class="text-muted">Total Students</p>
+                    </div>
                 </div>
             </div>
-
-
         </div>
     </section>
 
     <!-- Content -->
-    <section class="bg-light">
+    <section class="adventContent">
         <div class="container p-1">
+            <h1 class="adventTitle text-center pt-4 pb-3">All Student Solutions</h1>
+            <div class="adventFilter text-center">
+                <!-- Student Filter -->
+                <div class="dropdown d-inline">
+                    <a class="btn btn-outline-warning btn-sm" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Student Filter <i class="fas fa-caret-down"></i>
+                    </a>
+
+                    <div id="studentFilter" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <!-- Dropdown items, dynamically generated -->
+                    </div>
+                </div>
+
+                <!-- Day Filter -->
+                <button type="button" class="btn btn-outline-warning btn-sm" data-toggle="modal" data-target="#exampleModal">
+                    Date Filter
+                </button>
+
+                <!-- Filter Reset -->
+                <a class="btn btn-outline-warning btn-sm" href="./advent-of-code.html" onclick="onClick(`clear`)">
+                        Clear Filter
+                </a>
+
+            </div>
             <div id="solutions" class="row mt-4">
 
             </div>
@@ -218,7 +216,7 @@
                 <div class="modal-body">
                     <div id="userContent" class="button-area">
                         <h2 id="userModal-points" class="p-5">
-                            
+
                         </h2>
                     </div>
                 </div>
