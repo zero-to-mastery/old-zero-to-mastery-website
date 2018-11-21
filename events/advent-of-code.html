@@ -25,17 +25,21 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg mb-5">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light mb-5">
         <a class="navbar-brand" href="../">
             <img src="../assets/images/ztm.png" width="50" height="50" class="d-inline-block align-top" alt="">
         </a>
 
-        <div class="collapse navbar-collapse justify-content-between" id="navbar">
-            <div class="navbar-nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      		<span class="navbar-toggler-icon"></span>
+	    </button>
 
-            </div>
-            <div class="navbar-nav">
+            <div class="collapse navbar-collapse ham-content" id="navbarSupportedContent">
 
+            	<ul class="navbar-nav">
+            	</ul>
+
+            	<ul class="navbar-nav ml-auto pb-2 pl-2 pr-2">
                 <!-- Course Dropdown -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -95,9 +99,9 @@
                         <a class="dropdown-item" href="../community/job-board.html">Job Board</a>
                     </div>
                 </li>
+            </ul>
 
             </div>
-        </div>
     </nav>
 
     <section id="adventHeader" class="text-center">
