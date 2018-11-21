@@ -262,7 +262,7 @@ h1.proj{
 }
 
 #solutions {
-  min-height: 50px
+  min-height: 50px;
 }
 
 .adventCard {
