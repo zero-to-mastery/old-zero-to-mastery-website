@@ -161,6 +161,27 @@ div.desktop-wrapper iframe {
   background-position: center;
 }
 
+h1.proj{
+  color: black;
+}
+
+#projects h5 {
+  color: black;
+  font: 400 1em;
+}
+
+.projectIcon {
+  max-width: 100%;
+  height: 10em;
+  margin: auto;
+  display: block;
+}
+
+#searchBox {
+  width: 50%;
+}
+
+
 /* ################### */
 
 /* #   Events Pages  # */
@@ -241,7 +262,6 @@ div.desktop-wrapper iframe {
   top: 10px;
   left: 10px
 }
-
 /* ################### */
 
 /* # Community Pages # */
