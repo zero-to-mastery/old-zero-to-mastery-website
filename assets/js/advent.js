@@ -20,7 +20,7 @@ const users = async () => {
         data.forEach(user => {
             let uLink = "?user=" + user.username
             document.getElementById("studentFilter").insertAdjacentHTML('beforeend',  
-            `<a class="dropdown-item" href=${uLink}>${user.username}</a>`)
+            `<a class="dropdown-item" id=${uLink} onclick=onClick(this.id)>${user.username}</a>`)
         });
     }).catch(err => {
         throw err;
@@ -28,14 +28,28 @@ const users = async () => {
 }
 users()
 
+const onClick = (param) => {
+    document.getElementById("solutions").innerHTML = `<h3 class="my-5 w-100">Loading...</h3>`;
+    if(param === "clear") fetchSolutions("solutions/all");
+    if(param.includes("user")) displayUser(param);
+    if(param.includes("day")) {
+        $('#exampleModal').modal('hide');
+        fetchSolutions("solutions/"+param)
+    }
+
+    console.log("Clicked", param)
+}
+
 // Fetch Solution
 const fetchSolutions = (url) => {
     fetch("https://cors.io/?http://91.121.210.171:42550/" + url).then(response => {
         return response.json();
     }).then(data => {
+        document.getElementById("solutions").innerHTML = ``;
        if(data.length < 1) {
-        document.getElementById("solutions").innerHTML = `<h5 class="p-5 m-5">Nothing to display</h5>`;
+        document.getElementById("solutions").innerHTML = `<h3 class="my-5 w-100">Nothing to display</h3>`;
        }
+       
         data.forEach(sol => {
             insertCard(sol)
         });
@@ -52,9 +66,11 @@ const displayUser = (user) => {
     fetch("https://cors.io/?http://91.121.210.171:42550/solutions/all").then(response => {
         return response.json();
     }).then(data => {
+        document.getElementById("solutions").innerHTML = ``;
        if(data.length < 1) {
-        document.getElementById("solutions").innerHTML = `<h5 class="p-5 m-5">Nothing to display</h5>`;
+        document.getElementById("solutions").innerHTML = `<h3 class="my-5 w-100">Nothing to display</h3>`;
        }
+       
         data.forEach(sol => {
             if(sol.userName === name){
             insertCard(sol)
@@ -113,7 +129,7 @@ while (day > 0) {
     let link = `?day=` + day
     document.getElementById('calBtn').insertAdjacentHTML('beforeend', 
     `
-    <a href=${link}><img src=${dayBtn}></a>
+    <a  id=${link} onclick=onClick(this.id)><img src=${dayBtn}></a>
     
 
     `);
