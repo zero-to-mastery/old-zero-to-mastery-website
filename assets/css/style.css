@@ -43,6 +43,11 @@ When adding styles try to ensure the following:
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f4f4f4' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
 }
 
+.ham-content {
+  background-color: #f8f9fa;
+  border-radius: 0px 0px 10px 10px;
+}
+
 /* Video section styles*/
 
 .playicon {
@@ -290,7 +295,7 @@ h1.proj{
 }
 
 .button-area img {
-  width: 45px
+  width: 45px;
 }
 
 #pastEvents {
