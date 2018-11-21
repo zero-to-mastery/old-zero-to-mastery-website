@@ -36,6 +36,7 @@ const onClick = (param) => {
         $('#exampleModal').modal('hide');
         fetchSolutions("solutions/" + param)
     }
+    if(param === "leaderboard") leaderboard()
 }
 
 // Fetch Solution
@@ -43,7 +44,7 @@ const fetchSolutions = (url) => {
     fetch("https://cors.io/?http://91.121.210.171:42550/" + url).then(response => {
         return response.json();
     }).then(data => {
-        console.log(url)
+        
         document.getElementById("solutions").innerHTML = ``;
         if (data.length < 1) {
             document.getElementById("solutions").innerHTML = `<h3 class="my-5 w-100">Nothing to display</h3>`;
@@ -85,22 +86,59 @@ const displayUser = (user) => {
     });
 }
 
+const leaderboard = () => {
+    fetch("https://cors.io/?http://91.121.210.171:42550/user").then(response => {
+        return response.json();
+    }).then(data => {
+        document.getElementById("solutions").innerHTML = `<div id="leaderboardd" class="w-100 bg-dark text-white p-3 m-3 text-left"><div class="row"></div></div>`;
+        if (data.length < 1) {
+            document.getElementById("solutions").innerHTML = `<h3 class="my-5 w-100">Nothing to display</h3>`;
+        }
+        document.getElementById("adventTitle").innerHTML = `Leaderboard`;
+
+        function compare(a,b) {
+            if (a.point > b.point)
+                return -1;
+                if (a.point > b.point)
+              return 1;
+            return 0;
+          }
+          
+          let points = data.sort(compare);
+          points.forEach((u, i) => {
+              let medal = "noMedal";
+              if(i === 0) medal = "goldMedal"
+              if(i === 1) medal = "silverMedal"
+              if(i === 2) medal = "bronzeMedal"
+              document.getElementById('leaderboardd').insertAdjacentHTML('beforeend',
+              `
+                <div class="m-3">
+                    <img class="leaderPlace d-inline ${medal}" src=${u.avatarUrl}>
+                    <div class="leaderName d-inline pt-2">${u.username}</div>
+                    <div class="leaderPoints d-inline pt-2 mx-3 float-right">${u.point} Points</div>
+                    <hr class="leaderHr">
+                </div>               
+              `
+          )
+          });
+
+    }).catch(err => {
+        throw err;
+    });
+   
+}
+
 
 const qIndex = window.location.href.indexOf("?")
 let qParam = (qIndex === -1 ? "solutions/all" : window.location.href.slice(qIndex))
 if (qParam.includes("?day=")) fetchSolutions("solutions/" + qParam)
 if (qParam.includes("?user=")) displayUser(qParam)
 if (qParam === "solutions/all") fetchSolutions(qParam)
-console.log(qParam)
 
 
 const insertCard = (sol) => {
     let dayImgUrl = "../assets/images/days/" + sol.dayNumber + ".png";
     const tooltip = "Day-" + sol.dayNumber
-    console.log("111", Object.keys(sol).length)
-    if (Object.keys(sol).length === 0) {
-        console.log("NOPE")
-    }
     document.getElementById('solutions').insertAdjacentHTML('beforeend',
         `
         <div class="my-3 col-sm-6 col-md-4 col-lg-3">
@@ -140,7 +178,6 @@ while (day > 0) {
 }
 
 playerModal = (u) => {
-    console.log(u)
     document.getElementById("userModal-points").innerHTML =
         `<i class="fa fa-spinner fa-spin" style="color: #D4AF37; font-size: 0.8em"></i>`;
     fetch("https://cors.io/?http://91.121.210.171:42550/user").then(response => {
@@ -148,10 +185,7 @@ playerModal = (u) => {
     }).then(data => {
         let obj = data.find(obj => obj.username === u);
         document.getElementById("userModal-points").innerHTML = "Points: " + obj.point;
-        // document.getElementById("userContent").innerHTML = 
-        // `<h5 class="p-5">Name: ${obj.username}</h5>
-        // <h5 class="p-5">Points: ${obj.point}</h5>`;
-        console.log("User Obj", obj)
+
     }).catch(err => {
         throw err;
     });

@@ -148,7 +148,7 @@
     <!-- Content -->
     <section class="adventContent">
         <div class="container">
-            <h1 id="adventTitle" class="adventTitle text-center pt-4 pb-3">All Student Solutions</h1>
+            <h1 id="adventTitle" class="adventTitle text-center pt-4 pb-3">Loading Solutions</h1>
             <div class="adventFilter text-center">
                 <!-- Student Filter -->
                 <div class="dropdown d-inline">
@@ -169,12 +169,17 @@
 
                 <!-- Filter Reset -->
                 <button class="btn btn-outline-warning btn-sm mx-3 py-2 px-4" onclick="onClick(`clear`)">
-                        Clear Filter
+                    Clear Filter
+                </button>
+
+                <!-- Filter Reset -->
+                <button class="btn btn-outline-warning btn-sm mx-3 py-2 px-4" onclick="onClick(`leaderboard`)">
+                    Leaderboard
                 </button>
 
             </div>
             <div id="solutions" class="row mt-4 text-center">
-
+                <h3 class="my-5 w-100">Loading...</h3>
             </div>
         </div>
     </section>

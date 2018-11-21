@@ -319,6 +319,35 @@ h1.proj{
   top: 10px;
   left: 10px
 }
+.leaderPlace {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(68, 68, 68);
+  padding: 5px;
+  margin: 0 25px
+}
+.leaderName{
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+.leaderPoints{
+  position: relative;
+  right: 10px
+}
+.leaderHr{
+  border-color: #4d4d4d
+}
+
+.goldMedal {
+  background-color: #D4AF37
+}
+.silverMedal {
+  background-color: silver
+}
+.bronzeMedal {
+  background-color: rgb(100, 55, 3)
+}
 /* ################### */
 
 /* # Community Pages # */
