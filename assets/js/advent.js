@@ -148,7 +148,7 @@ const insertCard = (sol) => {
                 <img class="card-img-top img-fluid" src=${sol.avatarUrl} alt=${sol.userName}>
                 <div class="card-body text-center bg-dark">
                     <h5 class="card-title">
-                        <a class="text-white" href="#" onclick="playerModal('${sol.userName}')" id="userNameHolder">${sol.userName}</a>
+                        <a class="text-white" id="userNameHolder">${sol.userName}</a>
                     </h5>
                     <a href=${sol.url} target="_blank" class="btn btn-outline-warning btn-sm mt-3 mb-0">View Solution</a>
                 </div>
@@ -177,17 +177,3 @@ while (day > 0) {
     day--
 }
 
-playerModal = (u) => {
-    document.getElementById("userModal-points").innerHTML =
-        `<i class="fa fa-spinner fa-spin" style="color: #D4AF37; font-size: 0.8em"></i>`;
-    fetch("https://cors.io/?http://91.121.210.171:42550/user").then(response => {
-        return response.json();
-    }).then(data => {
-        let obj = data.find(obj => obj.username === u);
-        document.getElementById("userModal-points").innerHTML = "Points: " + obj.point;
-
-    }).catch(err => {
-        throw err;
-    });
-    $('#student').modal('show');
-}
