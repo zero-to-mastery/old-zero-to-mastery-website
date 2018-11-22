@@ -224,8 +224,8 @@ const insertList = (sol) => {
     document.getElementById('solutions').insertAdjacentHTML('beforeend',
         `
         <div class="m-3">
-            <img src=${dayImgUrl} class="dayIcon" data-toggle="tooltip" data-placement="top" title=${tooltip}>
-            <img class="leaderPlace d-inline card-img-top img-fluid" src=${sol.avatarUrl}>
+            <img class="leaderPlace d-inline" src=${sol.avatarUrl}>
+            <img src=${dayImgUrl} class="sizer" data-toggle="tooltip" data-placement="top" title=${tooltip}>
             <div class="leaderName d-inline pt-2">${sol.userName}</div><br>
             <a href=${sol.url} target="_blank" class="btn btn-outline-warning btn-sm mt-3 mb-0">View Solution</a>
             <hr class="leaderHr">

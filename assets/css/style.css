@@ -223,6 +223,11 @@ h1.proj{
   padding: 1px
 }
 
+.sizer {
+  width: 40px;
+  height: 40px;
+}
+
 .adventStats {
   background-image: linear-gradient(to bottom, #0f0f23 0%, rgb(36, 36, 36) 100%);
   padding: 30px 0 20px 0;
@@ -318,7 +323,7 @@ h1.proj{
   height: 50px;
   position: absolute;
   top: 10px;
-  left: 10px
+  left: 10px;
 }
 .leaderPlace {
   width: 50px;
