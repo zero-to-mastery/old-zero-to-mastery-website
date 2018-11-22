@@ -1,3 +1,6 @@
+let currentUrl;
+
+let currentView = document.getElementById('toggler').innerHTML.trim();
 
 const stats = async () => {
     fetch("https://cors.io/?http://91.121.210.171:42550/data").then(response => {
@@ -34,14 +37,21 @@ const onClick = (param) => {
     if (param.includes("user")) displayUser(param);
     if (param.includes("day")) {
         $('#exampleModal').modal('hide');
+        currentUrl = "solutions/" + param
+        console.log(currentUrl)
         fetchSolutions("solutions/" + param)
     }
-    if(param === "leaderboard") leaderboard()
+    if(param === "leaderboard") {
+        // disable toggle button
+        document.getElementById('toggler').disabled = true;
+        leaderboard()
+    }
 }
 
 // Fetch Solution
 const fetchSolutions = (url) => {
     fetch("https://cors.io/?http://91.121.210.171:42550/" + url).then(response => {
+        console.log(currentUrl)
         return response.json();
     }).then(data => {
         
@@ -49,13 +59,20 @@ const fetchSolutions = (url) => {
         if (data.length < 1) {
             document.getElementById("solutions").innerHTML = `<h3 class="my-5 w-100">Nothing to display</h3>`;
         }
-        if(url.includes("solutions/all")) document.getElementById("adventTitle").innerHTML = `All Student's Solutions`;
+        if(url.includes("solutions/all")) {
+            currentUrl = "https://cors.io/?http://91.121.210.171:42550/solutions/all";
+            document.getElementById("adventTitle").innerHTML = `All Student's Solutions`;
+        }
         if(url.includes("solutions/?day")) { 
             
             document.getElementById("adventTitle").innerHTML = `Solutions for ${url.slice(15)} December`;
         }
         data.forEach(sol => {
-            insertCard(sol)
+            if (currentView === "List") {
+                insertCard(sol)
+            } else {
+                insertList(sol)
+            }
         });
 
     }).catch(err => {
@@ -68,6 +85,7 @@ const displayUser = (user) => {
     let name = user.slice(6)
     console.log(name)
     fetch("https://cors.io/?http://91.121.210.171:42550/solutions/all").then(response => {
+        currentUrl = "https://cors.io/?http://91.121.210.171:42550/solutions/all";
         return response.json();
     }).then(data => {
         document.getElementById("solutions").innerHTML = ``;
@@ -77,7 +95,11 @@ const displayUser = (user) => {
         document.getElementById("adventTitle").innerHTML = `${name}'s Solutions`;
         data.forEach(sol => {
             if (sol.userName === name) {
-                insertCard(sol)
+                if (currentView === "List") {
+                    insertCard(sol)
+                } else {
+                    insertList(sol)
+                }
             }
         });
 
@@ -136,7 +158,39 @@ if (qParam.includes("?user=")) displayUser(qParam)
 if (qParam === "solutions/all") fetchSolutions(qParam)
 
 
+const toggleCard = () => {
+    if (currentView === 'List') {
+        document.getElementById('toggler').innerHTML = "Card";
+        currentView = "Card"
+        console.log(currentUrl)
+        if (currentUrl === "https://cors.io/?http://91.121.210.171:42550/solutions/all") {
+            onClick('clear');
+        } else if (currentUrl.includes("day")) {
+            document.getElementById("solutions").innerHTML = `<h3 class="my-5 w-100">Loading...</h3>`;
+            fetchSolutions(currentUrl)
+        } else {
+
+        }
+    } else if (currentView === 'Card') {
+        document.getElementById('toggler').innerHTML = 'List';
+        currentView = "List"
+        if (currentUrl === "https://cors.io/?http://91.121.210.171:42550/solutions/all") {
+            onClick('clear');
+        } else if (currentUrl.includes("day")) {
+            document.getElementById("solutions").innerHTML = `<h3 class="my-5 w-100">Loading...</h3>`;
+            fetchSolutions(currentUrl)
+        } else {
+
+        }
+    }
+}
+
 const insertCard = (sol) => {
+    console.log('card enabled')
+
+    // enable toggle button
+    document.getElementById('toggler').disabled = false;
+
     let dayImgUrl = "../assets/images/days/" + sol.dayNumber + ".png";
     const tooltip = "Day-" + sol.dayNumber
     document.getElementById('solutions').insertAdjacentHTML('beforeend',
@@ -157,6 +211,26 @@ const insertCard = (sol) => {
     `)
 }
 
+const insertList = (sol) => {
+    console.log('list enabled')
+
+    // enable toggle button
+    document.getElementById('toggler').disabled = false;
+
+    let dayImgUrl = "../assets/images/days/" + sol.dayNumber + ".png";
+    const tooltip = "Day-" + sol.dayNumber
+    document.getElementById('solutions').insertAdjacentHTML('beforeend',
+        `
+        <div class="m-3">
+            <img src=${dayImgUrl} class="dayIcon" data-toggle="tooltip" data-placement="top" title=${tooltip}>
+            <img class="leaderPlace d-inline card-img-top img-fluid" src=${sol.avatarUrl}>
+            <div class="leaderName d-inline pt-2">${sol.userName}</div><br>
+            <a href=${sol.url} target="_blank" class="btn btn-outline-warning btn-sm mt-3 mb-0">View Solution</a>
+            <hr class="leaderHr">
+        </div>
+    `)
+}
+
 
 
 
@@ -172,8 +246,6 @@ while (day > 0) {
         `
     <a  id=${link} onclick=onClick(this.id)><img src=${dayBtn}></a>
     
-
     `);
     day--
 }
-
