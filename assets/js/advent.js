@@ -132,10 +132,11 @@ const leaderboard = () => {
               if(i === 0) medal = "goldMedal"
               if(i === 1) medal = "silverMedal"
               if(i === 2) medal = "bronzeMedal"
+              let avatar = (u.avatarUrl === null ? "../assets/images/advent/defaultAvatar.png" : u.avatarUrl)
               document.getElementById('leaderboardd').insertAdjacentHTML('beforeend',
               `
                 <div class="m-3">
-                    <img class="leaderPlace d-inline ${medal}" src=${u.avatarUrl}>
+                    <img class="leaderPlace d-inline ${medal}" src=${avatar}>
                     <div class="leaderName d-inline pt-2">${u.username}</div>
                     <div class="leaderPoints d-inline pt-2 mx-3 float-right">${u.point} Points</div>
                     <hr class="leaderHr">
@@ -193,13 +194,14 @@ const insertCard = (sol) => {
 
     let dayImgUrl = "../assets/images/days/" + sol.dayNumber + ".png";
     const tooltip = "Day-" + sol.dayNumber
+    let avatar = (sol.avatarUrl === null ? "../assets/images/advent/defaultAvatar.png" : sol.avatarUrl)
     document.getElementById('solutions').insertAdjacentHTML('beforeend',
         `
         <div class="my-3 col-sm-6 col-md-4 col-lg-3">
             <div class="card adventCard">
                 <img src="https://cdn2.iconfinder.com/data/icons/nodejs-1/512/nodejs-512.png" class="langIcon">
                 <img src=${dayImgUrl} class="dayIcon" data-toggle="tooltip" data-placement="top" title=${tooltip}>
-                <img class="card-img-top img-fluid" src=${sol.avatarUrl} alt=${sol.userName}>
+                <img class="card-img-top img-fluid" src=${avatar} alt=${sol.userName}>
                 <div class="card-body text-center bg-dark">
                     <h5 class="card-title">
                         <a class="text-white" id="userNameHolder">${sol.userName}</a>
