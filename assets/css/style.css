@@ -175,7 +175,8 @@ h1.proj{
 
 #projects h5 {
   color: black;
-  font: 400 1em;
+  font-weight: 400;
+  font-size: 1.4em;
 }
 
 .projectIcon {
