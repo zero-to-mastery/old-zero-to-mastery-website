@@ -273,6 +273,10 @@ const insertList = (sol) => {
     // enable toggle button
     document.getElementById('toggler').disabled = false;
 
+    let dbTime = new Date(sol.Time);
+
+    let timeAgo = timeDifference(current, new Date(dbTime.getFullYear(), dbTime.getMonth(), dbTime.getDate(), dbTime.getHours(), dbTime.getMinutes(), dbTime.getSeconds(), dbTime.getMilliseconds()));
+
     let dayImgUrl = "../assets/images/days/" + sol.dayNumber + ".png";
     const tooltip = "Day-" + sol.dayNumber
     let avatar = (sol.avatarUrl === null ? "../assets/images/advent/defaultAvatar.png" : sol.avatarUrl)
@@ -283,6 +287,8 @@ const insertList = (sol) => {
             <img src=${dayImgUrl} class="sizer" data-toggle="tooltip" data-placement="top" title=${tooltip}>
             <div class="leaderName d-inline pt-2">${sol.userName}</div><br>
             <a href=${sol.url} target="_blank" class="btn btn-outline-warning btn-sm mt-3 mb-0">View Solution</a>
+            <hr class="leaderHr">
+            <small>Submitted ${timeAgo}<small>
             <hr class="leaderHr">
         </div>
     `)
