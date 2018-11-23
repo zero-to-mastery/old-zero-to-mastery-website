@@ -257,7 +257,7 @@ const insertCard = (sol) => {
                     </h5>
                     <a href=${sol.url} target="_blank" class="btn btn-outline-warning btn-sm mt-3 mb-0">View Solution</a>
                 </div>
-                <small>Submitted ${timeAgo}<small>
+                <small class="py-2">Submitted ${timeAgo}<small>
             </div>
         </div>
     `)

@@ -276,6 +276,7 @@ h1.proj{
 }
 
 .adventCard > .card-img-top {
+  border-radius: 10px 10px 0 0;
   background: url(../images/advent/ztmbg.png);
   background-size: cover;
   background-position: center;
