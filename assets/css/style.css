@@ -190,6 +190,12 @@ h1.proj{
   width: 50%;
 }
 
+a.faq {
+  width: 10em;
+  border-color: #6b6b6b;
+  color: black;
+  font-size: 1.5em;
+}
 
 /* ################### */
 
