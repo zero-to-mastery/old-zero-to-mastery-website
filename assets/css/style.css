@@ -275,6 +275,12 @@ h1.proj{
   border-radius: 10px
 }
 
+.adventCard > .card-img-top {
+  background: url(../images/advent/ztmbg.png);
+  background-size: cover;
+  background-position: center;
+}
+
 .adventCard h5 {
   color: rgb(255, 255, 255);
   font-family: 'Titillium Web', sans-serif;

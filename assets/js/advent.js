@@ -118,25 +118,21 @@ const leaderboard = () => {
         }
         document.getElementById("adventTitle").innerHTML = `Leaderboard`;
 
-        function compare(a,b) {
-            if (a.point > b.point)
-                return -1;
-                if (a.point > b.point)
-              return 1;
-            return 0;
-          }
-          
-          let points = data.sort(compare);
+        function compare(a, b) {
+            return b.point - a.point;
+        }
+         
+          let points = data.sort(compare); console.log(points)
           points.forEach((u, i) => {
               let medal = "noMedal";
               if(i === 0) medal = "goldMedal"
               if(i === 1) medal = "silverMedal"
               if(i === 2) medal = "bronzeMedal"
-              let avatar = (u.avatarUrl === null ? "../assets/images/advent/defaultAvatar.png" : u.avatarUrl)
+            //   let avatar = (u.avatarUrl === null ? "../assets/images/advent/defaultAvatar.png" : u.avatarUrl)
               document.getElementById('leaderboardd').insertAdjacentHTML('beforeend',
               `
                 <div class="m-3">
-                    <img class="leaderPlace d-inline ${medal}" src=${avatar}>
+                    <img class="leaderPlace d-inline ${medal}" src=${u.avatarUrl}>
                     <div class="leaderName d-inline pt-2">${u.username}</div>
                     <div class="leaderPoints d-inline pt-2 mx-3 float-right">${u.point} Points</div>
                     <hr class="leaderHr">
@@ -223,7 +219,7 @@ const insertList = (sol) => {
     const tooltip = "Day-" + sol.dayNumber
     document.getElementById('solutions').insertAdjacentHTML('beforeend',
         `
-        <div class="m-3">
+        <div class="m-3 text-center">
             <img class="leaderPlace d-inline" src=${sol.avatarUrl}>
             <img src=${dayImgUrl} class="sizer" data-toggle="tooltip" data-placement="top" title=${tooltip}>
             <div class="leaderName d-inline pt-2">${sol.userName}</div><br>
