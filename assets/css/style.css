@@ -186,6 +186,16 @@ h1.proj{
   display: block;
 }
 
+.challengeIcon {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#projects h5.challenge {
+  font-size: 1.7em;
+}
+
 #searchBox {
   width: 50%;
 }
