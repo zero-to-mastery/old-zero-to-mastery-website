@@ -155,6 +155,55 @@ if (qParam.includes("?user=")) displayUser(qParam)
 if (qParam === "solutions/all") fetchSolutions(qParam)
 
 
+
+const timeDifference = (current, previous) => {
+    
+    let msPerMinute = 60 * 1000;
+    let msPerHour = msPerMinute * 60;
+    let msPerDay = msPerHour * 24;
+    let msPerMonth = msPerDay * 30;
+    let msPerYear = msPerDay * 365;
+    
+    let elapsed = current - previous;
+    
+    if (elapsed < msPerMinute) {
+         return Math.round(elapsed/1000) + ' seconds ago';
+    }
+    
+    else if (elapsed < msPerHour) {
+         return Math.round(elapsed/msPerMinute) + ' mins ago';
+    }
+    
+    else if (elapsed < msPerDay ) {
+         return Math.round(elapsed/msPerHour ) + ' hours ago';
+    }
+
+    else if (elapsed < msPerMonth) {
+         return 'approx. ' + Math.round(elapsed/msPerDay) + ' days ago';
+    }
+    
+    else if (elapsed < msPerYear) {
+         return 'approx. ' + Math.round(elapsed/msPerMonth) + ' months ago';
+    }
+    
+    else {
+         return 'approx. ' + Math.round(elapsed/msPerYear ) + ' years ago';
+    }
+}
+
+
+// TESTS
+let currentTime = new Date();
+let current= new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate(), currentTime.getHours(), currentTime.getMinutes(), currentTime.getSeconds(), currentTime.getMilliseconds());
+// alert(timeDifference(current, new Date(2011, 04, 24, 12, 30, 00, 00)));
+
+
+
+
+
+
+
+
 const toggleCard = () => {
     if (currentView === 'List') {
         document.getElementById('toggler').innerHTML = "Card";
@@ -188,6 +237,10 @@ const insertCard = (sol) => {
     // enable toggle button
     document.getElementById('toggler').disabled = false;
 
+    let dbTime = new Date(sol.Time);
+
+    let timeAgo = timeDifference(current, new Date(dbTime.getFullYear(), dbTime.getMonth(), dbTime.getDate(), dbTime.getHours(), dbTime.getMinutes(), dbTime.getSeconds(), dbTime.getMilliseconds()));
+
     let dayImgUrl = "../assets/images/days/" + sol.dayNumber + ".png";
     const tooltip = "Day-" + sol.dayNumber
     let avatar = (sol.avatarUrl === null ? "../assets/images/advent/defaultAvatar.png" : sol.avatarUrl)
@@ -204,6 +257,7 @@ const insertCard = (sol) => {
                     </h5>
                     <a href=${sol.url} target="_blank" class="btn btn-outline-warning btn-sm mt-3 mb-0">View Solution</a>
                 </div>
+                <small>Submitted ${timeAgo}<small>
             </div>
         </div>
     `)
@@ -215,8 +269,13 @@ const insertList = (sol) => {
     // enable toggle button
     document.getElementById('toggler').disabled = false;
 
+    let dbTime = new Date(sol.Time);
+
+    let timeAgo = timeDifference(current, new Date(dbTime.getFullYear(), dbTime.getMonth(), dbTime.getDate(), dbTime.getHours(), dbTime.getMinutes(), dbTime.getSeconds(), dbTime.getMilliseconds()));
+
     let dayImgUrl = "../assets/images/days/" + sol.dayNumber + ".png";
     const tooltip = "Day-" + sol.dayNumber
+    let avatar = (sol.avatarUrl === null ? "../assets/images/advent/defaultAvatar.png" : sol.avatarUrl)
     document.getElementById('solutions').insertAdjacentHTML('beforeend',
         `
         <div class="m-3 text-center">
@@ -224,6 +283,8 @@ const insertList = (sol) => {
             <img src=${dayImgUrl} class="sizer" data-toggle="tooltip" data-placement="top" title=${tooltip}>
             <div class="leaderName d-inline pt-2">${sol.userName}</div><br>
             <a href=${sol.url} target="_blank" class="btn btn-outline-warning btn-sm mt-3 mb-0">View Solution</a>
+            <hr class="leaderHr">
+            <small>Submitted ${timeAgo}<small>
             <hr class="leaderHr">
         </div>
     `)
