@@ -51,7 +51,6 @@ const onClick = (param) => {
 // Fetch Solution
 const fetchSolutions = (url) => {
     fetch("https://cors.io/?http://91.121.210.171:42550/" + url).then(response => {
-        console.log(currentUrl)
         return response.json();
     }).then(data => {
         
@@ -209,7 +208,7 @@ const toggleCard = () => {
     if (currentView === 'List') {
         document.getElementById('toggler').innerHTML = "Card";
         currentView = "Card"
-        console.log(currentUrl)
+        // console.log(currentUrl)
         if (currentUrl === "https://cors.io/?http://91.121.210.171:42550/solutions/all") {
             onClick('clear');
         } else if (currentUrl.includes("day")) {
@@ -308,8 +307,13 @@ const insertList = (sol) => {
 
 
 // Modal Button Generator
+
+//  time convertion to EST
 let date = new Date();
-let day = date.getDate()
+let offset = -300; //Timezone offset for EST in minutes.
+let estDate = new Date(date.getTime() + offset*60*1000);
+let day = estDate.getDate();
+console.log('est', estDate.getDate());
 
 
 while (day > 0) {
