@@ -64,7 +64,8 @@ const fetchSolutions = (url) => {
             document.getElementById("adventTitle").innerHTML = `All Student's Solutions`;
         }
         if(url.includes("solutions/?day")) { 
-            
+            console.log("url", url)
+            currentUrl = url
             document.getElementById("adventTitle").innerHTML = `Solutions for ${url.slice(15)} December`;
         }
         data.forEach(sol => {
@@ -179,20 +180,20 @@ const timeDifference = (current, previous) => {
     }
 
     else if (elapsed < msPerMonth) {
-         return 'approx. ' + Math.round(elapsed/msPerDay) + ' days ago';
+         return Math.round(elapsed/msPerDay) + ' days ago';
     }
     
     else if (elapsed < msPerYear) {
-         return 'approx. ' + Math.round(elapsed/msPerMonth) + ' months ago';
+         return Math.round(elapsed/msPerMonth) + ' months ago';
     }
     
     else {
-         return 'approx. ' + Math.round(elapsed/msPerYear ) + ' years ago';
+         return Math.round(elapsed/msPerYear ) + ' years ago';
     }
 }
 
 
-// TESTS
+// current time
 let currentTime = new Date();
 let current= new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate(), currentTime.getHours(), currentTime.getMinutes(), currentTime.getSeconds(), currentTime.getMilliseconds());
 // alert(timeDifference(current, new Date(2011, 04, 24, 12, 30, 00, 00)));
@@ -215,7 +216,7 @@ const toggleCard = () => {
             document.getElementById("solutions").innerHTML = `<h3 class="my-5 w-100">Loading...</h3>`;
             fetchSolutions(currentUrl)
         } else {
-
+            fetchSolutions("https://cors.io/?http://91.121.210.171:42550/" + currentUrl)
         }
     } else if (currentView === 'Card') {
         document.getElementById('toggler').innerHTML = 'List';
@@ -226,7 +227,7 @@ const toggleCard = () => {
             document.getElementById("solutions").innerHTML = `<h3 class="my-5 w-100">Loading...</h3>`;
             fetchSolutions(currentUrl)
         } else {
-
+            fetchSolutions("https://cors.io/?http://91.121.210.171:42550/" + currentUrl)
         }
     }
 }
@@ -241,19 +242,29 @@ const insertCard = (sol) => {
 
     let timeAgo = timeDifference(current, new Date(dbTime.getFullYear(), dbTime.getMonth(), dbTime.getDate(), dbTime.getHours(), dbTime.getMinutes(), dbTime.getSeconds(), dbTime.getMilliseconds()));
 
+    // "https://cdn2.iconfinder.com/data/icons/nodejs-1/512/nodejs-512.png"
+
     let dayImgUrl = "../assets/images/days/" + sol.dayNumber + ".png";
-    const tooltip = "Day-" + sol.dayNumber
+    let langImgUrl = "../assets/images/lang/" + sol.langName.toLowerCase() + ".png";
+    const tooltip = "Day-" + sol.dayNumber;
+    const langToolTip = sol.langName;
     let avatar = (sol.avatarUrl === null ? "../assets/images/advent/defaultAvatar.png" : sol.avatarUrl)
+    let uName;
+    if (sol.userName.length > 11) {
+        uName = sol.userName.substring(0, 11)+"..."
+    } else {
+        uName = sol.userName
+    }
     document.getElementById('solutions').insertAdjacentHTML('beforeend',
         `
         <div class="my-3 col-sm-6 col-md-4 col-lg-3">
             <div class="card adventCard">
-                <img src="https://cdn2.iconfinder.com/data/icons/nodejs-1/512/nodejs-512.png" class="langIcon">
+                <img src=${langImgUrl} class="langIcon" title=${langToolTip}>
                 <img src=${dayImgUrl} class="dayIcon" data-toggle="tooltip" data-placement="top" title=${tooltip}>
                 <img class="card-img-top img-fluid" src=${avatar} alt=${sol.userName}>
                 <div class="card-body text-center bg-dark">
                     <h5 class="card-title">
-                        <a class="text-white" id="userNameHolder">${sol.userName}</a>
+                        <a class="text-white" id="userNameHolder" title=${sol.userName}>${uName}</a>
                     </h5>
                     <a href=${sol.url} target="_blank" class="btn btn-outline-warning btn-sm mt-3 mb-0">View Solution</a>
                 </div>
@@ -274,23 +285,26 @@ const insertList = (sol) => {
     let timeAgo = timeDifference(current, new Date(dbTime.getFullYear(), dbTime.getMonth(), dbTime.getDate(), dbTime.getHours(), dbTime.getMinutes(), dbTime.getSeconds(), dbTime.getMilliseconds()));
 
     let dayImgUrl = "../assets/images/days/" + sol.dayNumber + ".png";
-    const tooltip = "Day-" + sol.dayNumber
+    let langImgUrl = "../assets/images/lang/" + sol.langName.toLowerCase() + ".png";
+    const tooltip = "Day-" + sol.dayNumber;
+    const langToolTip = sol.langName;
     let avatar = (sol.avatarUrl === null ? "../assets/images/advent/defaultAvatar.png" : sol.avatarUrl)
     document.getElementById('solutions').insertAdjacentHTML('beforeend',
         `
-        <div class="m-3 text-center">
-            <img class="leaderPlace d-inline" src=${sol.avatarUrl}>
+        <div class="text-center col-sm-12 col-md-6 col-lg-6">
+            <img class="listImg d-inline" src=${sol.avatarUrl}>
+            <div class="leaderName d-inline pt-2">
+            ${sol.userName}
+            </div>
             <img src=${dayImgUrl} class="sizer" data-toggle="tooltip" data-placement="top" title=${tooltip}>
-            <div class="leaderName d-inline pt-2">${sol.userName}</div><br>
-            <a href=${sol.url} target="_blank" class="btn btn-outline-warning btn-sm mt-3 mb-0">View Solution</a>
-            <hr class="leaderHr">
+            <img src=${langImgUrl} class="sizer" title=${langToolTip}>
+            <a href=${sol.url} target="_blank" class="btn btn-outline-warning btn-sm mb-0">View Solution</a><br>
             <small>Submitted ${timeAgo}<small>
             <hr class="leaderHr">
         </div>
+        
     `)
 }
-
-
 
 
 // Modal Button Generator
