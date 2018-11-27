@@ -4,6 +4,7 @@ function play(){
   };
 
 function dateFilter() {
+	//are we using var?
   	var date = new Date($('#date-input').val());
   	day = date.getDate();
   	fetch('https://cors.io/?http://91.121.210.171:42550/solutions/?day='+day).then(response => {

@@ -26,7 +26,9 @@ When adding styles try to ensure the following:
   -moz-box-shadow: 0px 5px 24px -3px rgba(0, 0, 0, 0.88);
   box-shadow: 0px 5px 24px -3px rgba(0, 0, 0, 0.88);
 }
-
+.navbar-bg{
+  background-color: #e5bf48;
+}
 /* ################### */
 
 /* #  Index Page Styles  # */
@@ -38,6 +40,18 @@ When adding styles try to ensure the following:
 .langs {
   background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f4f4f4' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+.langs svg{
+  max-height: 200px;
+  width: 20%;
+  filter: grayscale(100%);
+  transition: filter 2s ease-out, transform 1s ease-in-out;
+}
+.langs svg:hover{
+  transform: scale(1.2);
+  filter: grayscale(0%);
 }
 
 /* Video section styles*/

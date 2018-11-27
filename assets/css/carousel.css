@@ -92,20 +92,26 @@
   }
   
   @media (min-width: 300px) {
+    .carousel-caption {
+      top: 100px !important;
+    }
     .img-fluid.w-100.d-block {
-      height: auto;
+      height: 50vh;
     }
   }
   
   @media (min-width: 576px) {
+    .carousel-caption {
+      top: 180px !important;
+    }
     .img-fluid.w-100.d-block {
-      height: auto;
+      height: 65vh;
     }
   }
   
   @media (min-width: 768px) {
     .img-fluid.w-100.d-block {
-      height: auto;
+      height: 85vh;
     }
   }
   
