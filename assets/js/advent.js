@@ -3,7 +3,7 @@ let currentUrl;
 let currentView = document.getElementById('toggler').innerHTML.trim();
 
 const stats = async () => {
-    fetch("https://cors.io/?http://91.121.210.171:42550/data").then(response => {
+    fetch("https://cors.io/?http://91.121.210.171:42551/data").then(response => {
         return response.json();
     }).then(data => {
         document.getElementById("statsTotal").innerHTML = data.all;
@@ -17,7 +17,7 @@ stats()
 
 // Fetch Users for Dropdown
 const users = async () => {
-    fetch("https://cors.io/?http://91.121.210.171:42550/user").then(response => {
+    fetch("https://cors.io/?http://91.121.210.171:42551/user").then(response => {
         return response.json();
     }).then(data => {
         data.forEach(user => {
@@ -50,7 +50,7 @@ const onClick = (param) => {
 
 // Fetch Solution
 const fetchSolutions = (url) => {
-    fetch("https://cors.io/?http://91.121.210.171:42550/" + url).then(response => {
+    fetch("https://cors.io/?http://91.121.210.171:42551/" + url).then(response => {
         return response.json();
     }).then(data => {
         
@@ -59,7 +59,7 @@ const fetchSolutions = (url) => {
             document.getElementById("solutions").innerHTML = `<h3 class="my-5 w-100">Nothing to display</h3>`;
         }
         if(url.includes("solutions/all")) {
-            currentUrl = "https://cors.io/?http://91.121.210.171:42550/solutions/all";
+            currentUrl = "https://cors.io/?http://91.121.210.171:42551/solutions/all";
             document.getElementById("adventTitle").innerHTML = `All Student's Solutions`;
         }
         if(url.includes("solutions/?day")) { 
@@ -84,8 +84,8 @@ const fetchSolutions = (url) => {
 const displayUser = (user) => {
     let name = user.slice(6)
     console.log(name)
-    fetch("https://cors.io/?http://91.121.210.171:42550/solutions/all").then(response => {
-        currentUrl = "https://cors.io/?http://91.121.210.171:42550/solutions/all";
+    fetch("https://cors.io/?http://91.121.210.171:42551/solutions/all").then(response => {
+        currentUrl = "https://cors.io/?http://91.121.210.171:42551/solutions/all";
         return response.json();
     }).then(data => {
         document.getElementById("solutions").innerHTML = ``;
@@ -109,7 +109,7 @@ const displayUser = (user) => {
 }
 
 const leaderboard = () => {
-    fetch("https://cors.io/?http://91.121.210.171:42550/user").then(response => {
+    fetch("https://cors.io/?http://91.121.210.171:42551/user").then(response => {
         return response.json();
     }).then(data => {
         document.getElementById("solutions").innerHTML = `<div id="leaderboardd" class="w-100 bg-dark text-white p-3 m-3 text-left"><div class="row"></div></div>`;
@@ -209,24 +209,24 @@ const toggleCard = () => {
         document.getElementById('toggler').innerHTML = "Card";
         currentView = "Card"
         // console.log(currentUrl)
-        if (currentUrl === "https://cors.io/?http://91.121.210.171:42550/solutions/all") {
+        if (currentUrl === "https://cors.io/?http://91.121.210.171:42551/solutions/all") {
             onClick('clear');
         } else if (currentUrl.includes("day")) {
             document.getElementById("solutions").innerHTML = `<h3 class="my-5 w-100">Loading...</h3>`;
             fetchSolutions(currentUrl)
         } else {
-            fetchSolutions("https://cors.io/?http://91.121.210.171:42550/" + currentUrl)
+            fetchSolutions("https://cors.io/?http://91.121.210.171:42551/" + currentUrl)
         }
     } else if (currentView === 'Card') {
         document.getElementById('toggler').innerHTML = 'List';
         currentView = "List"
-        if (currentUrl === "https://cors.io/?http://91.121.210.171:42550/solutions/all") {
+        if (currentUrl === "https://cors.io/?http://91.121.210.171:42551/solutions/all") {
             onClick('clear');
         } else if (currentUrl.includes("day")) {
             document.getElementById("solutions").innerHTML = `<h3 class="my-5 w-100">Loading...</h3>`;
             fetchSolutions(currentUrl)
         } else {
-            fetchSolutions("https://cors.io/?http://91.121.210.171:42550/" + currentUrl)
+            fetchSolutions("https://cors.io/?http://91.121.210.171:42551/" + currentUrl)
         }
     }
 }
