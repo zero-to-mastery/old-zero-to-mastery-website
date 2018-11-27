@@ -242,11 +242,13 @@ const insertCard = (sol) => {
     let timeAgo = timeDifference(current, new Date(dbTime.getFullYear(), dbTime.getMonth(), dbTime.getDate(), dbTime.getHours(), dbTime.getMinutes(), dbTime.getSeconds(), dbTime.getMilliseconds()));
 
     // "https://cdn2.iconfinder.com/data/icons/nodejs-1/512/nodejs-512.png"
-
+    let langName = "unknown";
+    console.log(sol.langName)
+    if(sol.langName) langName = sol.langName
     let dayImgUrl = "../assets/images/days/" + sol.dayNumber + ".png";
-    let langImgUrl = "../assets/images/lang/" + sol.langName.toLowerCase() + ".png";
+    let langImgUrl = "../assets/images/lang/" + langName.toLowerCase() + ".png";
     const tooltip = "Day-" + sol.dayNumber;
-    const langToolTip = sol.langName;
+    const langToolTip = langName;
     let avatar = (sol.avatarUrl === null ? "../assets/images/advent/defaultAvatar.png" : sol.avatarUrl)
     let uName;
     if (sol.userName.length > 11) {
@@ -284,9 +286,9 @@ const insertList = (sol) => {
     let timeAgo = timeDifference(current, new Date(dbTime.getFullYear(), dbTime.getMonth(), dbTime.getDate(), dbTime.getHours(), dbTime.getMinutes(), dbTime.getSeconds(), dbTime.getMilliseconds()));
 
     let dayImgUrl = "../assets/images/days/" + sol.dayNumber + ".png";
-    let langImgUrl = "../assets/images/lang/" + sol.langName.toLowerCase() + ".png";
+    let langImgUrl = "../assets/images/lang/" + langName.toLowerCase() + ".png";
     const tooltip = "Day-" + sol.dayNumber;
-    const langToolTip = sol.langName;
+    const langToolTip = langName;
     let avatar = (sol.avatarUrl === null ? "../assets/images/advent/defaultAvatar.png" : sol.avatarUrl)
     document.getElementById('solutions').insertAdjacentHTML('beforeend',
         `
