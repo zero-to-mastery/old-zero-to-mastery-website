@@ -246,7 +246,12 @@ const insertCard = (sol) => {
     console.log(sol.langName)
     if(sol.langName) langName = sol.langName
     let dayImgUrl = "../assets/images/days/" + sol.dayNumber + ".png";
-    let langImgUrl = "../assets/images/lang/" + langName.toLowerCase() + ".png";
+    let langImgUrl;
+    if (langName.toLowerCase().includes("js")) {
+        langImgUrl = "../assets/images/lang/javascript.png";
+    } else {
+        langImgUrl = "../assets/images/lang/" + langName.toLowerCase() + ".png";
+    }
     const tooltip = "Day-" + sol.dayNumber;
     const langToolTip = langName;
     let avatar = (sol.avatarUrl === null ? "../assets/images/advent/defaultAvatar.png" : sol.avatarUrl)
@@ -283,10 +288,19 @@ const insertList = (sol) => {
 
     let dbTime = new Date(sol.Time);
 
+    let langName = "unknown";
+    console.log(sol.langName)
+    if(sol.langName) langName = sol.langName
+
     let timeAgo = timeDifference(current, new Date(dbTime.getFullYear(), dbTime.getMonth(), dbTime.getDate(), dbTime.getHours(), dbTime.getMinutes(), dbTime.getSeconds(), dbTime.getMilliseconds()));
 
     let dayImgUrl = "../assets/images/days/" + sol.dayNumber + ".png";
-    let langImgUrl = "../assets/images/lang/" + langName.toLowerCase() + ".png";
+    let langImgUrl;
+    if (langName.toLowerCase().includes("js")) {
+        langImgUrl = "../assets/images/lang/javascript.png";
+    } else {
+        langImgUrl = "../assets/images/lang/" + langName.toLowerCase() + ".png";
+    }
     const tooltip = "Day-" + sol.dayNumber;
     const langToolTip = langName;
     let avatar = (sol.avatarUrl === null ? "../assets/images/advent/defaultAvatar.png" : sol.avatarUrl)
