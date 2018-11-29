@@ -59,7 +59,12 @@ const drawCards = (d) => {
             let langName = (sol.langName ? sol.langName : "unknown")
             let dbTime = new Date(sol.Time);
             let timeAgo = timeDifference(current, new Date(dbTime.getFullYear(), dbTime.getMonth(), dbTime.getDate(), dbTime.getHours(), dbTime.getMinutes(), dbTime.getSeconds(), dbTime.getMilliseconds()));
-
+            let uName;
+            if (sol.userName.length > 11) {
+                uName = sol.userName.substring(0, 11)+"..."
+            } else {
+                uName = sol.userName
+            }
             document.getElementById('solutions').insertAdjacentHTML('beforeend',
                 `<div class="my-3 col-sm-6 col-md-4 col-lg-3">
             <div class="card adventCard">
@@ -68,7 +73,7 @@ const drawCards = (d) => {
                 <img class="card-img-top img-fluid" src=${sol.avatarUrl} alt=${sol.userName}>
                 <div class="card-body text-center bg-dark">
                     <h5 class="card-title">
-                        <a class="text-white" id="userNameHolder" title=${sol.userName}>${(sol.userName.lenth > 11 ? `${sol.userName.substring(0, 11)}...` :  sol.userNam)}</a>
+                        <a class="text-white" id="userNameHolder" title=${sol.userName}>${uName}</a>
                     </h5>
                     <a href=${sol.url} target="_blank" class="btn btn-outline-warning btn-sm mt-3 mb-0">View Solution</a>
                 </div>
@@ -152,8 +157,6 @@ const filter = (a, b) => {
 }
 
 const onClick = async (param) => {
-    console.log("ONLICK PARAM", param)
-
     // Reset Filter Buttons
     document.getElementById("sf").innerHTML = `Student Filter <i class="fas fa-caret-down"></i>`
     document.getElementById("df").innerHTML = `Date Filter`
