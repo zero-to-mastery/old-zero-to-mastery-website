@@ -10,7 +10,7 @@ const letsFetch = async (url) => {
     return data
 }
 
-let settins = { view: "list", curData: [] }
+let settins = { view: "card", curData: [] }
 
 init = async () => {
 
@@ -68,7 +68,7 @@ const drawCards = (d) => {
                 <img class="card-img-top img-fluid" src=${sol.avatarUrl} alt=${sol.userName}>
                 <div class="card-body text-center bg-dark">
                     <h5 class="card-title">
-                        <a class="text-white" id="userNameHolder" title=${sol.userName}>${sol.userName}</a>
+                        <a class="text-white" id="userNameHolder" title=${sol.userName}>${(sol.userName.lenth > 11 ? `${sol.userName.substring(0, 11)}...` :  sol.userNam)}</a>
                     </h5>
                     <a href=${sol.url} target="_blank" class="btn btn-outline-warning btn-sm mt-3 mb-0">View Solution</a>
                 </div>
