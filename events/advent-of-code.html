@@ -30,16 +30,17 @@
             <img src="../assets/images/ztm.png" width="50" height="50" class="d-inline-block align-top" alt="">
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      		<span class="navbar-toggler-icon"></span>
-	    </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse ham-content" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse ham-content" id="navbarSupportedContent">
 
-            	<ul class="navbar-nav">
-            	</ul>
+            <ul class="navbar-nav">
+            </ul>
 
-            	<ul class="navbar-nav ml-auto pb-2 pl-2 pr-2">
+            <ul class="navbar-nav ml-auto pb-2 pl-2 pr-2">
                 <!-- Course Dropdown -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -101,7 +102,7 @@
                 </li>
             </ul>
 
-            </div>
+        </div>
     </nav>
 
     <section id="adventHeader" class="text-center">
@@ -113,7 +114,7 @@
     </section>
 
     <section>
-        <div class="adventStats"><hr class="m-3 text-white">
+        <div class="adventStats">
             <div class="container text-center">
                 <div class="row">
                     <!-- Total Submissions -->
@@ -145,6 +146,21 @@
         </div>
     </section>
 
+    <section>
+        <div class="adventSubNav p-4">
+            <div class="container text-center">
+                <!-- Leaderboard -->
+                <button class="btn btn-outline-warning btn-sm mx-3 py-2 px-4" onclick="onClick(`solutions`)">
+                    Solutions
+                </button>
+                <!-- Leaderboard -->
+                <button class="btn btn-outline-warning btn-sm mx-3 py-2 px-4" onclick="onClick(`leaderboard`)">
+                    Leaderboard
+                </button>
+            </div>
+        </div>
+    </section>
+
     <!-- Content -->
     <section class="adventContent">
         <div class="container">
@@ -154,7 +170,8 @@
                 <div class="dropdown d-inline">
                     <a class="btn btn-outline-warning btn-sm mx-3 py-2 px-4" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
-                        Student Filter <i class="fas fa-caret-down"></i>
+                        <div id="sf">Student Filter <i class="fas fa-caret-down"></i></div>
+                        
                     </a>
 
                     <div id="studentFilter" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -163,16 +180,25 @@
                 </div>
 
                 <!-- Day Filter -->
-                <button type="button" class="btn btn-outline-warning btn-sm mx-3 py-2 px-4" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" id="df" class="btn btn-outline-warning btn-sm mx-3 py-2 px-4" data-toggle="modal" data-target="#exampleModal">
                     Date Filter
                 </button>
 
-                <!-- Filter Leaderboard -->
-                <button class="btn btn-outline-warning btn-sm mx-3 py-2 px-4" onclick="onClick(`leaderboard`)">
-                    Leaderboard
-                </button>
+                <!-- Lang Filter -->
+                <div class="dropdown d-inline">
+                    <a class="btn btn-outline-warning btn-sm mx-3 py-2 px-4" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <div id="lf">Language Filter <i class="fas fa-caret-down"></i></div>
+                    </a>
+
+                    <div id="langFilter" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <!-- Dropdown items, dynamically generated -->
+                    </div>
+                </div>
+
+
                 <!-- toggle between card and list view -->
-                <button class="btn btn-outline-warning btn-sm mx-3 py-2 px-4" id="toggler" onclick="toggleCard()">
+                <button class="btn btn-outline-warning btn-sm mx-3 py-2 px-4" id="toggler" onclick="toggleView()">
                     List
                 </button>
 
@@ -217,26 +243,6 @@
         </div>
     </div>
 
-    <!-- Student Modal -->
-    <div class="modal fade " id="student" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header bg-dark">
-                    <h5 class="modal-title" id="exampleModalLabel">User</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div id="userContent" class="button-area">
-                        <h2 id="userModal-points" class="p-5">
-
-                        </h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
