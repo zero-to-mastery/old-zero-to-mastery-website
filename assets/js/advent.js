@@ -10,7 +10,14 @@ const letsFetch = async (url) => {
     return data
 }
 
-let settins = { view: "card", curData: [], cron: "old"}
+let settins = { view: "card", curData: [], cron: "old", location: "home"}
+
+if(window.location.href.includes("?")){
+    locat = window.location.href
+    settins.location = locat.slice(locat.indexOf("?") + 1, locat.length)
+    console.log(settins.location)
+}
+
 
 init = async () => {
 
@@ -29,6 +36,8 @@ init = async () => {
     // Initialise Users
     userObj = await letsFetch("https://cors.io/?http://91.121.210.171:42551/user");
     userList(userObj);
+
+    if(settins.location === "leaderboard") onClick("leaderboard")
 
     // Generate Lang List
     let langArray = [];
