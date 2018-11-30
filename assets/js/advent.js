@@ -44,9 +44,8 @@ init = async () => {
 // Initialise the User List for Dropdown
 const userList = (data) => {
     data.forEach(user => {
-        // let uLink = "?user=" + user.username
         document.getElementById("studentFilter").insertAdjacentHTML('beforeend',
-            `<a class="dropdown-item" id=?user=${user.username} onclick=onClick(this.id)>${user.username}</a>`)
+            `<a class="dropdown-item" id="?user=${user.username}" onclick=onClick(this.id)>${user.username}</a>`)
     });
 }
 
