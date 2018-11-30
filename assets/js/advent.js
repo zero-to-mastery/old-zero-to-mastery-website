@@ -10,7 +10,7 @@ const letsFetch = async (url) => {
     return data
 }
 
-let settins = { view: "card", curData: [] }
+let settins = { view: "card", curData: [], cron: "old"}
 
 init = async () => {
 
@@ -53,8 +53,15 @@ const drawCards = (d) => {
 
     document.getElementById("solutions").innerHTML = ""
 
+    function compare(a, b) {
+        if(settins.cron === "new") return b.dayNumber - a.dayNumber;
+        if(settins.cron === "old") return a.dayNumber - b.dayNumber;
+    }
+
+    let sorted = d.sort(compare)
+
     if (settins.view === "card") {
-        d.forEach(sol => {
+        sorted.forEach(sol => {
             let langName = (sol.langName ? sol.langName : "unknown")
             let dbTime = new Date(sol.Time);
             let timeAgo = timeDifference(current, new Date(dbTime.getFullYear(), dbTime.getMonth(), dbTime.getDate(), dbTime.getHours(), dbTime.getMinutes(), dbTime.getSeconds(), dbTime.getMilliseconds()));
@@ -115,6 +122,18 @@ const toggleView = () => {
         settins.view = "card"
         drawCards(settins.curData)
         document.getElementById('toggler').innerHTML = "List";
+    }
+}
+
+const toggleSortCron = () => {
+    if(settins.cron === "old") {
+        settins.cron = "new"
+        document.getElementById('sortCron').innerHTML = "Newest First";
+        drawCards(settins.curData)
+    } else {
+        settins.cron = "old"
+        document.getElementById('sortCron').innerHTML = "Oldest First";
+        drawCards(settins.curData)
     }
 }
 

@@ -168,10 +168,12 @@
             <div class="adventFilter text-center">
                 <!-- Student Filter -->
                 <div class="dropdown d-inline">
-                    <a class="btn btn-outline-warning btn-sm mx-3 py-2 px-4" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                    <a class="btn btn-outline-warning btn-sm mx-2 py-2 px-4" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
-                        <div id="sf">Student Filter <i class="fas fa-caret-down"></i></div>
-                        
+                        <div id="sf">Student Filter
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+
                     </a>
 
                     <div id="studentFilter" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -180,15 +182,17 @@
                 </div>
 
                 <!-- Day Filter -->
-                <button type="button" id="df" class="btn btn-outline-warning btn-sm mx-3 py-2 px-4" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" id="df" class="btn btn-outline-warning btn-sm mx-2 py-2 px-4" data-toggle="modal" data-target="#exampleModal">
                     Date Filter
                 </button>
 
                 <!-- Lang Filter -->
                 <div class="dropdown d-inline">
-                    <a class="btn btn-outline-warning btn-sm mx-3 py-2 px-4" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                    <a class="btn btn-outline-warning btn-sm mx-2 py-2 px-4" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
-                        <div id="lf">Language Filter <i class="fas fa-caret-down"></i></div>
+                        <div id="lf">Language Filter
+                            <i class="fas fa-caret-down"></i>
+                        </div>
                     </a>
 
                     <div id="langFilter" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -198,13 +202,18 @@
 
 
                 <!-- toggle between card and list view -->
-                <button class="btn btn-outline-warning btn-sm mx-3 py-2 px-4" id="toggler" onclick="toggleView()">
+                <button class="btn btn-outline-warning btn-sm mx-2 py-2 px-4" id="toggler" onclick="toggleView()">
                     List
                 </button>
 
                 <!-- Filter Reset -->
-                <button class="btn btn-outline-warning btn-sm mx-3 py-2 px-4" onclick="onClick(`clear`)">
+                <button class="btn btn-outline-warning btn-sm mx-2 py-2 px-4" onclick="onClick(`clear`)">
                     Clear Filter
+                </button>
+
+                <!-- Filter Reset -->
+                <button class="btn btn-outline-warning btn-sm mx-2 py-2 px-4" id="sortCron" onclick="toggleSortCron()">
+                    Oldest First
                 </button>
 
             </div>
