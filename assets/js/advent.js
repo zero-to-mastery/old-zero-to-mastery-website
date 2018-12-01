@@ -193,6 +193,7 @@ const onClick = async (param) => {
     document.getElementById("lf").innerHTML = `Language Filter <i class="fas fa-caret-down"></i>`
 
     if (param === "clear") {
+        document.getElementById('toggler').disabled = false;
         document.getElementById("adventTitle").innerHTML = `All Solutions`;
         drawCards(soluObj);
     }
@@ -209,6 +210,7 @@ const onClick = async (param) => {
         drawCards(soluObj)
     }
     else {
+        document.getElementById('toggler').disabled = false;
         if (param.includes("user")) {
             document.getElementById("sf").innerHTML = `${param.slice(6)} <i class="fas fa-caret-down"></i>`
             document.getElementById("adventTitle").innerHTML = `${param.slice(6)}'s Solutions`;
