@@ -305,6 +305,21 @@ a.faq {
   margin-bottom: 0px;
 }
 
+.userSearch {
+  background: #666666;
+  border: 1px solid #ffc107;
+  border-radius: 5px;
+  padding: 8px 25px!important;
+  color: #e6e6e6
+}
+.userSearch::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(185, 185, 185);
+  opacity: 1; /* Firefox */
+}
+.userSearch:focus {
+  outline:none;
+}
+
 .button-area {
   margin: 10px auto;
   display: flex;

@@ -53,15 +53,27 @@ init = async () => {
     });
 }
 
+const userList1 = (a) => {
+    // let searchArray =[]
+    drawCards(soluObj, a)
+}
+
 // Initialise the User List for Dropdown
-const userList = (data) => {
-    data.forEach(user => {
+const userList = async (data) => {
+    let userArray = [];
+
+    await data.forEach(u => {
+        userArray.push(u.username)
+    })
+    sortedUsers = userArray.sort()
+
+    sortedUsers.forEach(user => {
         document.getElementById("studentFilter").insertAdjacentHTML('beforeend',
-            `<a class="dropdown-item" id="?user=${user.username}" onclick=onClick(this.id)>${user.username}</a>`)
+            `<a class="dropdown-item" id="?user=${user}" onclick=onClick(this.id)>${user}</a>`)
     });
 }
 
-const drawCards = (d) => {
+const drawCards = (d, filter) => {
 
     document.getElementById("solutions").innerHTML = ""
 
@@ -72,8 +84,14 @@ const drawCards = (d) => {
 
     let sorted = d.sort(compare)
 
+    let filtUsers= []
+    if(filter) sorted.forEach(f => {
+        console.log(f)
+        if(f.userName.toLowerCase().includes(filter.toLowerCase())) filtUsers.push(f)
+    });
+
     if (settins.view === "card") {
-        sorted.forEach(sol => {
+        (filter ? filtUsers : sorted).forEach(sol => {
             let langName = (sol.langName ? sol.langName : "unknown")
             let dbTime = new Date(sol.Time);
             let timeAgo = timeDifference(current, new Date(dbTime.getFullYear(), dbTime.getMonth(), dbTime.getDate(), dbTime.getHours(), dbTime.getMinutes(), dbTime.getSeconds(), dbTime.getMilliseconds()));
@@ -104,7 +122,7 @@ const drawCards = (d) => {
             )
         });
     } else if (settins.view === "list") {
-        d.forEach(sol => {
+        (filter ? filtUsers : sorted).forEach(sol => {
             let langName = (sol.langName ? sol.langName : "unknown")
             let dbTime = new Date(sol.Time);
             let timeAgo = timeDifference(current, new Date(dbTime.getFullYear(), dbTime.getMonth(), dbTime.getDate(), dbTime.getHours(), dbTime.getMinutes(), dbTime.getSeconds(), dbTime.getMilliseconds()));

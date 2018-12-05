@@ -30,8 +30,8 @@
       <img src="../assets/images/ztm.png" width="50" height="50" class="d-inline-block align-top" alt="">
     </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -43,8 +43,8 @@
       <ul class="navbar-nav ml-auto pb-2 pl-2 pr-2">
         <!-- Course Dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
             Courses
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -58,8 +58,8 @@
 
         <!-- Projects -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
             Projects
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -73,8 +73,8 @@
 
         <!-- Events -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
             Events
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -86,8 +86,8 @@
 
         <!-- Community -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
             Community
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -166,10 +166,16 @@
     <div class="container">
       <h1 id="adventTitle" class="adventTitle text-center pt-4 pb-3">Loading Solutions</h1>
       <div class="adventFilter text-center">
+
+        <!-- User Search -->
+        <div class="px-5 py-3">
+          <input type="text" class="userSearch w-100 p-2" placeholder="Student Filter" onkeyup="userList1(this.value)">
+        </div>
+
         <!-- Student Filter -->
         <div class="dropdown d-inline">
-          <a class="btn btn-outline-warning btn-sm mx-2 py-2 px-4" href="#" id="dropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <a class="btn btn-outline-warning btn-sm mx-2 py-2 px-4" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
             <div id="sf">Student Filter
               <i class="fas fa-caret-down"></i>
             </div>
@@ -182,15 +188,14 @@
         </div>
 
         <!-- Day Filter -->
-        <button type="button" id="df" class="btn btn-outline-warning btn-sm mx-2 py-2 px-4" data-toggle="modal"
-          data-target="#exampleModal">
+        <button type="button" id="df" class="btn btn-outline-warning btn-sm mx-2 py-2 px-4" data-toggle="modal" data-target="#exampleModal">
           Date Filter
         </button>
 
         <!-- Lang Filter -->
         <div class="dropdown d-inline">
-          <a class="btn btn-outline-warning btn-sm mx-2 py-2 px-4" href="#" id="dropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <a class="btn btn-outline-warning btn-sm mx-2 py-2 px-4" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
             <div id="lf">Language Filter
               <i class="fas fa-caret-down"></i>
             </div>
@@ -229,15 +234,14 @@
   <footer class="pt-5 pb-3 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Zero To Mastery 2018</p>
-      <p class="pt-2 text-center text-secondary">Built by the students for the students with a special thanks to Andrei
-        Neagoie.</p>
+      <p class="pt-2 text-center text-secondary">Built by the students for the students with a special thanks to Andrei Neagoie.
+      </p>
     </div>
     <!-- /.container -->
   </footer>
 
   <!-- Date Modal -->
-  <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+  <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header bg-warning">
