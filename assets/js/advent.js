@@ -86,7 +86,10 @@ const drawCards = (d) => {
             document.getElementById('solutions').insertAdjacentHTML('beforeend',
                 `<div class="my-3 col-sm-6 col-md-4 col-lg-3">
             <div class="card adventCard">
-                <img src=../assets/images/lang/${langName.toLowerCase()}.png class="langIcon" title="Written in: ${langName}">
+                <img src=../assets/images/lang/${langName.toLowerCase()}.png 
+                	class="langIcon" 
+                	title="Written in: ${langName}"
+                	onerror="this.src='../assets/images/lang/unknown.png';">
                 <img src=../assets/images/days/${sol.dayNumber}.png class="dayIcon" data-toggle="tooltip" data-placement="top" title="Day ${sol.dayNumber}">
                 <img class="card-img-top img-fluid" src=${sol.avatarUrl} alt=${sol.userName}>
                 <div class="card-body text-center bg-dark">
@@ -193,6 +196,7 @@ const onClick = async (param) => {
     document.getElementById("lf").innerHTML = `Language Filter <i class="fas fa-caret-down"></i>`
 
     if (param === "clear") {
+        document.getElementById('toggler').disabled = false;
         document.getElementById("adventTitle").innerHTML = `All Solutions`;
         drawCards(soluObj);
     }
@@ -209,6 +213,7 @@ const onClick = async (param) => {
         drawCards(soluObj)
     }
     else {
+        document.getElementById('toggler').disabled = false;
         if (param.includes("user")) {
             document.getElementById("sf").innerHTML = `${param.slice(6)} <i class="fas fa-caret-down"></i>`
             document.getElementById("adventTitle").innerHTML = `${param.slice(6)}'s Solutions`;
