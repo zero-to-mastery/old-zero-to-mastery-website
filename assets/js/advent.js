@@ -1,3 +1,6 @@
+const ip = "37.187.96.54"
+const port = "8001"
+
 // Function to fetch data
 const letsFetch = async (url) => {
     let data = await fetch(url).then(async (response) => {
@@ -22,19 +25,19 @@ if(window.location.href.includes("?")){
 init = async () => {
 
     // Initialise Stats
-    statObj = await letsFetch("https://cors.io/?http://91.121.210.171:42551/data");
+    statObj = await letsFetch(`https://api.zerobot.xyz/advent/data`);
     document.getElementById("statsTotal").innerHTML = statObj.all;
     document.getElementById("statsToday").innerHTML = statObj.day;
     document.getElementById("statsStudents").innerHTML = statObj.user;
 
     // Initialise Solutions
-    soluObj = await letsFetch("https://cors.io/?http://91.121.210.171:42551/solutions/all");
+    soluObj = await letsFetch(`https://api.zerobot.xyz/advent/solutions/all`);
     document.getElementById("adventTitle").innerHTML = `All Solutions`;
     drawCards(soluObj);
     settins.curData = soluObj
 
     // Initialise Users
-    userObj = await letsFetch("https://cors.io/?http://91.121.210.171:42551/user");
+    userObj = await letsFetch(`https://api.zerobot.xyz/advent/user`);
     userList(userObj);
 
     if(settins.location === "leaderboard") onClick("leaderboard")
