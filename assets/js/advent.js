@@ -104,8 +104,8 @@ const drawCards = (d, filter) => {
             document.getElementById('solutions').insertAdjacentHTML('beforeend',
                 `<div class="my-3 col-sm-6 col-md-4 col-lg-3">
             <div class="card adventCard">
-                <img src=../assets/images/lang/${langName.toLowerCase()}.png 
-                	class="langIcon" 
+                <img src=../assets/images/lang/${langName.toLowerCase()}.png
+                	class="langIcon"
                 	title="Written in: ${langName}"
                 	onerror="this.src='../assets/images/lang/unknown.png';">
                 <img src=../assets/images/days/${sol.dayNumber}.png class="dayIcon" data-toggle="tooltip" data-placement="top" title="Day ${sol.dayNumber}">
@@ -139,7 +139,7 @@ const drawCards = (d, filter) => {
             <a href=${sol.url} target="_blank" class="btn btn-outline-warning btn-sm mb-0">View Solution</a><br>
             <small>Submitted ${timeAgo}<small>
             <hr class="leaderHr">
-        </div>  
+        </div>
     `)
         });
     }
@@ -185,14 +185,30 @@ const leaderboard = (data) => {
         if (i === 0) medal = "goldMedal"
         if (i === 1) medal = "silverMedal"
         if (i === 2) medal = "bronzeMedal"
+
+        let a = '<img src=../assets/images/badges/star.png class="sizer ml-2" title="Merry Christmas">'
+
+        //badge url genrator
+        let badge;
+        if (u.badgePoint > 0) {
+          a = a+'<img src=../assets/images/badges/coffee.png class="sizer" title="Merry Christmas">'
+        }
+        if (u.badgePoint>=5) {
+          a = a+'<img src=../assets/images/badges/pro.png class="sizer ml-2" title="Merry Christmas">'
+        }
+        if (u.badgePoint>=10) {
+          a = a+'<img src=../assets/images/badges/ztm.png class="sizer ml-2" title="Merry Christmas">'
+        }
+
         document.getElementById('leaderboardd').insertAdjacentHTML('beforeend',
             `
                 <div class="m-3">
                     <img class="leaderPlace d-inline ${medal}" src=${u.avatarUrl}>
                     <div class="leaderName d-inline pt-2">${u.username}</div>
+                    ${a}
                     <div class="leaderPoints d-inline pt-2 mx-3 float-right">${u.point} Points</div>
                     <hr class="leaderHr">
-                </div>               
+                </div>
               `
         )
     });
