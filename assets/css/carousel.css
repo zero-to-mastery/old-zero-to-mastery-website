@@ -1,5 +1,6 @@
 .carousel {
   height: 85vh;
+  z-index: -1;
 }
 
 .carousel-fade .carousel-item {
@@ -42,10 +43,6 @@
     position: relative;
   }
   
-  .carousel-indicators {
-    position: absolute;
-    bottom: -80px;
-  }
   .carousel-indicators li {
     background: #000;
     color: #000;

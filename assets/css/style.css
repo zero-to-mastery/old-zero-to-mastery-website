@@ -16,6 +16,10 @@ When adding styles try to ensure the following:
 
 /* #  Global Styles  # */
 
+* {
+  box-sizing: border-box;
+}
+
 /* ################### */
 
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:200|Kaushan+Script');
