@@ -1,6 +1,5 @@
 .carousel {
   height: 85vh;
-  z-index: -1;
 }
 
 .carousel-fade .carousel-item {
