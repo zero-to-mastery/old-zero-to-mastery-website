@@ -147,6 +147,10 @@ div.desktop-wrapper iframe {
   height: 100vh;
 }
 
+.text-style {
+  width: 650px;
+}
+
 .noBullets {
   list-style-type: none;
 }
