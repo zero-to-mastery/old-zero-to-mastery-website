@@ -187,6 +187,27 @@ div.desktop-wrapper iframe {
   height: 100vh;
 }
 
+.text-style {
+  width: 650px;
+}
+
+.noBullets {
+  list-style-type: none;
+}
+
+.tic {
+  margin-right: 2%; 
+  color: purple;
+}
+
+.arrow {
+  font-size: 80%;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
 /* ################### */
 
 /* #  Projects Pages # */
