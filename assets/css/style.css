@@ -22,6 +22,30 @@ When adding styles try to ensure the following:
 
 /* ################### */
 
+/* #  Scrollbar style # */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37; 
+}
+
+/* ################### */
+
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:200|Kaushan+Script');
 .navbar {
   border-top: 5px solid #D4AF37;
@@ -30,8 +54,24 @@ When adding styles try to ensure the following:
   -moz-box-shadow: 0px 5px 24px -3px rgba(0, 0, 0, 0.88);
   box-shadow: 0px 5px 24px -3px rgba(0, 0, 0, 0.88);
 }
+
+.navbar-nav li:hover, .nav-item a:hover {
+  background-color: #888;
+  color: #D4AF37 !important;
+  transition: all 0.3s;
+}
+
+.dropdown-menu, .dropdown-divider {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu a {
+  padding: 15px;
+}
+
 .dropdown-item.active, .dropdown-item:active {
-  background-color: #e6e6e6!important
+  background-color: #e6e6e6!important;
 }
 
 /* ################### */
