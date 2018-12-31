@@ -43,13 +43,21 @@
   }
   
   .carousel-indicators li {
-    background: #000;
+    background: rgba(0, 0, 0, 0.85);
     color: #000;
     height: 30px;
     width: 30px;
     margin: 5px !important;
     border-radius: 100%;
   }
+
+  .carousel-indicators li:hover {
+    cursor: pointer;
+  }
+
+  .carousel-indicators .active {
+    background-color: rgba(255, 255, 255, 0.75);
+}
   
   .carousel-caption {
     top: 120px;
