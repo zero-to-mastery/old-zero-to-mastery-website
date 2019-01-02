@@ -61,14 +61,20 @@ When adding styles try to ensure the following:
 
 .navbar-brand:hover {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  transform: scale(1.2)
+  transform: scale(1.2);
+}
+
+.navbar-light .navbar-nav .nav-link {
+ padding: 5px;
 }
 
 .navbar-nav li:hover,
 .nav-item a:hover {
   background-color: #888;
   color: #d4af37 !important;
-  transition: all 0.3s;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-1px);
 }
 
 .dropdown-menu,
