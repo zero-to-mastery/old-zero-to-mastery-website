@@ -1,6 +1,3 @@
-const ip = "37.187.96.54"
-const port = "8001"
-
 // Function to fetch data
 const letsFetch = async (url) => {
     let data = await fetch(url).then(async (response) => {
@@ -25,19 +22,21 @@ if(window.location.href.includes("?")){
 init = async () => {
 
     // Initialise Stats
-    statObj = await letsFetch(`https://api.zerobot.xyz/advent/data`);
+    statObj = {"all":355,"day":55,"user":77};
     document.getElementById("statsTotal").innerHTML = statObj.all;
-    document.getElementById("statsToday").innerHTML = statObj.day;
     document.getElementById("statsStudents").innerHTML = statObj.user;
 
     // Initialise Solutions
-    soluObj = await letsFetch(`https://api.zerobot.xyz/advent/solutions/all`);
+    soluObj = await letsFetch('../assets/data/aoc/solutions.json');
     document.getElementById("adventTitle").innerHTML = `All Solutions`;
+    const d = new Date()
+    document.getElementById("statsToday").innerHTML = soluObj.filter(s => s.dayNumber == d.getDate()).length; 
+    document.getElementById("todays").innerHTML = d.getDate() + " Dec's Submissions"; 
     drawCards(soluObj);
     settins.curData = soluObj
 
     // Initialise Users
-    userObj = await letsFetch(`https://api.zerobot.xyz/advent/user`);
+    userObj = await letsFetch(`../assets/data/aoc/users.json`);
     userList(userObj);
 
     if(settins.location === "leaderboard") onClick("leaderboard")
@@ -109,7 +108,7 @@ const drawCards = (d, filter) => {
                 	title="Written in: ${langName}"
                 	onerror="this.src='../assets/images/lang/unknown.png';">
                 <img src=../assets/images/days/${sol.dayNumber}.png class="dayIcon" data-toggle="tooltip" data-placement="top" title="Day ${sol.dayNumber}">
-                <img class="card-img-top img-fluid" src=${sol.avatarUrl} alt=${sol.userName}>
+                <img class="card-img-top img-fluid" src=${sol.avatarUrl} alt=${sol.userName} onerror="this.src='https://robohash.org/' + this.alt + '.png?set=set4'">
                 <div class="card-body text-center bg-dark">
                     <h5 class="card-title">
                         <a class="text-white" id="userNameHolder" title=${sol.userName}>${uName}</a>
