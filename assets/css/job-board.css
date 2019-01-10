@@ -38,6 +38,7 @@ a{
     min-height: 200px;
     min-width: 200px;
     background-color: white;
+    padding-top: 20px;
 }
 
 .card-body-middle{
@@ -53,10 +54,11 @@ a{
 
 .profile-image{
     border-radius: 50%;
-    margin-left: 72px;
+    margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
     border: .25rem solid #2196f3;
+    width: 110px;
+    display: block;
 }
 
 .name{
