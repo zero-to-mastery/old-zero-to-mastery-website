@@ -7,18 +7,14 @@
   }
   
   .carousel-fade .carousel-item img {
-    height: 100%;
-    width: 100%;
-    max-width: 100%;
     background-size: cover;
-    background-origin: content-box;
-    background-clip: content-box;
-    background-position: center;
+    max-width: 100%;
+    max-height: 100vh;
+    position: relative;
     color: rgba(0, 0, 0, 0.56);
     filter: brightness(30%);
     right: 0;
-    left: 0;
-    resize: both;
+    left: 0; 
   }
   
   .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -43,22 +39,24 @@
   }
   
   .carousel-indicators li {
-    background: #000;
+    background: rgba(0, 0, 0, 0.85);
     color: #000;
     height: 30px;
     width: 30px;
     margin: 5px !important;
     border-radius: 100%;
   }
+
+  .carousel-indicators li:hover {
+    cursor: pointer;
+  }
+
+  .carousel-indicators .active {
+    background-color: rgba(255, 255, 255, 0.75);
+}
   
   .carousel-caption {
     top: 120px;
-  }
-  
-  @media (min-width: 992px) {
-    .carousel-caption {
-      top: 180px !important;
-    }
   }
   
   .carousel-caption h3 {
@@ -125,7 +123,7 @@
   
   @media (min-width: 300px) {
     .carousel-caption {
-      top: 0;
+      /* top: 0; */
       font-size: 20px;
     }
   }

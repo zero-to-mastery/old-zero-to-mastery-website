@@ -22,16 +22,79 @@ When adding styles try to ensure the following:
 
 /* ################### */
 
+/* #  Scrollbar style # */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d4af37;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* ################### */
+
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:200|Kaushan+Script');
 .navbar {
-  border-top: 5px solid #D4AF37;
+  border-top: 5px solid #d4af37;
   height: 80px;
   -webkit-box-shadow: 0px 5px 24px -3px rgba(0, 0, 0, 0.88);
   -moz-box-shadow: 0px 5px 24px -3px rgba(0, 0, 0, 0.88);
   box-shadow: 0px 5px 24px -3px rgba(0, 0, 0, 0.88);
 }
-.dropdown-item.active, .dropdown-item:active {
-  background-color: #e6e6e6!important
+
+.navbar-brand {
+  transition: all 1s;
+}
+
+.navbar-brand:hover {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  transform: scale(1.2);
+}
+
+.navbar-light .navbar-nav .nav-link {
+ padding: 5px;
+}
+
+.navbar-nav li:hover,
+.nav-item a:hover {
+  background-color: #888;
+  color: #d4af37 !important;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-1px);
+}
+
+.dropdown-menu,
+.dropdown-divider {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu a {
+  padding: 15px;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #e6e6e6 !important;
+}
+
+/* This aligns the dropdown content so that the items under 'Community' are not cut off*/
+#navbarSupportedContent {
+  padding-right: 2rem;
 }
 
 /* ################### */
@@ -101,7 +164,7 @@ div.desktop-wrapper iframe {
 }
 
 .videoTitles h2 {
-  color: #D4AF37;
+  color: #d4af37;
 }
 
 #about p {
@@ -113,13 +176,13 @@ div.desktop-wrapper iframe {
 }
 
 .coursecard h5 {
-  color: #D4AF37;
-  text-align: center
+  color: #d4af37;
+  text-align: center;
 }
 
 .coursecard p {
   color: rgba(100, 100, 100, 0.938);
-  text-align: justify
+  text-align: justify;
 }
 
 /* ################### */
@@ -145,6 +208,27 @@ div.desktop-wrapper iframe {
 
 .courseHeader {
   height: 100vh;
+}
+
+.text-style {
+  width: 650px;
+}
+
+.noBullets {
+  list-style-type: none;
+}
+
+.tic {
+  margin-right: 2%;
+  color: purple;
+}
+
+.arrow {
+  font-size: 80%;
+}
+
+.link:hover {
+  text-decoration: none;
 }
 
 /* ################### */
@@ -174,7 +258,7 @@ div.desktop-wrapper iframe {
   background-position: center;
 }
 
-h1.proj{
+h1.proj {
   color: black;
 }
 
@@ -221,7 +305,7 @@ a.faq {
 #adventHeader {
   height: 100vh;
   padding-top: 80px;
-  background: url("../images/advent/advent.png");
+  background: url('../images/advent/advent.png');
   background-size: cover;
   background-position: center;
   padding: 15em 0;
@@ -230,18 +314,18 @@ a.faq {
 #adventHeader h1 {
   font-family: 'Kaushan Script', cursive;
   font-size: 5em;
-  color: #ffffff
+  color: #ffffff;
 }
 
 #adventHeader .year {
   font-family: 'Titillium Web', sans-serif;
-  color: #D4AF37;
+  color: #d4af37;
   border: 2px #e9ecef solid;
   border-left: 0px;
   border-right: 0px;
   width: 150px;
   margin: 15px auto;
-  padding: 1px
+  padding: 1px;
 }
 
 .sizer {
@@ -250,9 +334,13 @@ a.faq {
 }
 
 .adventStats {
-  background-image: linear-gradient(to bottom, #0f0f23 0%, rgb(36, 36, 36) 100%);
+  background-image: linear-gradient(
+    to bottom,
+    #0f0f23 0%,
+    rgb(36, 36, 36) 100%
+  );
   padding: 30px 0 20px 0;
-  border-top: 1px #2e2e2e solid
+  border-top: 1px #2e2e2e solid;
 }
 
 .adventContent {
@@ -261,21 +349,25 @@ a.faq {
 }
 
 .adventFilter {
-  background-image: linear-gradient(to bottom, #6b6b6b 0%, rgb(36, 36, 36) 100%);
+  background-image: linear-gradient(
+    to bottom,
+    #6b6b6b 0%,
+    rgb(36, 36, 36) 100%
+  );
   border-radius: 5px;
   padding: 18px 0;
 }
 
 .adventStats i {
   color: rgba(153, 153, 153, 0.123);
-  font-size: 4em
+  font-size: 4em;
 }
 
 .adventStats h2 {
-  color: #D4AF37;
+  color: #d4af37;
   font-size: 3em;
   font-family: 'Titillium Web', sans-serif;
-  margin-bottom: 0px
+  margin-bottom: 0px;
 }
 
 .adventStats p {
@@ -293,7 +385,7 @@ a.faq {
 }
 
 .adventCard {
-  border-radius: 10px
+  border-radius: 10px;
 }
 
 .adventCard > .card-img-top {
@@ -314,15 +406,16 @@ a.faq {
   background: #666666;
   border: 1px solid #ffc107;
   border-radius: 5px;
-  padding: 8px 25px!important;
-  color: #e6e6e6
+  padding: 8px 25px !important;
+  color: #e6e6e6;
 }
-.userSearch::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.userSearch::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: rgb(185, 185, 185);
   opacity: 1; /* Firefox */
 }
 .userSearch:focus {
-  outline:none;
+  outline: none;
 }
 
 .button-area {
@@ -336,7 +429,7 @@ a.faq {
 
 .button-area a {
   background: rgba(241, 240, 240, 0.795);
-  border: 2px #D4AF37 solid;
+  border: 2px #d4af37 solid;
   border-radius: 10px;
   padding: 1em 1.4em;
   margin: 0.45em;
@@ -362,7 +455,7 @@ a.faq {
   height: 70px;
   position: absolute;
   top: 1px;
-  right: 10px
+  right: 10px;
 }
 
 .dayIcon {
@@ -378,28 +471,28 @@ a.faq {
   border-radius: 50%;
   background: rgb(68, 68, 68);
   padding: 5px;
-  margin: 0 25px
+  margin: 0 25px;
 }
-.leaderName{
+.leaderName {
   font-size: 1.2em;
   font-weight: bolder;
 }
-.leaderPoints{
+.leaderPoints {
   position: relative;
-  right: 10px
+  right: 10px;
 }
-.leaderHr{
-  border-color: #4d4d4d
+.leaderHr {
+  border-color: #4d4d4d;
 }
 
 .goldMedal {
-  background-color: #D4AF37
+  background-color: #d4af37;
 }
 .silverMedal {
-  background-color: silver
+  background-color: silver;
 }
 .bronzeMedal {
-  background-color: rgb(100, 55, 3)
+  background-color: rgb(100, 55, 3);
 }
 .listImg {
   width: 50px;
