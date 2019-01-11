@@ -122,7 +122,7 @@ a{
 }
 
 .cardui-body:hover .place{
-    background-color: whitesmoke;
+    background-color: rgb(238, 231, 231);
     transition: .2s ease-in;
 }
 
