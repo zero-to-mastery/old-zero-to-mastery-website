@@ -1,5 +1,6 @@
 .carousel {
   height: auto;
+  margin-top: 80px;
 }
 
 .carousel-fade .carousel-item {
@@ -8,8 +9,9 @@
   
   .carousel-fade .carousel-item img {
     background-size: cover;
+    min-height: 250px;
     max-width: 100%;
-    max-height: 100vh;
+    max-height: calc(100vh - 80px);
     position: relative;
     color: rgba(0, 0, 0, 0.56);
     filter: brightness(30%);
@@ -17,6 +19,7 @@
     left: 0; 
   }
   
+@media (min-width: 600px){
   .carousel-control-prev-icon, .carousel-control-next-icon {
     height: 60px;
     width: 60px;
@@ -26,6 +29,7 @@
     font-size: 40px;
     border-radius: 100%;
   }
+}
   
   .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
     opacity: 9;
@@ -38,6 +42,7 @@
     position: relative;
   }
   
+@media (min-width: 600px){
   .carousel-indicators li {
     background: rgba(0, 0, 0, 0.85);
     color: #000;
@@ -46,6 +51,7 @@
     margin: 5px !important;
     border-radius: 100%;
   }
+}
 
   .carousel-indicators li:hover {
     cursor: pointer;
@@ -55,9 +61,13 @@
     background-color: rgba(255, 255, 255, 0.75);
 }
   
+@media (min-width: 400px){
   .carousel-caption {
-    top: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
   }
+}
   
   .carousel-caption h3 {
     font-size: 60px;
@@ -78,7 +88,6 @@
   
   .carousel-caption p {
     font-size: 30px;
-    margin-top: 20px;
     text-align: center;
   }
   
@@ -94,31 +103,6 @@
     border: 2px solid #fff;
     border-radius: 0;
     position: relative;
-    top: 1.5rem;
-  }
-  
-  @media (min-width: 300px) {
-    .img-fluid.w-100.d-block {
-      height: auto;
-    }
-  }
-  
-  @media (min-width: 576px) {
-    .img-fluid.w-100.d-block {
-      height: auto;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .img-fluid.w-100.d-block {
-      height: auto;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .img-fluid.w-100.d-block {
-      height: 100vh;
-    }
   }
   
   @media (min-width: 300px) {
@@ -138,11 +122,6 @@
     font-size: 15px;
   }
   
-  @media (min-width: 768px) {
-    .carousel-caption {
-      top: 100px;
-    }
-  }
   
   @media (min-width: 768px) {
     .carousel-caption h3 {
