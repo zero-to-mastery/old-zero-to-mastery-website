@@ -108,8 +108,33 @@ When adding styles try to ensure the following:
 .langs {
   background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f4f4f4' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
-  margin-top: 100px;
+  display: flex;
 }
+
+.langs img {
+  padding:5px;
+  max-width: 25%;
+  -moz-transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+@media (min-width: 990px){
+  .langs img {
+    padding:10px;
+    max-width: 20%;
+  }
+}
+
+.langs img:hover {
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 
 .ham-content {
   background-color: #f8f9fa;
