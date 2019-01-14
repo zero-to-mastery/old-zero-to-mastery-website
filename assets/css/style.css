@@ -68,6 +68,12 @@ When adding styles try to ensure the following:
  padding: 5px;
 }
 
+.nav-link {
+  text-transform: uppercase;
+}
+
+
+
 .navbar-nav li:hover,
 .nav-item a:hover {
   background-color: #888;
@@ -112,7 +118,7 @@ When adding styles try to ensure the following:
 }
 
 .langs img {
-  padding:5px;
+  padding:0 45px;
   max-width: 25%;
   -moz-transition: all .5s linear;
   -webkit-transition: all .5s linear;
