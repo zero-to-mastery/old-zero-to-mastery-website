@@ -216,6 +216,14 @@ div.desktop-wrapper iframe {
   text-align: justify;
 }
 
+.coursecard {
+  transition: all 0.5s;
+}
+
+.coursecard:hover {
+  transform: scale(1.05);
+}
+
 /* ################### */
 
 /* #   Course Pages  # */
