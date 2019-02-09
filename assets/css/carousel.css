@@ -46,8 +46,8 @@
   .carousel-indicators li {
     background: rgba(0, 0, 0, 0.85);
     color: #000;
-    height: 30px;
-    width: 30px;
+    height: 15px;
+    width: 15px;
     margin: 5px !important;
     border-radius: 100%;
   }
