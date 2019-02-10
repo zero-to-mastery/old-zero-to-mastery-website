@@ -196,6 +196,7 @@ div.desktop-wrapper iframe {
 
 .videoTitles h2 {
   color: #d4af37;
+  font-size: 5vw;
 }
 
 #about p {
@@ -214,6 +215,14 @@ div.desktop-wrapper iframe {
 .coursecard p {
   color: rgba(100, 100, 100, 0.938);
   text-align: justify;
+}
+
+.coursecard {
+  transition: all 0.5s;
+}
+
+.coursecard:hover {
+  transform: scale(1.05);
 }
 
 /* ################### */
@@ -242,7 +251,7 @@ div.desktop-wrapper iframe {
 }
 
 .text-style {
-  width: 650px;
+  width: 100vw;
 }
 
 .noBullets {
