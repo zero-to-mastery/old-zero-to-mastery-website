@@ -98,6 +98,11 @@ When adding styles try to ensure the following:
   background-color: #e6e6e6 !important;
 }
 
+.dropdown:hover .dropdown-menu{
+  display: block;
+  margin-top: 0;
+}
+
 /* This aligns the dropdown content so that the items under 'Community' are not cut off*/
 #navbarSupportedContent {
   padding-right: 2rem;
