@@ -181,6 +181,7 @@ When adding styles try to ensure the following:
     left: 0;
     width: 100%;
     height: 100%;
+    cursor: alias;
 }
 
 div.desktop-wrapper {
