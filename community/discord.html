@@ -1,178 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
+    <title>Zero To Mastery - Become a Web Dev Today</title>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.ico" />
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
-  <title>Zero To Mastery - Become a Web Dev Today</title>
-  <link rel="icon" type="image/png" href="../assets/images/favicon.ico">
+    <!-- Custom styles for this template -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+  </head>
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light mb-5">
+      <a class="navbar-brand" href="../index.html">
+        <img
+          src="../assets/images/ztm.png"
+          width="50"
+          height="50"
+          class="d-inline-block align-top"
+          alt=""
+        />
+      </a>
 
-  <!-- Custom styles for this template -->
-  <link href="../assets/css/style.css" rel="stylesheet">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-</head>
+      <div
+        class="collapse navbar-collapse ham-content"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav"></ul>
 
-<body>
+        <ul class="navbar-nav ml-auto pb-2 pl-2 pr-2">
+          <!-- Course Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Courses
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../courses/zero-to-mastery.html"
+                >Zero to Mastery</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../courses/junior-to-senior.html"
+                >Junior to Senior</a
+              >
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                href="../courses/master-the-coding-interview.html"
+                >Master the Coding Interview</a
+              >
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                href="../courses/advanced-javascript.html"
+                >Advance Javascript Concepts</a
+              >
+            </div>
+          </li>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light mb-5">
-    <a class="navbar-brand" href="../index.html">
-      <img src="../assets/images/ztm.png" width="50" height="50" class="d-inline-block align-top" alt="">
-    </a>
+          <!-- Projects -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a
+                class="dropdown-item"
+                href="../projects/collaboration-projects.html"
+                >Collaboration Projects</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../projects/coding-challenges.html"
+                >Coding Challenges</a
+              >
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                href="../projects/project-of-the-month.html"
+                >Project of the Month</a
+              >
+            </div>
+          </li>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+          <!-- Events -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Events
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../events/advent-of-code.html"
+                >Advent Of Code</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../events/past-events.html"
+                >Past Events</a
+              >
+            </div>
+          </li>
 
-    <div class="collapse navbar-collapse ham-content" id="navbarSupportedContent">
+          <!-- Community -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Community
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../community/discord.html"
+                >Discord</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../community/resources.html"
+                >Handy Resources</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../community/questions-board.html"
+                >Question Board</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../community/job-board.html"
+                >Job Board</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-      <ul class="navbar-nav">
-      </ul>
+    <!-- Header Image -->
+    <header id="discord" class="communityHeader">
+      <!-- Header Image via CSS -->
+    </header>
 
-      <ul class="navbar-nav ml-auto pb-2 pl-2 pr-2">
-        <!-- Course Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Courses
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="../courses/zero-to-mastery.html">Zero to Mastery</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../courses/junior-to-senior.html">Junior to Senior</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../courses/master-the-coding-interview.html">Master the Coding Interview</a>
-          </div>
-        </li>
+    <!-- Content -->
+    <section class="py-5">
+      <div class="container">
+        <p>
+          To make sure that you all succeed with the courses, we have an online
+          community of thousands of developers helping to answer questions and
+          talk about all things programming and web development!
+        </p>
+        <p>
+          This community is a valuable resource, especially in your early stages
+          as a developer. Take the opportunity to chat, discuss and ask
+          questions with other members. You will also find lots of interesting
+          articles posted by your fellow students.
+        </p>
+        <p>
+          "Why Discord?" A lot of companies use Discord to communicate across
+          teams and is a valuable tool for you to learn as you become a
+          developer. In the spirit of keeping the course as useful as possible
+          for employment this year, we are introducing a Discord online
+          classroom where you can:
+        </p>
+        <ul>
+          <li>Introduce yourself</li>
+          <li>Ask the community questions</li>
+          <li>Get help with exercises</li>
+          <li>Meet other students around the world</li>
+          <li>Learn how to answer questions</li>
+          <li>Learn from each other</li>
+        </ul>
+        <p>
+          Many students have said this is the best part of the course as you
+          will feel like you are learning in a classroom rather than by yourself
+          in front of a computer. I know it isn&#8217;t for everybody, but being
+          able to ask questions and help others when they have questions is the
+          best way to learn. The Discord community should give you faster
+          replies from the community and learn another valuable tool of a
+          developer. I hope you find it useful. Once there, you can sign up, and
+          click on channels to explore different topics.
+        </p>
+        <p>
+          If you need help using discord your should check out the
+          #using-discord channel. Feel free to reach out to a member of the
+          @management team if your still have questions. I&#8217;ll see you in
+          there!
+        </p>
 
-        <!-- Projects -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Projects
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="../projects/collaboration-projects.html">Collaboration Projects</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../projects/coding-challenges.html">Coding Challenges</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../projects/project-of-the-month.html">Project of the Month</a>
-          </div>
-        </li>
+        <h3 class="text-center" id="discord-rules">RULES</h3>
+        A few simple common sense rules to keep the community a friendly
+        enviornment, a good rule of thumb would be to conduct yourself as you
+        would at work.
+        <ul>
+          <li>Keeping on topic</li>
+          <li>Keep discussion in relevant channels</li>
+          <li>Pinging</li>
+          <li>Do not ping server members or groups unnecessarily</li>
+          <li>Work safe</li>
+          <li>No spam, NSFW, or otherwise offensive content</li>
+          <li>Friendly</li>
+          <li>
+            Be nice to everyone, and try to keep this a friendly environment
+          </li>
+          <li>Have Fun!</li>
+          <li>Keep coding :D</li>
+        </ul>
+      </div>
+    </section>
 
-        <!-- Events -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Events
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="../events/advent-of-code.html">Advent Of Code</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../events/past-events.html">Past Events</a>
-          </div>
-        </li>
+    <!-- Footer -->
+    <footer class="pt-5 pb-3 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Copyright &copy; <span class="year-footer">2018</span> Zero To Mastery
+        </p>
+        <p class="pt-2 text-center text-secondary">
+          Built by the students for the students with a special thanks to Andrei
+          Neagoie <3.
+        </p>
+      </div>
+      <!-- /.container -->
+    </footer>
 
-        <!-- Community -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Community
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="../community/discord.html">Discord</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../community/resources.html">Handy Resources</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../community/questions-board.html">Question Board</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../community/job-board.html">Job Board</a>
-          </div>
-        </li>
-      </ul>
-
-    </div>
-  </nav>
-
-  <!-- Header Image -->
-  <header id="discord" class="communityHeader">
-    <!-- Header Image via CSS -->
-  </header>
-
-  <!-- Content -->
-  <section class="py-5">
-    <div class="container">
-      <p>To make sure that you all succeed with the courses, we have an online community of thousands of developers
-        helping to answer questions and talk about all things programming and web development!</p>
-      <p>This community is a valuable resource, especially in your early stages as a developer. Take the opportunity to
-        chat, discuss and ask questions with other members. You will also find lots of interesting articles posted by
-        your fellow students.</p>
-      <p>"Why Discord?" A lot of companies use Discord to communicate across teams and is a valuable tool for you to
-        learn as you become a developer. In the spirit of keeping the course as useful as possible for employment this
-        year, we are introducing a Discord online classroom where you can:</p>
-      <ul>
-        <li>Introduce yourself</li>
-        <li>Ask the community questions</li>
-        <li>Get help with exercises</li>
-        <li>Meet other students around the world</li>
-        <li>Learn how to answer questions</li>
-        <li>Learn from each other</li>
-      </ul>
-      <p>Many students have said this is the best part of the course as you will feel like you are learning in a
-        classroom rather than by yourself in front of a computer. I know it isn&#8217;t for everybody, but being able
-        to ask questions and help others when they have questions is the best way to learn. The Discord community
-        should give you faster replies
-        from the community and learn another valuable tool of a developer. I hope you find it useful.
-
-        Once there, you can sign up, and click on channels to explore different topics.</p>
-      <p>If you need help using discord your should check out the #using-discord channel. Feel free to reach out to a
-        member of the @management team if your still have questions. I&#8217;ll see you in there!</p>
-
-      <h3 class="text-center" id="discord-rules"> RULES </h3>
-      A few simple common sense rules to keep the community a friendly enviornment, a good rule of thumb would be to
-      conduct yourself as you would at work.
-      <ul>
-        <li>Keeping on topic</li>
-        <li>Keep discussion in relevant channels</li>
-        <li>Pinging</li>
-        <li>Do not ping server members or groups unnecessarily</li>
-        <li>Work safe</li>
-        <li>No spam, NSFW, or otherwise offensive content</li>
-        <li>Friendly</li>
-        <li>Be nice to everyone, and try to keep this a friendly environment</li>
-        <li>Have Fun!</li>
-        <li>Keep coding :D</li>
-      </ul>
-    </div>
-  </section>
-
-
-  <!-- Footer -->
-  <footer class="pt-5 pb-3 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; <span class="year-footer">2018</span> Zero To Mastery </p>
-      <p class="pt-2 text-center text-secondary">Built by the students for the students with a special thanks to Andrei
-        Neagoie <3.</p> </div> <!-- /.container -->
-  </footer>
-
-  <script src="../assets/js/scripts.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
-</body>
-
+    <script src="../assets/js/scripts.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
