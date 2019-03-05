@@ -83,15 +83,19 @@ When adding styles try to ensure the following:
 
 .nav-link {
     text-transform: uppercase;
+    margin: 0 5px;
 }
 
-.navbar-nav li:hover,
-.nav-item a:hover {
+.navbar-nav li:hover {
     background-color: #888;
-    color: #d4af37 !important;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
     transform: translateY(-1px);
+}
+
+.nav-item a:hover {
+    color: #d4af37 !important;
+    transition: all 0.3s ease-in-out;
 }
 
 .dropdown-menu,
