@@ -1,280 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
+    <title>Zero To Mastery - Become a Web Dev Today</title>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.ico" />
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
-  <title>Zero To Mastery - Become a Web Dev Today</title>
-  <link rel="icon" type="image/png" href="../assets/images/favicon.ico">
+    <!-- Custom styles for this template -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+  </head>
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light mb-5">
+      <a class="navbar-brand" href="../index.html">
+        <img
+          src="../assets/images/ztm.png"
+          width="50"
+          height="50"
+          class="d-inline-block align-top"
+          alt=""
+        />
+      </a>
 
-  <!-- Custom styles for this template -->
-  <link href="../assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-</head>
+      <div
+        class="collapse navbar-collapse ham-content"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav"></ul>
 
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light mb-5">
-    <a class="navbar-brand" href="../index.html">
-      <img src="../assets/images/ztm.png" width="50" height="50" class="d-inline-block align-top" alt="">
-    </a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse ham-content" id="navbarSupportedContent">
-
-      <ul class="navbar-nav">
-      </ul>
-
-      <ul class="navbar-nav ml-auto pb-2 pl-2 pr-2">
-        <!-- Course Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            Courses
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="../courses/zero-to-mastery.html">Zero to Mastery</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../courses/junior-to-senior.html">Junior to Senior</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../courses/master-the-coding-interview.html">Master the Coding Interview</a>
-          </div>
-        </li>
-
-        <!-- Projects -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            Projects
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="../projects/collaboration-projects.html">Collaboration Projects</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../projects/coding-challenges.html">Coding Challenges</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../projects/project-of-the-month.html">Project of the Month</a>
-          </div>
-        </li>
-
-        <!-- Events -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            Events
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="../events/advent-of-code.html">Advent Of Code</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../events/past-events.html">Past Events</a>
-          </div>
-        </li>
-
-        <!-- Community -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            Community
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="../community/discord.html">Discord</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../community/resources.html">Handy Resources</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../community/questions-board.html">Question Board</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="../community/job-board.html">Job Board</a>
-          </div>
-        </li>
-      </ul>
-
-    </div>
-  </nav>
-
-  <section id="adventHeader" class="text-center">
-    <div class="advOverlay">
-      <h1>Advent of Code</h1>
-      <h2 class="year">2018</h2>
-      <a class="btn btn-outline-light" target="blank" href="https://adventofcode.com/">About AoC</a>
-    </div>
-  </section>
-
-  <section>
-    <div class="adventStats">
-      <div class="container text-center">
-        <div class="row">
-          <!-- Total Submissions -->
-          <div class="col-md-4 ">
-            <i class="far fa-file-code"></i>
-            <h2 id="statsTotal">
-              <i class="fa fa-spinner fa-spin" style="color: #D4AF37; font-size: 0.8em"></i>
-            </h2>
-            <p class="text-muted">Total Submissions</p>
-          </div>
-          <!-- Todays Submissions  -->
-          <div class="col-md-4 ">
-            <i class="far fa-calendar-alt"></i>
-            <h2 id="statsToday">
-              <i class="fa fa-spinner fa-spin" style="color: #D4AF37; font-size: 0.8em"></i>
-            </h2>
-            <p id="todays" class="text-muted">Todays Submissions</p>
-          </div>
-          <!-- Total Students  -->
-          <div class="col-md-4 ">
-            <i class="fas fa-users"></i>
-            <h2 id="statsStudents">
-              <i class="fa fa-spinner fa-spin" style="color: #D4AF37; font-size: 0.8em"></i>
-            </h2>
-            <p class="text-muted">Total Students</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="adventSubNav p-4">
-      <div class="container text-center">
-        <!-- Leaderboard -->
-        <button class="btn btn-outline-warning btn-sm mx-3 py-2 px-4" onclick="onClick(`solutions`)">
-          Solutions
-        </button>
-        <!-- Leaderboard -->
-        <button class="btn btn-outline-warning btn-sm mx-3 py-2 px-4" onclick="onClick(`leaderboard`)">
-          Leaderboard
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Content -->
-  <section class="adventContent">
-    <div class="container">
-      <h1 id="adventTitle" class="adventTitle text-center pt-4 pb-3">Loading Solutions</h1>
-      <div class="adventFilter text-center">
-
-        <!-- User Search -->
-        <div class="px-5 py-3">
-          <input type="text" class="userSearch w-100 p-2" placeholder="Student Filter" onkeyup="userList1(this.value)">
-        </div>
-
-        <!-- Student Filter -->
-        <div class="dropdown d-inline">
-          <a class="btn btn-outline-warning btn-sm mx-2 py-2 px-4" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            <div id="sf">Student Filter
-              <i class="fas fa-caret-down"></i>
+        <ul class="navbar-nav ml-auto pb-2 pl-2 pr-2">
+          <!-- Course Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Courses
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../courses/zero-to-mastery.html"
+                >Zero to Mastery</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../courses/junior-to-senior.html"
+                >Junior to Senior</a
+              >
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                href="../courses/master-the-coding-interview.html"
+                >Master the Coding Interview</a
+              >
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                href="../courses/advanced-javascript.html"
+                >Advance Javascript Concepts</a
+              >
             </div>
+          </li>
 
-          </a>
-
-          <div id="studentFilter" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <!-- Dropdown items, dynamically generated -->
-          </div>
-        </div>
-
-        <!-- Day Filter -->
-        <button type="button" id="df" class="btn btn-outline-warning btn-sm mx-2 py-2 px-4" data-toggle="modal" data-target="#exampleModal">
-          Date Filter
-        </button>
-
-        <!-- Lang Filter -->
-        <div class="dropdown d-inline">
-          <a class="btn btn-outline-warning btn-sm mx-2 py-2 px-4" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            <div id="lf">Language Filter
-              <i class="fas fa-caret-down"></i>
+          <!-- Projects -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a
+                class="dropdown-item"
+                href="../projects/collaboration-projects.html"
+                >Collaboration Projects</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../projects/coding-challenges.html"
+                >Coding Challenges</a
+              >
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                href="../projects/project-of-the-month.html"
+                >Project of the Month</a
+              >
             </div>
-          </a>
+          </li>
 
-          <div id="langFilter" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <!-- Dropdown items, dynamically generated -->
+          <!-- Events -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Events
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../events/advent-of-code.html"
+                >Advent Of Code</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../events/past-events.html"
+                >Past Events</a
+              >
+            </div>
+          </li>
+
+          <!-- Community -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Community
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../community/discord.html"
+                >Discord</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../community/resources.html"
+                >Handy Resources</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../community/questions-board.html"
+                >Question Board</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../community/job-board.html"
+                >Job Board</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="adventHeader" class="text-center">
+      <div class="advOverlay">
+        <h1>Advent of Code</h1>
+        <h2 class="year">2018</h2>
+        <a
+          class="btn btn-outline-light"
+          target="blank"
+          href="https://adventofcode.com/"
+          >About AoC</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <div class="adventStats">
+        <div class="container text-center">
+          <div class="row">
+            <!-- Total Submissions -->
+            <div class="col-md-4 ">
+              <i class="far fa-file-code"></i>
+              <h2 id="statsTotal">
+                <i
+                  class="fa fa-spinner fa-spin"
+                  style="color: #D4AF37; font-size: 0.8em"
+                ></i>
+              </h2>
+              <p class="text-muted">Total Submissions</p>
+            </div>
+            <!-- Todays Submissions  -->
+            <div class="col-md-4 ">
+              <i class="far fa-calendar-alt"></i>
+              <h2 id="statsToday">
+                <i
+                  class="fa fa-spinner fa-spin"
+                  style="color: #D4AF37; font-size: 0.8em"
+                ></i>
+              </h2>
+              <p id="todays" class="text-muted">Todays Submissions</p>
+            </div>
+            <!-- Total Students  -->
+            <div class="col-md-4 ">
+              <i class="fas fa-users"></i>
+              <h2 id="statsStudents">
+                <i
+                  class="fa fa-spinner fa-spin"
+                  style="color: #D4AF37; font-size: 0.8em"
+                ></i>
+              </h2>
+              <p class="text-muted">Total Students</p>
+            </div>
           </div>
         </div>
-
-
-        <!-- toggle between card and list view -->
-        <button class="btn btn-outline-warning btn-sm mx-2 py-2 px-4" id="toggler" onclick="toggleView()">
-          List
-        </button>
-
-        <!-- Filter Reset -->
-        <button class="btn btn-outline-warning btn-sm mx-2 py-2 px-4" onclick="onClick(`clear`)">
-          Clear Filter
-        </button>
-
-        <!-- Filter Reset -->
-        <button class="btn btn-outline-warning btn-sm mx-2 py-2 px-4" id="sortCron" onclick="toggleSortCron()">
-          Oldest First
-        </button>
-
       </div>
-      <!-- solutions-card -->
-      <div id="solutions" class="row mt-4 text-center">
-        <h3 class="my-5 w-100">Loading...</h3>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="pt-5 pb-3 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; <span class="year-footer">2018</span> Zero To Mastery </p>
-      <p class="pt-2 text-center text-secondary">Built by the students for the students with a special thanks to Andrei Neagoie.
-      </p>
-    </div>
-    <!-- /.container -->
-  </footer>
-
-  <!-- Date Modal -->
-  <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header bg-warning">
-          <h5 class="modal-title" id="exampleModalLabel">Select Date</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+    <section>
+      <div class="adventSubNav p-4">
+        <div class="container text-center">
+          <!-- Leaderboard -->
+          <button
+            class="btn btn-outline-warning btn-sm mx-3 py-2 px-4"
+            onclick="onClick(`solutions`)"
+          >
+            Solutions
+          </button>
+          <!-- Leaderboard -->
+          <button
+            class="btn btn-outline-warning btn-sm mx-3 py-2 px-4"
+            onclick="onClick(`leaderboard`)"
+          >
+            Leaderboard
           </button>
         </div>
-        <div class="modal-body">
-          <div id="calBtn" class="button-area">
+      </div>
+    </section>
 
+    <!-- Content -->
+    <section class="adventContent">
+      <div class="container">
+        <h1 id="adventTitle" class="adventTitle text-center pt-4 pb-3">
+          Loading Solutions
+        </h1>
+        <div class="adventFilter text-center">
+          <!-- User Search -->
+          <div class="px-5 py-3">
+            <input
+              type="text"
+              class="userSearch w-100 p-2"
+              placeholder="Student Filter"
+              onkeyup="userList1(this.value)"
+            />
+          </div>
+
+          <!-- Student Filter -->
+          <div class="dropdown d-inline">
+            <a
+              class="btn btn-outline-warning btn-sm mx-2 py-2 px-4"
+              href="#"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <div id="sf">
+                Student Filter
+                <i class="fas fa-caret-down"></i>
+              </div>
+            </a>
+
+            <div
+              id="studentFilter"
+              class="dropdown-menu"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <!-- Dropdown items, dynamically generated -->
+            </div>
+          </div>
+
+          <!-- Day Filter -->
+          <button
+            type="button"
+            id="df"
+            class="btn btn-outline-warning btn-sm mx-2 py-2 px-4"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            Date Filter
+          </button>
+
+          <!-- Lang Filter -->
+          <div class="dropdown d-inline">
+            <a
+              class="btn btn-outline-warning btn-sm mx-2 py-2 px-4"
+              href="#"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <div id="lf">
+                Language Filter
+                <i class="fas fa-caret-down"></i>
+              </div>
+            </a>
+
+            <div
+              id="langFilter"
+              class="dropdown-menu"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <!-- Dropdown items, dynamically generated -->
+            </div>
+          </div>
+
+          <!-- toggle between card and list view -->
+          <button
+            class="btn btn-outline-warning btn-sm mx-2 py-2 px-4"
+            id="toggler"
+            onclick="toggleView()"
+          >
+            List
+          </button>
+
+          <!-- Filter Reset -->
+          <button
+            class="btn btn-outline-warning btn-sm mx-2 py-2 px-4"
+            onclick="onClick(`clear`)"
+          >
+            Clear Filter
+          </button>
+
+          <!-- Filter Reset -->
+          <button
+            class="btn btn-outline-warning btn-sm mx-2 py-2 px-4"
+            id="sortCron"
+            onclick="toggleSortCron()"
+          >
+            Oldest First
+          </button>
+        </div>
+        <!-- solutions-card -->
+        <div id="solutions" class="row mt-4 text-center">
+          <h3 class="my-5 w-100">Loading...</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-3 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Copyright &copy; <span class="year-footer">2018</span> Zero To Mastery
+        </p>
+        <p class="pt-2 text-center text-secondary">
+          Built by the students for the students with a special thanks to Andrei
+          Neagoie.
+        </p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Date Modal -->
+    <div
+      class="modal fade "
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title" id="exampleModalLabel">Select Date</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="calBtn" class="button-area"></div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/scripts.js"></script>
+    <!-- Bootstrap core JavaScript -->
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="../assets/js/scripts.js"></script>
-  <!-- Bootstrap core JavaScript -->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script src="../assets/js/advent.js"></script>
-  <script>
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
-  </script>
-</body>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/advent.js"></script>
+    <script>
+      $(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
 </html>
