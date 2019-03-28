@@ -39,7 +39,7 @@ const displayProjects = () => {
                 return resp.json();
             }).then(contributors => {
                 let pull_requests = contributors.reduce((acc, val) => acc + val.contributions, 0);
-                document.getElementById("projects").insertAdjacentHTML("beforeend", 
+                document.getElementById("projects").insertAdjacentHTML("beforeend",
                 `
                 <div class="my-3 col-sm-6 col-md-4 col-lg-3 osProject">
                     <div class="card adventCard">
@@ -50,7 +50,7 @@ const displayProjects = () => {
                         <div class="card-body text-center bg-dark">
                             <h6 class="btn-outline-warning">Contributors: ${contributors.length}</h6>
                             <h6 class="btn-outline-warning">Pull requests: ${pull_requests}</h6>
-                            <a href=${project.projectUrl} class="btn btn-outline-warning btn-sm mt-3 mb-0">Contribute Now</a>
+                            <a href=${project.projectUrl} target="_blank" class="btn btn-outline-warning btn-sm mt-3 mb-0">Contribute Now</a>
                         </div>
                     </div>
                 </div>
