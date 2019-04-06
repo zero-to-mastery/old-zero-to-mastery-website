@@ -623,7 +623,7 @@ a.faq {
 /* # Resources Page # */
 .cat {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: minmax(150px, 1fr) 2fr;
     padding: 25px 0;
     border-bottom: solid 0.5px black;
 }
@@ -654,6 +654,8 @@ a.faq {
     /* list-style: none; */
 }
 
-.cat-list ul li {
-    /* display: flex; */
+@media only screen and (max-width: 800px) {
+    .cat-list ul {
+        height: min-content;
+    }
 }
