@@ -13,14 +13,14 @@ Re-developing  https://zerotomastery.io/
 **A Note from Andrei: This is 100% a community run (0 involvement from me) from day 1 and all procceeds from this website go into supporting our open source projects (i.e. hosting, domains).**
 
 ## Intro
-Zero-to-Mastery and the community has grown into so much more than ever could have been imagined when this project was first created. Each month brings many more new students to the community with many new ideas, leaving this website and project, outdated and under utilised. 
+Zero-to-Mastery and the community has grown into so much more than ever could have been imagined when this project was first created. Each month brings many more new students to the community with many new ideas, leaving this website and project, outdated and under utilised.
 
 The aim of this event is to bring together all that ZTM has to offer, into a single weblication. A community portal, where students a like can find resources they may not have known existed before now.
 
 ## Features
 
-#### Courses Page 
-A page containing details of each course, some reviews and sign up buttons. 
+#### Courses Page
+A page containing details of each course, some reviews and sign up buttons.
 Udemy's API, might be something we could use in this.
 
 -----
@@ -30,7 +30,7 @@ Listing all the group projects available, what language/tech they use. Also info
 
 -----
 
-#### Coding Challenges 
+#### Coding Challenges
 
 List all previous coding challenges & entries, utilising a JSON file structure to allow adding new challenges quickly and easily. Making it easier for new students to go back and try previous challenges.
 
@@ -42,9 +42,9 @@ Integrate the Job Board
 
 -----
 
-#### Resources (https://github.com/zero-to-mastery/resources)  
+#### Resources Page  
 
-Integrate the Resources Website
+Add more categories and/or links to the list.
 
 -----
 
@@ -54,7 +54,7 @@ Information and links to zeroOverflow
 
 -----
 
-#### Discord 
+#### Discord
 
 Information about the Discord Community, along with guides on using Discord.
 
@@ -69,5 +69,3 @@ Theme: Light and Elegant
 - You can use the **#group-project** channel on Discord to discuss anything related to this project.  
 
 Happy coding!
-
-
