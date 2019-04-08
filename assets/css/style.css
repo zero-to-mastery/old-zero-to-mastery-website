@@ -643,6 +643,10 @@ a.faq {
     margin-bottom: 5px;
 }
 
+#first {
+    margin-right: 20px;
+}
+
 .cat-list {
     padding: 15px 0;
 }
