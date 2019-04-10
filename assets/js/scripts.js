@@ -15,6 +15,9 @@ function play(video){
 function getDate(){
   const yearSaver = document.querySelectorAll('.year');
   yearSaver.forEach(value => value.innerHTML = new Date().getFullYear());
+  if(yearSaver.innerHTML !== new Date().getFullYear()){
+    yearSaver.innerHTML = new Date().getFullYear();
+  };
 }
 
 setInterval(getDate, 5000);
