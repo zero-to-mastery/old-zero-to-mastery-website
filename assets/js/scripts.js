@@ -7,15 +7,15 @@ function play(video){
 (function () {
   // gets the span wrapped around the year
   const year = document.querySelector('.year-footer');
-  const yearSaver = document.querySelector('.year');
   // updates the year with the current year
   year.innerHTML = new Date().getFullYear();
 })();
 
 function getDate(){
+  // grabbing all items with the class of year
   const yearSaver = document.querySelectorAll('.year');
+  // looping through the nodelist and adding the year to each span element
   yearSaver.forEach(value => value.innerHTML = new Date().getFullYear());
 }
 
-setInterval(getDate, 5000);
 getDate();
