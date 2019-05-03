@@ -234,22 +234,28 @@ div.desktop-wrapper iframe {
     padding: 20px;
 }
 
+
 .coursecard h5 {
     color: #d4af37;
     text-align: center;
+    
 }
 
 .coursecard p {
     color: rgba(100, 100, 100, 0.938);
     text-align: justify;
+    
 }
 
 .coursecard {
     transition: all 0.5s;
+    margin:15px;
 }
 
 .coursecard:hover {
     transform: scale(1.05);
+    backface-visibility: hidden;
+    
 }
 
 
