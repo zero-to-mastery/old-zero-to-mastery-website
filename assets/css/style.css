@@ -234,22 +234,28 @@ div.desktop-wrapper iframe {
     padding: 20px;
 }
 
+
 .coursecard h5 {
     color: #d4af37;
     text-align: center;
+    
 }
 
 .coursecard p {
     color: rgba(100, 100, 100, 0.938);
     text-align: justify;
+    
 }
 
 .coursecard {
     transition: all 0.5s;
+    margin:15px;
 }
 
 .coursecard:hover {
     transform: scale(1.05);
+    backface-visibility: hidden;
+    
 }
 
 
@@ -618,4 +624,48 @@ a.faq {
     background: url(../images/job-board.jpg);
     background-size: cover;
     background-position: center;
+}
+
+/* # Resources Page # */
+.cat {
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) 2fr;
+    padding: 25px 0;
+    border-bottom: solid 0.5px black;
+}
+
+.cat:last-of-type {
+    border-bottom: none;
+}
+
+.cat-head {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.cat-head img {
+    width: 60px;
+    height: 80px;
+    margin-bottom: 5px;
+}
+
+#first {
+    margin-right: 20px;
+}
+
+.cat-list {
+    padding: 15px 0;
+}
+
+.cat-list ul {
+    display: flex;
+    flex-flow: column wrap;
+    height: 200px;
+    /* list-style: none; */
+}
+
+@media only screen and (max-width: 800px) {
+    .cat-list ul {
+        height: min-content;
+    }
 }

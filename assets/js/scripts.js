@@ -10,3 +10,12 @@ function play(video){
   // updates the year with the current year
   year.innerHTML = new Date().getFullYear();
 })();
+
+function getDate(){
+  // grabbing all items with the class of year
+  const yearSaver = document.querySelectorAll('.year');
+  // looping through the nodelist and adding the year to each span element
+  yearSaver.forEach(value => value.innerHTML = new Date().getFullYear());
+}
+
+getDate();
