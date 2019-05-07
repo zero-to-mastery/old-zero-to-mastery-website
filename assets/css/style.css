@@ -366,7 +366,13 @@ h1.proj {
 
 #searchBox {
     width: 50%;
+    outline: none;
 }
+#searchBox:focus, textarea:focus {
+  box-shadow: 0 0 5px #ffc107;
+  border: 1px solid #ffc107;
+}
+
 
 a.faq {
     width: 10em;
