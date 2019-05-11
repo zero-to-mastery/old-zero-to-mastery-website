@@ -671,7 +671,7 @@ a.faq {
 .cat-list ul {
     display: flex;
     flex-flow: column wrap;
-    height: 200px;
+    min-height: 50px;
     /* list-style: none; */
 }
 
