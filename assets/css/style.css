@@ -252,6 +252,11 @@ div.desktop-wrapper iframe {
     margin:15px;
 }
 
+.coursecard .card-footer{
+    border-top: none;
+    background-color: transparent;
+}
+
 .coursecard:hover {
     transform: scale(1.05);
     backface-visibility: hidden;
