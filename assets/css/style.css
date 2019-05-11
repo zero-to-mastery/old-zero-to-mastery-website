@@ -655,7 +655,7 @@ a.faq {
 }
 
 .cat-head img {
-    width: 60px;
+    min-width: 60px;
     height: 80px;
     margin-bottom: 5px;
 }
