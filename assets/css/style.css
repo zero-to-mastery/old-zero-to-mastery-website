@@ -665,14 +665,19 @@ a.faq {
 }
 
 .cat-list {
-    padding: 15px 0;
+    padding: 0px 0;
 }
 
 .cat-list ul {
     display: flex;
     flex-flow: column wrap;
     min-height: 50px;
-    /* list-style: none; */
+    margin-bottom: 0;
+    list-style: none; 
+}
+
+.cat-list ul li{
+    padding: 2px 0;
 }
 
 @media only screen and (max-width: 800px) {
