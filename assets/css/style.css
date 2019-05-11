@@ -252,6 +252,11 @@ div.desktop-wrapper iframe {
     margin:15px;
 }
 
+.coursecard .card-footer{
+    border-top: none;
+    background-color: transparent;
+}
+
 .coursecard:hover {
     transform: scale(1.05);
     backface-visibility: hidden;
@@ -512,7 +517,7 @@ a.faq {
 
 .button-area a {
     background: rgba(241, 240, 240, 0.795);
-    border: 2px #d4af37 solid;
+    border: 2px #aaa79d solid;
     border-radius: 10px;
     padding: 1em 1.4em;
     margin: 0.45em;
@@ -637,7 +642,7 @@ a.faq {
     display: grid;
     grid-template-columns: minmax(150px, 1fr) 2fr;
     padding: 25px 0;
-    border-bottom: solid 0.5px black;
+    border-bottom: solid 0.5px #bdc3c7;
 }
 
 .cat:last-of-type {
@@ -646,11 +651,11 @@ a.faq {
 
 .cat-head {
     text-align: center;
-    padding: 15px 0;
+    
 }
 
 .cat-head img {
-    width: 60px;
+    min-width: 60px;
     height: 80px;
     margin-bottom: 5px;
 }
@@ -660,14 +665,19 @@ a.faq {
 }
 
 .cat-list {
-    padding: 15px 0;
+    padding: 0px 0;
 }
 
 .cat-list ul {
     display: flex;
     flex-flow: column wrap;
-    height: 200px;
-    /* list-style: none; */
+    min-height: 50px;
+    margin-bottom: 0;
+    list-style: none; 
+}
+
+.cat-list ul li{
+    padding: 2px 0;
 }
 
 @media only screen and (max-width: 800px) {
