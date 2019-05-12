@@ -357,10 +357,12 @@ h1.proj {
 }
 
 .projectIcon {
-    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+    background: url(../images/advent/ztmbg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
     height: 10em;
-    margin: auto;
-    display: block;
 }
 
 .challengeIcon {
