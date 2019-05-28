@@ -72,7 +72,12 @@ When adding styles try to ensure the following:
 }
 
 .navbar-brand {
-    transform: scale(1.5);
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
+}
+
+.navbar-brand--logo {
+    max-width: 60px;
 }
 
 .navbar-brand:hover {
@@ -130,11 +135,6 @@ When adding styles try to ensure the following:
 
 /* This aligns the dropdown content so that the items under 'Community' are not cut off*/
 
-#navbarSupportedContent {
-    padding-right: 2rem;
-}
-
-
 /* ################### */
 
 
@@ -152,21 +152,33 @@ When adding styles try to ensure the following:
     display: flex;
 }
 
+.langs .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
 .langs img {
-    padding: 0 45px;
-    max-width: 25%;
+    padding: 0 16px;
+    max-width: 60%;
     -moz-transition: all .5s linear;
     -webkit-transition: all .5s linear;
     -o-transition: all .5s linear;
     transition: all .5s linear;
 }
 
-@media (min-width: 990px) {
+@media(max-width: 767px) {
+    .langs img {
+        max-width: 100%;
+    }
+}
+
+/* @media (min-width: 990px) {
     .langs img {
         padding: 10px;
         max-width: 20%;
     }
-}
+} */
 
 .langs img:hover {
     -ms-transform: scale(1.1);
