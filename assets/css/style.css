@@ -112,6 +112,11 @@ When adding styles try to ensure the following:
     transition: all 0.3s ease-in-out;
 }
 
+.nav-item.dropdown:last-of-type .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+
 .dropdown-menu,
 .dropdown-divider {
     padding: 0;
