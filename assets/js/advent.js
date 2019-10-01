@@ -113,7 +113,7 @@ const drawCards = (d, filter) => {
                     <h5 class="card-title">
                         <a class="text-white" id="userNameHolder" title=${sol.userName}>${uName}</a>
                     </h5>
-                    <a href=${sol.url} target="_blank" class="btn btn-outline-warning btn-sm mt-3 mb-0">View Solution</a>
+                    <a href=${sol.url} target="_blank" rel="noopener noreferrer" class="btn btn-outline-warning btn-sm mt-3 mb-0">View Solution</a>
                 </div>
                 <small class="py-2">Submitted ${timeAgo}<small>
             </div>
@@ -135,7 +135,7 @@ const drawCards = (d, filter) => {
             </div>
             <img src=../assets/images/days/${sol.dayNumber}.png class="sizer" data-toggle="tooltip" data-placement="top" title="Day ${sol.dayNumber}">
             <img src=../assets/images/lang/${langName.toLowerCase()}.png class="sizer" title="Written in: ${langName}">
-            <a href=${sol.url} target="_blank" class="btn btn-outline-warning btn-sm mb-0">View Solution</a><br>
+            <a href=${sol.url} target="_blank" rel="noopener noreferrer" class="btn btn-outline-warning btn-sm mb-0">View Solution</a><br>
             <small>Submitted ${timeAgo}<small>
             <hr class="leaderHr">
         </div>
