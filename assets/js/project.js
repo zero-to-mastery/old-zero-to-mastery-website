@@ -50,7 +50,7 @@ const displayProjects = () => {
                         <div class="card-body text-center bg-dark">
                             <h6 class="text-warning">Contributors: ${contributors.length}</h6>
                             <h6 class="text-warning">Pull requests: ${pull_requests}</h6>
-                            <a href=${project.projectUrl} target="_blank" class="btn btn-outline-warning btn-sm mt-3 mb-0">Contribute Now</a>
+                            <a href=${project.projectUrl} target="_blank" rel="noopener noreferrer" class="btn btn-outline-warning btn-sm mt-3 mb-0">Contribute Now</a>
                         </div>
                     </div>
                 </div>
