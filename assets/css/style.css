@@ -685,3 +685,49 @@ a.faq {
     height: min-content;
   }
 }
+
+/* To fix color contrast accessibility issues */
+#course .card-body {
+  padding: 0;
+}
+#course .card-title {
+  padding: 1rem;
+  background: black;
+}
+#course .card-text {
+  padding: 0.5rem 1rem;
+}
+#course .card-footer a {
+  background: #ffc107;
+  color: #000000;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+  transition: translateY 0.25s;
+}
+
+#course .card-footer a:hover {
+  transform: translateY(2px);
+}
+
+#course .card-footer a:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 2px #ffc107;
+}
+
+#course .coursecard {
+  border: 2px solid black;
+  transition: 0.25s;
+}
+#course .coursecard:hover {
+  transform: scale(1.03);
+}
+
+.footer-subtext {
+  color: #959ca3;
+}
+
+#about,
+footer {
+  background: #000000;
+}
