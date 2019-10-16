@@ -3,11 +3,11 @@
   margin-top: 80px;
 }
 
-.carousel-fade .carousel-item {
+.carousel .carousel-item {
   height: 100%;
 }
 
-.carousel-fade .carousel-item img {
+.carousel .carousel-item img {
   background-size: cover;
   min-height: 250px;
   max-width: 100%;
@@ -124,7 +124,8 @@
     height: 15px;
     width: 15px;
     margin: 5px !important;
-    border-radius: 100%;
+    border: none;
+    border-radius: 50%;
   }
 }
 
