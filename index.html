@@ -4,15 +4,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
+  <meta name="description" content="Zero To Mastery Official Website. Learn HTML, CSS, JavaScript, ReactJS, NodeJS, PostgreSQL, Python, Algorithms and Data Structures at ZTM." />
   <meta name="author" content="" />
 
   <title>Zero To Mastery - Become a Web Dev Today</title>
   <link rel="icon" type="image/png" href="./assets/images/favicon.ico" />
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!--Animation On Scroll-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
   <!-- Custom styles for this template -->
   <link href="./assets/css/style.css" rel="stylesheet" />
@@ -21,9 +22,9 @@
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light mb-5">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light mb-5">
     <a class="navbar-brand" href="../">
-      <img src="../assets/images/ztm.png" width="50" height="50" class="d-inline-block align-top" alt="" />
+      <img src="../assets/images/ztm.png" class="d-inline-block align-top navbar-brand--logo" alt="Zero to Mastery Homepage" />
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -31,7 +32,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse ham-content" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav"></ul>
 
       <ul class="navbar-nav ml-auto pb-2 pl-2 pr-2">
@@ -49,6 +50,10 @@
             <a class="dropdown-item" href="../courses/master-the-coding-interview.html">Master the Coding Interview</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="../courses/advanced-javascript.html">Advance Javascript Concepts</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./courses/complete-react-developer.html">Complete React Developer</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="./courses/complete-python-developer.html">Complete Python Developer</a>
           </div>
         </li>
 
@@ -101,10 +106,10 @@
   </nav>
 
   <header>
-    <div class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000" id="carousel-1">
+    <div class="carousel slide" data-ride="carousel" data-interval="4000" id="carousel-1">
       <div class="carousel-inner" role="listbox">
         <!-- Slide 1 -->
-        <div class="carousel-item active">
+        <div class="carousel-item active" role="option">
           <img class="img-fluid w-100 d-block" srcset="
                 ./assets/images/slide-images/slide1-xs.jpg  600w,
                 ./assets/images/slide-images/slide1-s.jpg   900w,
@@ -123,7 +128,7 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item">
+        <div class="carousel-item" role="option">
           <img class="img-fluid w-100 d-block" srcset="
                 ./assets/images/slide-images/slide2-xs.jpg  600w,
                 ./assets/images/slide-images/slide2-s.jpg   900w,
@@ -133,7 +138,7 @@
           <div class="carousel-caption">
             <h3 class="animated fadeInDown">Collaboration Projects</h3>
             <p class="animated slideInUp">
-              Opensource community projects, work with other to create
+              Open source community projects, work with others to create
               something awesome
             </p>
             <a href="./projects/collaboration-projects.html"
@@ -142,7 +147,7 @@
         </div>
 
         <!-- Slide 3 -->
-        <div class="carousel-item">
+        <div class="carousel-item" role="option">
           <img class="img-fluid w-100 d-block" srcset="
                 ./assets/images/slide-images/slide3-xs.jpg  600w,
                 ./assets/images/slide-images/slide3-s.jpg   900w,
@@ -152,14 +157,14 @@
           <div class="carousel-caption">
             <h3 class="animated slideInDown">Useful Resources</h3>
             <p class="animated slideInLeft">
-              Student collated resources and article repository
+              Student collated resources and articles repository
             </p>
             <a href="./community/resources.html" class="btn btn-outline-light btn-lg animated slideInUp">Read More</a>
           </div>
         </div>
 
         <!-- Slide 4 -->
-        <div class="carousel-item">
+        <div class="carousel-item" role="option">
           <img class="img-fluid w-100 d-block" srcset="
                 ./assets/images/slide-images/slide4-xs.jpg  600w,
                 ./assets/images/slide-images/slide4-s.jpg   900w,
@@ -175,7 +180,7 @@
         </div>
 
         <!-- Slide 5 -->
-        <div class="carousel-item">
+        <div class="carousel-item" role="option">
           <img class="img-fluid w-100 d-block" srcset="
                 ./assets/images/slide-images/slide5-xs.jpg  600w,
                 ./assets/images/slide-images/slide5-s.jpg   900w,
@@ -218,29 +223,29 @@
   <!-- Language Section -->
   <section class="langs py-5">
     <div class="container text-center">
-      <img src="./assets/images/lang/html.png" atl="HTML5" />
-      <img src="./assets/images/lang/css.png" atl="CSS3" />
-      <img src="./assets/images/lang/javascript.png" atl="JS" />
+      <img src="./assets/images/lang/html.png" alt="HTML5" data-aos="fade-up" data-aos-duration="1000"/>
+      <img src="./assets/images/lang/css.png" alt="CSS3" data-aos="fade-up" data-aos-duration="1000"/>
+      <img src="./assets/images/lang/javascript.png" alt="JavaScript" data-aos="fade-up" data-aos-duration="1000"/>
     </div>
   </section>
 
   <!-- Video Section -->
-  <section id="about" class="bg-secondary">
-    <div class="container bg-secondary text-center p-5">
+  <section id="about" class="bg-dark">
+    <div class="container bg-dark text-center p-5">
       <!-- Title -->
       <div class="videoTitles text-center">
-        <h3>Become a Web Developer</h3>
-        <h2 class="display-4">Start Today!</h2>
+        <h3 class="text-light" data-aos="fade-right" data-aos-duration="1000">Become a Web Developer</h3>
+        <h2 class="display-4" data-aos="fade-left" data-aos-duration="500">Start Today!</h2>
       </div>
 
       <!-- Video -->
-      <div class="desktop-wrapper my-5">
+      <div class="desktop-wrapper my-5" data-aos="fade-up" data-aos-duration="1000">
         <div onclick='play("https://www.youtube.com/embed/sCX_YMPuJGA?autoplay=1")' class="playicon " id="vidwrap">
         </div>
       </div>
 
       <!-- Description -->
-      <p>
+      <p data-aos="fade-right" data-aos-duration="750">
         <em>"The Complete Web Developer in 2019: Zero to Mastery"</em> is a
         complete full-stack web development course, with the latest and most
         in-demand technologies, for anyone trying to learn web development in
@@ -258,25 +263,25 @@
   <section id="course" class="container py-5">
     <div class="row justify-content-center">
       <!-- ZTM -->
-      <div class="card coursecard col-12 col-md-5 col-lg">
-        <img class="card-img-top" src="./assets/images/course-images/zerotomastery.jpg" alt="Card image cap" />
+      <div class="card coursecard col-12 col-md-5 col-lg-3 p-0" data-aos="fade-up" data-aos-duration="500">
+        <img class="card-img-top" src="./assets/images/course-images/zerotomastery.jpg" alt="Andrei Neagoie Complete Web Developer Course Image" />
         <div class="card-body">
           <h5 class="card-title">
             The Complete Web Developer in 2019: Zero to Mastery
           </h5>
           <p class="card-text">
-            Learn to code and become a web developer in 2019 with HTML5, CSS,
-            Javascript, React, Node.js, Machine Learning & more!
+            Learn to code and become a web developer in 2019 with HTML5, CSS3,
+            JavaScript (ES2019), ReactJS, ExpressJS, NodeJS, PostgreSQL, Machine Learning and more by making fun and exciting projects along the way!
           </p>
         </div>
-        <div class="card-footer bg-secondary text-center">
+        <div class="card-footer text-center">
           <a href="./courses/zero-to-mastery.html" class="btn btn-outline-warning">View Course</a>
         </div>
       </div>
 
       <!-- J2S -->
-      <div class="card coursecard col-12 col-md-5 col-lg">
-        <img class="card-img-top" src="./assets/images/course-images/j2s.jpg" alt="Card image cap" />
+      <div class="card coursecard col-12 col-md-5 col-lg-3 p-0" data-aos="fade-up" data-aos-duration="1000">
+        <img class="card-img-top" src="./assets/images/course-images/j2s.jpg" alt="Andrei Neagoie Junior to Senior Developer Course Image" />
         <div class="card-body">
           <h5 class="card-title">
             The Complete Junior to Senior Web Developer Roadmap (2019)
@@ -288,14 +293,14 @@
             industry.
           </p>
         </div>
-        <div class="card-footer bg-secondary text-center">
+        <div class="card-footer text-center">
           <a href="./courses/junior-to-senior.html" class="btn btn-outline-warning">View Course</a>
         </div>
       </div>
 
       <!-- MCI -->
-      <div class="card coursecard col-12 col-md-5 col-lg">
-        <img class="card-img-top" src="./assets/images/course-images/mastering-interviews.jpg" alt="Card image cap" />
+      <div class="card coursecard col-12 col-md-5 col-lg-3 p-0" data-aos="fade-up" data-aos-duration="1500">
+        <img class="card-img-top" src="./assets/images/course-images/mastering-interviews.jpg" alt="Andrei Neagoie Data Structures and Algorithms Course Image" />
         <div class="card-body">
           <h5 class="card-title">
             Master the Coding Interview: Data Structures + Algorithms
@@ -306,14 +311,14 @@
             Google, Microsoft, Facebook, Netflix, Amazon and more!
           </p>
         </div>
-        <div class="card-footer bg-secondary text-center">
+        <div class="card-footer text-center">
           <a href="./courses/master-the-coding-interview.html" class="btn btn-outline-warning">View Course</a>
         </div>
       </div>
 
       <!-- AJC -->
-      <div class="card coursecard col-12 col-md-5 col-lg">
-        <img class="card-img-top" src="./assets/images/course-images/AJC.jpg" alt="Card image cap" />
+      <div class="card coursecard col-12 col-md-5 col-lg-3 p-0" data-aos="fade-up" data-aos-duration="1000">
+        <img class="card-img-top" src="./assets/images/course-images/AJC.jpg" alt="Andrei Neagoie Advanced JavaScript Concepts Course Image" />
         <div class="card-body">
           <h5 class="card-title">
             Advanced JavaScript Concepts
@@ -325,10 +330,45 @@
             javascript developer.
           </p>
         </div>
-        <div class="card-footer bg-secondary text-center">
+        <div class="card-footer text-center">
           <a href="./courses/advanced-javascript.html" class="btn btn-outline-warning">View Course</a>
         </div>
       </div>
+
+      <!-- CRD -->
+      <div class="card coursecard col-12 col-md-5 col-lg-3 p-0" data-aos="fade-up" data-aos-duration="1500">
+        <img class="card-img-top" src="./assets/images/course-images/complete-react-developer.jpg" alt="Andrei Neagoie Complete React Developer Course Image" />
+        <div class="card-body">
+          <h5 class="card-title">
+            Complete React Developer in 2019
+          </h5>
+          <p class="card-text">
+            Become a Senior React Developer! Build a massive E-commerce app 
+            with Redux, Hooks, GraphQL, ContextAPI, Stripe, Firebase. Master React design patterns and 
+            develop a E-Commerce React application with above skills.
+          </p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="./courses/complete-react-developer.html" class="btn btn-outline-warning">View Course</a>
+        </div>
+      </div>
+
+      <!-- CPD -->
+      <div class="card coursecard col-12 col-md-5 col-lg-3 p-0" data-aos="fade-up" data-aos-duration="1500">
+        <img class="card-img-top" src="./assets/images/course-images/complete-python-developer.jpg" alt="Andrei Neagoie Complete Python Developer in 2019 Zero to Mastery Course Image" />
+        <div class="card-body">
+          <h5 class="card-title">
+            Complete Python Developer in 2019
+          </h5>
+          <p class="card-text">
+            How to become a Python 3 Developer and get hired! Build 12+ projects, learn Web Development, Machine Learning, Data Science, Web Scraping, processing images, CSVs, PDFs and other files and much more.
+          </p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="./courses/complete-python-developer.html" class="btn btn-outline-warning">View Course</a>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -338,7 +378,7 @@
       <p class="m-0 text-center text-white">
         Copyright &copy; <span class="year-footer">2018</span> Zero To Mastery
       </p>
-      <p class="pt-2 text-center text-secondary">
+      <p class="pt-2 text-center text-light">
         Built by the students for the students with a special thanks to Andrei
         Neagoie.
       </p>
@@ -348,15 +388,16 @@
 
   <script src="./assets/js/scripts.js"></script>
   <!-- Bootstrap core JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400,
+      duration: 1000
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 
 </html>
