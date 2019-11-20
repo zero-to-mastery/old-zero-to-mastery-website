@@ -67,9 +67,10 @@ When adding styles try to ensure the following:
   padding-bottom: 1.5px;
 }
 
-.navbar-brand--logo {
+/* .navbar-brand--logo {
   max-width: 60px;
-}
+  border-radius: 10px;
+} */
 
 .navbar-brand:hover {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
