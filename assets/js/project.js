@@ -43,9 +43,9 @@ const displayProjects = () => {
                 `
                 <div class="my-3 col-sm-6 col-md-4 col-lg-3 osProject">
                     <div class="card adventCard">
-                        <div>
+                        <div class = "project-top">
                             <img src=${project.image} class="projectIcon" data-toggle="tooltip" data-placement="top" alt=${project.name} title=${project.name}>
-                            <h5 class="card-title pt-3 pb-3 px-2 h6 font-weight-bold">${project.name}</h5>
+                            <div class="card-title pt-3 pb-3 px-2 h6 font-weight-bold">${project.name}</div>
                         </div>
                         <div class="card-body text-center bg-dark">
                             <h6 class="text-warning">Contributors: ${contributors.length}</h6>

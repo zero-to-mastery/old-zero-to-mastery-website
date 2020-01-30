@@ -386,6 +386,14 @@ a.faq {
   font-size: 1.5em;
 }
 
+#projects{
+  grid-auto-rows: 1fr
+}
+
+#projects .card-title{
+  height: auto;
+}
+
 /* ################### */
 
 /* #   Events Pages  # */
